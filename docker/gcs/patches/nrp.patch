@@ -1,0 +1,38 @@
+--- nrp.orig	2021-01-14 16:00:52.000000000 +0000
++++ nrp	2023-03-09 09:50:38.000000000 +0000
+@@ -586,7 +586,7 @@
+ typeset oldPlatform=$PLATFORM
+ typeset oldGCS=$GCS
+ typeset path=""
+-	export LD_LIBRARY_PATH=/usr/lib:/usr/local/lib:$OPENWINHOME/lib
++	export LD_LIBRARY_PATH=/usr/lib:/usr/local/lib:$OPENWINHOME/lib:/usr/local/lib64/
+ 
+ 
+ 	export PLATFORM=$g_newPlatform
+@@ -662,6 +662,8 @@
+ 			LD_LIBRARY_PATH=$(subsVar -r ${EXT}/libusb/lib/${oldPlatform}                 $LD_LIBRARY_PATH)
+ 			LD_LIBRARY_PATH=$(subsVar -r ${EXT}/megara-fmpt/lib/${oldPlatform}                 $LD_LIBRARY_PATH)
+ 			LD_LIBRARY_PATH=$(subsVar -r ${EXT}/ESDCan4CanOpen/lib/${oldPlatform}                 $LD_LIBRARY_PATH)
++			LD_LIBRARY_PATH=$(subsVar -r ${EXT}/yamlcpp_0.7.0/lib/${oldPlatform}                 $LD_LIBRARY_PATH)
++			LD_LIBRARY_PATH=$(subsVar -r ${EXT}/rabbitmq_c_0.11.0/lib/${oldPlatform}                 $LD_LIBRARY_PATH)
+ 		else
+ 			LD_LIBRARY_PATH=$(subsVar -r ${EXT}/gsl_1.7/lib/${oldPlatform}                     $LD_LIBRARY_PATH)
+ 			LD_LIBRARY_PATH=$(subsVar -r ${EXT}/fitsio_2.4/lib/${oldPlatform}                  $LD_LIBRARY_PATH)
+@@ -706,6 +708,8 @@
+ 			LD_LIBRARY_PATH=$(subsVar -r ${oldGCS}/ext/opencv/lib/${oldPlatform}                 $LD_LIBRARY_PATH)
+ 			LD_LIBRARY_PATH=$(subsVar -r ${oldGCS}/ext/megara-fmpt/lib/${oldPlatform}                 $LD_LIBRARY_PATH)
+ 			LD_LIBRARY_PATH=$(subsVar -r ${oldGCS}/ext/ESDCan4CanOpen/lib/${oldPlatform}                 $LD_LIBRARY_PATH)
++			LD_LIBRARY_PATH=$(subsVar -r ${oldGCS}/ext/yamlcpp_0.7.0/lib/${oldPlatform}                 $LD_LIBRARY_PATH)
++			LD_LIBRARY_PATH=$(subsVar -r ${oldGCS}/ext/rabbitmq_c_0.11.0/lib/${oldPlatform}                 $LD_LIBRARY_PATH)
+ 
+ 		else
+ 			LD_LIBRARY_PATH=$(subsVar -r ${oldGCS}/ext/gsl_1.7/lib/${oldPlatform}                     $LD_LIBRARY_PATH)
+@@ -823,6 +827,8 @@
+ 			LD_LIBRARY_PATH=$(subsVar -e ${EXT}/opencv/lib/${g_newPlatform} ${LD_LIBRARY_PATH})
+ 			LD_LIBRARY_PATH=$(subsVar -e ${EXT}/megara-fmpt/lib/${g_newPlatform} ${LD_LIBRARY_PATH})
+ 			LD_LIBRARY_PATH=$(subsVar -e ${EXT}/ESDCan4CanOpen/lib/${g_newPlatform} ${LD_LIBRARY_PATH})
++			LD_LIBRARY_PATH=$(subsVar -e ${EXT}/yamlcpp_0.7.0/lib/${g_newPlatform} ${LD_LIBRARY_PATH})
++			LD_LIBRARY_PATH=$(subsVar -e ${EXT}/rabbitmq_c_0.11.0/lib/${g_newPlatform} ${LD_LIBRARY_PATH})
+ 			
+ 		else
+ 			LD_LIBRARY_PATH=$(subsVar -e ${EXT}/gsl_1.7/lib/${g_newPlatform}             ${LD_LIBRARY_PATH})
