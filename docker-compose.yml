@@ -1,0 +1,29 @@
+version: "3.5"
+services:
+
+  # gcs
+  gcs:
+    image: gcs-ros:halley 
+    hostname: gcs
+    container_name: halley
+    depends_on:
+      - db    
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+
+  # Database
+  db:
+    image: mhuertas/instalacionconectada:mysql
+    hostname: db
+    container_name: db
+    ports:
+       - 3306:3306
+    volumes:
+      - data:/var/lib/mysql     
+
+    environment:
+      - MYSQL_ROOT_PASSWORD=passroot
+
+volumes:
+  data:  
+  
