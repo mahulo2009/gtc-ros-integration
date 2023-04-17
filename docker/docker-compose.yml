@@ -3,8 +3,8 @@ services:
 
   # gcs
   gcs:
-    image: gcs-ros:halley 
-    hostname: gcs
+    build: ./gcs/
+    hostname: gcs   
     container_name: halley
     depends_on:
       - db    
