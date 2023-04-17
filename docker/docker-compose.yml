@@ -11,6 +11,14 @@ services:
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix
 
+  # is
+  is:
+    build: ./is/
+    hostname: is
+    container_name: is
+    volumes: 
+      - ./is/conf:/root/is-workspace/conf
+
   # Database
   db:
     image: mhuertas/instalacionconectada:mysql
