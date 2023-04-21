@@ -1,0 +1,14 @@
+RELEASE NOTES 1.0.0
+  
+Interface
+
+  #1732 - Setup to execute the Icaro DRP as part of the release configuration & testing process
+
+    - First version of ICARO Das.
+
+Bugs
+
+Implementation
+	  
+Known errors
+

@@ -1,0 +1,5 @@
+LDLIBS += -lIcaroDas $(DSLPRO_DEV_LIBS) $(TAO_LIBS) $(SSL_LIBS)
+LDLIBS += ${JSON_LIBS} -ljsoncpp
+LDLIBS += -lDFAgent
+LDLIBS += -lICARODFAgent
+

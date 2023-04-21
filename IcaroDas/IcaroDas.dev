@@ -1,0 +1,153 @@
+// Copyright (c) 2020 Gran Telescopio de Canarias, S.A. (GRANTECAN)
+// All Rights Reserved
+
+package gtc.DSL.CK.GDEV;
+
+public abstract class IcaroDas
+{
+
+   //----------------------------------------------------------------------
+   //  Specific types
+   //----------------------------------------------------------------------
+
+   //-------------------------------------------------------------
+   // Commands
+   //-------------------------------------------------------------
+   
+   /**
+   *  Expose
+   */
+   void expose();
+   
+   /**
+   *  Expose
+   */
+   void exposeFromFile(String filename);
+   
+   /**
+   *  Abort Acquisition
+   */
+   void abortAcquisition();
+   
+   /**
+   *  Setup number of exposures
+   */
+   void setupNumberOfExposures (long num);
+            
+   /**
+   * Setup exposure time in seconds  
+   */	
+   void setupExposureTimeSeconds (double time);
+   
+   //-------------------------------------------------------------
+   // Monitors
+   //-------------------------------------------------------------   
+   
+   /**
+   * The state of the CCD
+   * @magnitude
+   * @description CCD and controller state
+   * @values CCD_OFF, CCD_IDLE, CCD_EXPOSING, CCD_READING
+   * @sampling 100s
+   * @storage 600s
+   */
+   protected enum_CCDState ccdState;
+
+   /**
+   * Time left to finish the exposition
+   * @magnitude
+   * @description Time left to finish the exposition
+   * @maximum 36000
+   * @minimum 0
+   * @units Second
+   * @sampling 1s
+   * @storage 60s
+   */
+   protected double exposureTimeLeft;
+   
+   /**
+   * Number of the current exposure
+   * @magnitude
+   * @description Number of the current exposure
+   * @maximum 2000000000
+   * @minimum 0
+   * @sampling 1s
+   * @storage 60s
+   */
+   protected long currentExposure;
+
+   //-------------------------------------------------------------
+   // Alarms
+   //-------------------------------------------------------------
+
+   /**
+   * Generic alarm
+   * @alarm
+   * @description Device is in FAULT status
+   * @severity LEVEL1
+   * @acknowledge Yes
+   * @actions "Check status"
+   */
+   private Alarm DeviceFault;   
+
+
+   //----------------------------------------------------------------------
+   //  Device Properties
+   //----------------------------------------------------------------------
+
+   /**
+   * Instance name of the Data Factory agent that will receive the adquired frames
+   * @property
+   * @description Instance name of the Data Factory agent that will receive the adquired frames
+   * @default ICARODFAgent
+   */
+   protected String dataFactoryAgentInstanceCorbaName;
+   
+   /**
+   * Instance name of the Data Factory that will receive the adquired frames
+   * @property
+   * @description Instance name of the Data Factory that will receive the adquired frames
+   * @default ICARODFAgent
+   */
+   protected String dataFactoryManagerInstanceCorbaName;
+   
+   //----------------------------------------------------------------------
+   //  INSTANCES of class IcaroDas
+   //----------------------------------------------------------------------
+
+   /**
+   * IcaroDas camera
+   * @instance 
+   * @name      ICARO/IcaroDas
+   * @mode      INTEGRATED
+   * @priority  50
+   * @threads   2
+   */
+   private Device icaroDas;
+
+   //----------------------------------------------------------------------
+   //  APPLICATION
+   //----------------------------------------------------------------------
+
+   /** 
+   * Application is used to create the device
+   * @application
+   * @name IcaroDasApp
+   */
+   private Application icaroDasApp;    
+
+   //----------------------------------------------------------------------
+   //  LCU
+   //----------------------------------------------------------------------
+
+   /** 
+   * The LCU starts the applications
+   * @lcu
+   * @name IcaroDasLCU
+   */
+   private LCU icaroDasLCU;
+   
+}
+
+//type declarations
+class enum_CCDState{};

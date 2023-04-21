@@ -1,0 +1,47 @@
+// Copyright (c) 2022 Gran Telescopio Canarias, S.A. (GRANTECAN)
+// All Rights Reserved
+
+#ifndef _ICARODAS_idl_
+#define _ICARODAS_idl_
+
+#include "DCF.idl"
+
+#pragma prefix "gtc"
+
+module ICARODAS
+{
+	enum CCDState
+	{
+		CCD_OFF, CCD_IDLE, CCD_EXPOSING, CCD_READING
+	};
+
+	interface IcaroDas_ifce : DCF::Device_ifce 
+	{
+		// Specific IcaroDas operations
+		void expose() 
+			raises (DGT::GCSException); 
+
+		void exposeFromFile(in string filename) 
+			raises (DGT::GCSException); 
+
+		void abortAcquisition() 
+			raises (DGT::GCSException); 
+
+		void setupNumberOfExposures(in long num) 
+			raises (DGT::GCSException); 
+
+		void setupExposureTimeSeconds(in double time) 
+			raises (DGT::GCSException); 
+
+		// Monitorable attributes (device magnitudes)
+		readonly attribute ICARODAS::CCDState ccdState;
+		readonly attribute double             exposureTimeLeft;
+		readonly attribute long               currentExposure;
+		
+		// Configurable attributes (device properties)
+		attribute string dataFactoryAgentInstanceCorbaName;
+		attribute string dataFactoryManagerInstanceCorbaName;
+	};
+};
+#endif // _ICARODAS_idl_ 
+

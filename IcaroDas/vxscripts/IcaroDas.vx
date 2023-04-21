@@ -1,0 +1,20 @@
+#-------------------------------------------------------------------------------
+# Application specific libraries
+#-------------------------------------------------------------------------------
+ld < libIcaroDas.so
+#cd "MODULE_DIR"
+ld < tests/testIcaroDas.p/vx.O/testIcaroDas
+ld < examples/runIcaroDas.p/vx.O/runIcaroDas
+#ld < examples/useIcaroDas.p/vx.O/useIcaroDas
+
+# moduleShow
+#-------------------------------------------------------------------------------
+# start_LCU    -> starts LCU services and applications
+# start_LCU(1) -> performs the update of the Devices
+
+# testIcaroDas DEVICE_NAME,UPDATE,MODE,PRIORITY,THREADS
+# testIcaroDas "ICARO/IcaroDas",0,0,50,2
+# testIcaroDas "ICARO/IcaroDas",1,1,50,2
+# testIcaroDas "ICARO/IcaroDas",0,1,50,2
+
+#-------------------------------------------------------------------------------
