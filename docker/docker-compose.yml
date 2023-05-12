@@ -4,26 +4,29 @@ services:
   # gcs
   gcs:
     build: ./gcs/
+    pod: gcs
     hostname: gcs   
     container_name: halley
+    privileged: true
     depends_on:
       - db    
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix
 
   # is
-  is:
-    build: ./is/
-    hostname: is
-    container_name: is
-    volumes: 
-      - ./is/conf:/root/is-workspace/conf
+  #is:
+  #  build: ./is/
+  #  pod: gcs
+  #  hostname: is
+  #  container_name: is
 
   # Database
   db:
     image: mhuertas/instalacionconectada:mysql
+    pod: gcs
     hostname: db
     container_name: db
+    privileged: true
     ports:
        - 3306:3306
     volumes:
