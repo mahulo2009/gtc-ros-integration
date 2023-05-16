@@ -1,0 +1,36 @@
+types:
+    idls:
+        - >
+            struct AddTwoInts_Request
+            {
+                int64 a;
+                int64 b;
+            };
+            struct AddTwoInts_Response
+            {
+                int64 sum;
+            };
+
+systems:
+    ros2_domain5: { type: ros2, domain: 5, node_name: "add_two_ints_server" }
+    ros2_domain10: { type: ros2, domain: 10, node_name: "add_two_ints_client" }
+
+routes:
+    domain_5_to_10: { server: ros2_domain5, clients: ros2_domain10 }
+
+services:
+    add_two_ints: {
+            request_type: AddTwoInts_Request,
+            reply_type: AddTwoInts_Response,
+            route: domain_5_to_10,
+            remap: {
+                ros2_domain5: {
+                    request_type: "example_interfaces/AddTwoInts:request",
+                    reply_type: "example_interfaces/AddTwoInts:response"
+                },
+                ros2_domain10: {
+                    request_type: "example_interfaces/AddTwoInts:request",
+                    reply_type: "example_interfaces/AddTwoInts:response"
+                }
+            }
+        }
