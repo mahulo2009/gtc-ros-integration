@@ -1,0 +1,41 @@
+#!/bin/bash
+
+[ $# -eq 0 ] && exit 0
+
+cap=${1^}
+
+echo "
+struct ${cap}Value
+{
+    string componentName;
+    string magnitudeName;
+    long long time_stamp;
+    ${1} value;
+};
+" > ${cap}Value.idl
+
+/opt/fastdds_ws/Fast-DDS-Gen/scripts/fastddsgen ${cap}Value.idl || { rm ${cap}Value.idl; exit 1; }
+
+rename .cxx .cpp *.cxx
+
+preamble=$(head -n $(grep -n "#include" FastDDS_Adapters.h | tail -1 | cut -f 1 -d :) FastDDS_Adapters.h)
+toidls=$(tail -n -$(grep -n "#include" FastDDS_Adapters.h | tail -1 | cut -f 1 -d :) FastDDS_Adapters.h | head -n -1)
+
+echo "${preamble}""
+#include \"${cap}ValuePubSubTypes.h\"
+
+""${toidls}""
+
+void toIDL(${1} ${1}Value, ${cap}Value & fastdds_${cap}value);
+
+#endif" > FastDDS_Adapters.h
+
+echo -n "
+
+void toIDL(${1} ${1}Value, ${cap}Value & fastdds_${cap}value)
+{        
+        fastdds_${cap}value.value(${1}Value);
+}" >> FastDDS_Adapters.cpp
+
+shift 1
+./$0 $@
