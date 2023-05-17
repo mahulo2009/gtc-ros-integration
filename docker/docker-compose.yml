@@ -14,11 +14,11 @@ services:
       - /tmp/.X11-unix:/tmp/.X11-unix
 
   # is
-  #is:
-  #  build: ./is/
-  #  pod: gcs
-  #  hostname: is
-  #  container_name: is
+  is:
+    build: ./is/
+    hostname: is
+    privileged: true
+    container_name: is
 
   # Database
   db:
