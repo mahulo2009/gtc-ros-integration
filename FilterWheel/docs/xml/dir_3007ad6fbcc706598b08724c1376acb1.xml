@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="dir_3007ad6fbcc706598b08724c1376acb1" kind="dir">
+    <compoundname>FilterWheel.l</compoundname>
+    <innerfile refid="FilterWheel_8cpp">FilterWheel.cpp</innerfile>
+    <innerfile refid="FilterWheel_8h">FilterWheel.h</innerfile>
+    <innerfile refid="FILTERWHEEL_8idl">FILTERWHEEL.idl</innerfile>
+    <innerfile refid="FilterWheelAdapter_8cpp">FilterWheelAdapter.cpp</innerfile>
+    <innerfile refid="FilterWheelAdapter_8h">FilterWheelAdapter.h</innerfile>
+    <innerfile refid="FilterWheelBase_8cpp">FilterWheelBase.cpp</innerfile>
+    <innerfile refid="FilterWheelBase_8h">FilterWheelBase.h</innerfile>
+    <innerfile refid="FilterWheelConfigAgent_8cpp">FilterWheelConfigAgent.cpp</innerfile>
+    <innerfile refid="FilterWheelConfigAgent_8h">FilterWheelConfigAgent.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/"/>
+  </compounddef>
+</doxygen>

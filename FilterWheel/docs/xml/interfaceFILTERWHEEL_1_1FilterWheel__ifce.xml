@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="interfaceFILTERWHEEL_1_1FilterWheel__ifce" kind="interface" prot="public">
+    <compoundname>FILTERWHEEL::FilterWheel_ifce</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Device_ifce</basecompoundref>
+    <includes refid="FILTERWHEEL_8idl" local="no">FILTERWHEEL.idl</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="interfaceFILTERWHEEL_1_1FilterWheel__ifce_1ae6e7271bbeede9f657ca7f9bcff66bca" prot="public" static="no" mutable="no">
+        <type>readonly attribute short</type>
+        <definition>readonly attribute short FILTERWHEEL::FilterWheel_ifce::filterWheelFilter</definition>
+        <argsstring></argsstring>
+        <name>filterWheelFilter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FILTERWHEEL.idl" line="20" column="1" bodyfile="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FILTERWHEEL.idl" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interfaceFILTERWHEEL_1_1FilterWheel__ifce_1a7743bdfb489fc4117c1d058cb0011307" prot="public" static="no" mutable="no">
+        <type>readonly attribute boolean</type>
+        <definition>readonly attribute boolean FILTERWHEEL::FilterWheel_ifce::filterWheelMoving</definition>
+        <argsstring></argsstring>
+        <name>filterWheelMoving</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FILTERWHEEL.idl" line="21" column="1" bodyfile="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FILTERWHEEL.idl" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interfaceFILTERWHEEL_1_1FilterWheel__ifce_1a2cbbee41cc8c690c41e73841cb49f3e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FILTERWHEEL::FilterWheel_ifce::moveCommand</definition>
+        <argsstring>(in short position)</argsstring>
+        <name>moveCommand</name>
+        <param>
+          <type>in short</type>
+          <declname>position</declname>
+        </param>
+        <exceptions> raises (DGT::GCSException)</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FILTERWHEEL.idl" line="16" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="31">
+        <label>FILTERWHEEL::FilterWheel_ifce</label>
+        <link refid="interfaceFILTERWHEEL_1_1FilterWheel__ifce"/>
+        <childnode refid="32" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>DCF::Device_ifce</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="33">
+        <label>FILTERWHEEL::FilterWheel_ifce</label>
+        <link refid="interfaceFILTERWHEEL_1_1FilterWheel__ifce"/>
+        <childnode refid="34" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>DCF::Device_ifce</label>
+      </node>
+    </collaborationgraph>
+    <location file="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FILTERWHEEL.idl" line="14" column="1" bodyfile="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FILTERWHEEL.idl" bodystart="13" bodyend="24"/>
+    <listofallmembers>
+      <member refid="interfaceFILTERWHEEL_1_1FilterWheel__ifce_1ae6e7271bbeede9f657ca7f9bcff66bca" prot="public" virt="non-virtual"><scope>FILTERWHEEL::FilterWheel_ifce</scope><name>filterWheelFilter</name></member>
+      <member refid="interfaceFILTERWHEEL_1_1FilterWheel__ifce_1a7743bdfb489fc4117c1d058cb0011307" prot="public" virt="non-virtual"><scope>FILTERWHEEL::FilterWheel_ifce</scope><name>filterWheelMoving</name></member>
+      <member refid="interfaceFILTERWHEEL_1_1FilterWheel__ifce_1a2cbbee41cc8c690c41e73841cb49f3e4" prot="public" virt="non-virtual"><scope>FILTERWHEEL::FilterWheel_ifce</scope><name>moveCommand</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

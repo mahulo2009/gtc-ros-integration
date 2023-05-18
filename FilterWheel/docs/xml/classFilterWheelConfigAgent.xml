@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classFilterWheelConfigAgent" kind="class" prot="public">
+    <compoundname>FilterWheelConfigAgent</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ConfigAgent</basecompoundref>
+    <includes refid="FilterWheelConfigAgent_8h" local="no">FilterWheelConfigAgent.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classFilterWheelConfigAgent_1a0bb2d314f567512e8635b40319b9faf5" prot="protected" static="no" mutable="no">
+        <type>Trace</type>
+        <definition>Trace FilterWheelConfigAgent::trace_</definition>
+        <argsstring></argsstring>
+        <name>trace_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelConfigAgent.h" line="47" column="1" bodyfile="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelConfigAgent.h" bodystart="47" bodyend="-1"/>
+        <referencedby refid="classFilterWheelConfigAgent_1a2f8da0daaaf4d3be259b2df4cd5333a9" compoundref="FilterWheelConfigAgent_8cpp" startline="28" endline="42">applyProperties</referencedby>
+        <referencedby refid="classFilterWheelConfigAgent_1ac6f44547cd91f786c0912ff92ebc798c" compoundref="FilterWheelConfigAgent_8cpp" startline="88" endline="104">fromConfiguration</referencedby>
+        <referencedby refid="classFilterWheelConfigAgent_1a2c40e64ac102a97b06cc3fce4d6d2cb6" compoundref="FilterWheelConfigAgent_8cpp" startline="47" endline="62">readProperties</referencedby>
+        <referencedby refid="classFilterWheelConfigAgent_1a89225bf4f324c1fd67b296edce54c824" compoundref="FilterWheelConfigAgent_8cpp" startline="67" endline="83">toConfiguration</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classFilterWheelConfigAgent_1a38fd24046c8cdf50ca56ba067e06a79d" prot="private" static="no" mutable="no">
+        <type><ref refid="classFilterWheelBase" kindref="compound">FilterWheelBase</ref> *</type>
+        <definition>FilterWheelBase* FilterWheelConfigAgent::device_</definition>
+        <argsstring></argsstring>
+        <name>device_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelConfigAgent.h" line="56" column="1" bodyfile="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelConfigAgent.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFilterWheelConfigAgent_1aa9b7cb150c8094b9dbb9c5247282c478" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FilterWheelConfigAgent::FilterWheelConfigAgent</definition>
+        <argsstring>(FilterWheelBase *device, const int mode, TimerEngine *timer)</argsstring>
+        <name>FilterWheelConfigAgent</name>
+        <param>
+          <type><ref refid="classFilterWheelBase" kindref="compound">FilterWheelBase</ref> *</type>
+          <declname>device</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>TimerEngine *</type>
+          <declname>timer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelConfigAgent.h" line="24" column="1" bodyfile="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelConfigAgent.cpp" bodystart="10" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classFilterWheelConfigAgent_1a7b2c5b89625a0f0495c7cbf1bc4f73ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>FilterWheelConfigAgent::~FilterWheelConfigAgent</definition>
+        <argsstring>()</argsstring>
+        <name>~FilterWheelConfigAgent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelConfigAgent.h" line="27" column="1" bodyfile="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelConfigAgent.cpp" bodystart="21" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classFilterWheelConfigAgent_1a2f8da0daaaf4d3be259b2df4cd5333a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FilterWheelConfigAgent::applyProperties</definition>
+        <argsstring>()</argsstring>
+        <name>applyProperties</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelConfigAgent.h" line="30" column="1" bodyfile="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelConfigAgent.cpp" bodystart="28" bodyend="42"/>
+        <references refid="classFilterWheelConfigAgent_1a0bb2d314f567512e8635b40319b9faf5" compoundref="FilterWheelConfigAgent_8h" startline="47">trace_</references>
+      </memberdef>
+      <memberdef kind="function" id="classFilterWheelConfigAgent_1a2c40e64ac102a97b06cc3fce4d6d2cb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int FilterWheelConfigAgent::readProperties</definition>
+        <argsstring>()</argsstring>
+        <name>readProperties</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelConfigAgent.h" line="33" column="1" bodyfile="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelConfigAgent.cpp" bodystart="47" bodyend="62"/>
+        <references refid="classFilterWheelConfigAgent_1a0bb2d314f567512e8635b40319b9faf5" compoundref="FilterWheelConfigAgent_8h" startline="47">trace_</references>
+      </memberdef>
+      <memberdef kind="function" id="classFilterWheelConfigAgent_1a89225bf4f324c1fd67b296edce54c824" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FilterWheelConfigAgent::toConfiguration</definition>
+        <argsstring>(CONFIG::Configuration &amp;c)</argsstring>
+        <name>toConfiguration</name>
+        <param>
+          <type>CONFIG::Configuration &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelConfigAgent.h" line="36" column="1" bodyfile="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelConfigAgent.cpp" bodystart="67" bodyend="83"/>
+        <references refid="classFilterWheelConfigAgent_1a0bb2d314f567512e8635b40319b9faf5" compoundref="FilterWheelConfigAgent_8h" startline="47">trace_</references>
+      </memberdef>
+      <memberdef kind="function" id="classFilterWheelConfigAgent_1ac6f44547cd91f786c0912ff92ebc798c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FilterWheelConfigAgent::fromConfiguration</definition>
+        <argsstring>(const CONFIG::Configuration &amp;c)</argsstring>
+        <name>fromConfiguration</name>
+        <param>
+          <type>const CONFIG::Configuration &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelConfigAgent.h" line="39" column="1" bodyfile="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelConfigAgent.cpp" bodystart="88" bodyend="104"/>
+        <references refid="classFilterWheelConfigAgent_1a0bb2d314f567512e8635b40319b9faf5" compoundref="FilterWheelConfigAgent_8h" startline="47">trace_</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="47">
+        <label>ConfigAgent</label>
+      </node>
+      <node id="46">
+        <label>FilterWheelConfigAgent</label>
+        <link refid="classFilterWheelConfigAgent"/>
+        <childnode refid="47" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="49">
+        <label>ConfigAgent</label>
+      </node>
+      <node id="48">
+        <label>FilterWheelConfigAgent</label>
+        <link refid="classFilterWheelConfigAgent"/>
+        <childnode refid="49" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelConfigAgent.h" line="16" column="1" bodyfile="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelConfigAgent.h" bodystart="15" bodyend="57"/>
+    <listofallmembers>
+      <member refid="classFilterWheelConfigAgent_1a2f8da0daaaf4d3be259b2df4cd5333a9" prot="public" virt="non-virtual"><scope>FilterWheelConfigAgent</scope><name>applyProperties</name></member>
+      <member refid="classFilterWheelConfigAgent_1a38fd24046c8cdf50ca56ba067e06a79d" prot="private" virt="non-virtual"><scope>FilterWheelConfigAgent</scope><name>device_</name></member>
+      <member refid="classFilterWheelConfigAgent_1aa9b7cb150c8094b9dbb9c5247282c478" prot="public" virt="non-virtual"><scope>FilterWheelConfigAgent</scope><name>FilterWheelConfigAgent</name></member>
+      <member refid="classFilterWheelConfigAgent_1ac6f44547cd91f786c0912ff92ebc798c" prot="public" virt="non-virtual"><scope>FilterWheelConfigAgent</scope><name>fromConfiguration</name></member>
+      <member refid="classFilterWheelConfigAgent_1a2c40e64ac102a97b06cc3fce4d6d2cb6" prot="public" virt="non-virtual"><scope>FilterWheelConfigAgent</scope><name>readProperties</name></member>
+      <member refid="classFilterWheelConfigAgent_1a89225bf4f324c1fd67b296edce54c824" prot="public" virt="non-virtual"><scope>FilterWheelConfigAgent</scope><name>toConfiguration</name></member>
+      <member refid="classFilterWheelConfigAgent_1a0bb2d314f567512e8635b40319b9faf5" prot="protected" virt="non-virtual"><scope>FilterWheelConfigAgent</scope><name>trace_</name></member>
+      <member refid="classFilterWheelConfigAgent_1a7b2c5b89625a0f0495c7cbf1bc4f73ba" prot="public" virt="virtual"><scope>FilterWheelConfigAgent</scope><name>~FilterWheelConfigAgent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

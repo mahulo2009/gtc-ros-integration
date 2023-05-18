@@ -1,0 +1,436 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classFilterWheelBase" kind="class" prot="public" abstract="yes">
+    <compoundname>FilterWheelBase</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Device</basecompoundref>
+    <derivedcompoundref refid="classFilterWheel" prot="public" virt="non-virtual">FilterWheel</derivedcompoundref>
+    <includes refid="FilterWheelBase_8h" local="no">FilterWheelBase.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classFilterWheelBase_1a260faa421241035ea51f6a67b05c3c1b" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool FilterWheelBase::corbaDebug_</definition>
+        <argsstring></argsstring>
+        <name>corbaDebug_</name>
+        <briefdescription>
+<para>Activate/deactivate corba debugging. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelBase.h" line="112" column="1" bodyfile="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelBase.h" bodystart="112" bodyend="-1"/>
+        <referencedby refid="classFilterWheelBase_1a273ecab6899be2705cca6f89ca6c4788" compoundref="FilterWheelBase_8cpp" startline="45" endline="124">connect</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classFilterWheelBase_1a07ef763d5ad181dfca1364cc8de6ce5f" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool FilterWheelBase::update_</definition>
+        <argsstring></argsstring>
+        <name>update_</name>
+        <briefdescription>
+<para>Activate/deactivate profile updating. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelBase.h" line="113" column="1" bodyfile="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelBase.h" bodystart="113" bodyend="-1"/>
+        <referencedby refid="classFilterWheelBase_1a273ecab6899be2705cca6f89ca6c4788" compoundref="FilterWheelBase_8cpp" startline="45" endline="124">connect</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classFilterWheelBase_1ac432f4002a52f07353455f175c06b16b" prot="protected" static="no" mutable="no">
+        <type>short</type>
+        <definition>short FilterWheelBase::filterWheelFilter_</definition>
+        <argsstring></argsstring>
+        <name>filterWheelFilter_</name>
+        <briefdescription>
+<para>FilterWheelFilter. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelBase.h" line="116" column="1" bodyfile="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelBase.h" bodystart="116" bodyend="-1"/>
+        <referencedby refid="classFilterWheelBase_1a8ec0287915338f45db06a390abb2faa6" compoundref="FilterWheelBase_8cpp" startline="12" endline="24">FilterWheelBase</referencedby>
+        <referencedby refid="classFilterWheelBase_1a50a4402a468508170ae0acbc708d6706" compoundref="FilterWheelBase_8cpp" startline="426" endline="436">filterWheelFilter</referencedby>
+        <referencedby refid="classFilterWheel_1a87d4d14b45f71f802b47fc34ca05b322" compoundref="FilterWheel_8cpp" startline="262" endline="299">FilterWheel::moveCommand</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classFilterWheelBase_1ad3ad7198360e9c298b92d8ae414beef2" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool FilterWheelBase::filterWheelMoving_</definition>
+        <argsstring></argsstring>
+        <name>filterWheelMoving_</name>
+        <briefdescription>
+<para>FilterWheelMoving. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelBase.h" line="117" column="1" bodyfile="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelBase.h" bodystart="117" bodyend="-1"/>
+        <referencedby refid="classFilterWheelBase_1a8ec0287915338f45db06a390abb2faa6" compoundref="FilterWheelBase_8cpp" startline="12" endline="24">FilterWheelBase</referencedby>
+        <referencedby refid="classFilterWheelBase_1a4f816ec06bdc1e05c66072140593512e" compoundref="FilterWheelBase_8cpp" startline="441" endline="451">filterWheelMoving</referencedby>
+        <referencedby refid="classFilterWheel_1a87d4d14b45f71f802b47fc34ca05b322" compoundref="FilterWheel_8cpp" startline="262" endline="299">FilterWheel::moveCommand</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFilterWheelBase_1a8ec0287915338f45db06a390abb2faa6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FilterWheelBase::FilterWheelBase</definition>
+        <argsstring>(string name)</argsstring>
+        <name>FilterWheelBase</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Device Constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelBase.h" line="27" column="1" bodyfile="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelBase.cpp" bodystart="12" bodyend="24"/>
+        <references refid="classFilterWheelBase_1ac432f4002a52f07353455f175c06b16b" compoundref="FilterWheelBase_8h" startline="116">filterWheelFilter_</references>
+        <references refid="classFilterWheelBase_1ad3ad7198360e9c298b92d8ae414beef2" compoundref="FilterWheelBase_8h" startline="117">filterWheelMoving_</references>
+        <referencedby refid="classFilterWheelBase_1abdd8d3fc7dc39520b5bcf489f60e6463" compoundref="FilterWheelBase_8cpp" startline="381" endline="397">createMonitors_</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classFilterWheelBase_1af570338f3e76a5363c7d74ecaa2d5a21" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>FilterWheelBase::~FilterWheelBase</definition>
+        <argsstring>()</argsstring>
+        <name>~FilterWheelBase</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelBase.h" line="30" column="1" bodyfile="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelBase.cpp" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classFilterWheelBase_1a273ecab6899be2705cca6f89ca6c4788" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FilterWheelBase::connect</definition>
+        <argsstring>(string orbname, bool corbaDebug, unsigned threads, long priority, bool mode=Device::INTEGRATED, bool update=Device::DO_NOT_UPDATE)</argsstring>
+        <name>connect</name>
+        <reimplementedby refid="classFilterWheel_1ac00c8bf7d5417e6dfd2148365685116d">connect</reimplementedby>
+        <param>
+          <type>string</type>
+          <declname>orbname</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>corbaDebug</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>threads</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>priority</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>mode</declname>
+          <defval>Device::INTEGRATED</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>update</declname>
+          <defval>Device::DO_NOT_UPDATE</defval>
+        </param>
+        <briefdescription>
+<para>Connects the device with a CORBA and other GCS Services. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelBase.h" line="35" column="1" bodyfile="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelBase.cpp" bodystart="45" bodyend="124"/>
+        <references refid="classFilterWheelBase_1a260faa421241035ea51f6a67b05c3c1b" compoundref="FilterWheelBase_8h" startline="112">corbaDebug_</references>
+        <references refid="classFilterWheelBase_1a07ef763d5ad181dfca1364cc8de6ce5f" compoundref="FilterWheelBase_8h" startline="113">update_</references>
+        <referencedby refid="classFilterWheel_1ac00c8bf7d5417e6dfd2148365685116d" compoundref="FilterWheel_8cpp" startline="36" endline="43">FilterWheel::connect</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classFilterWheelBase_1a42e67bf520aaec1c0310d392eb4cb056" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FilterWheelBase::start</definition>
+        <argsstring>()</argsstring>
+        <name>start</name>
+        <reimplementedby refid="classFilterWheel_1a56db65b608999a8997c48ece58571a8b">start</reimplementedby>
+        <briefdescription>
+<para>Starting procedure. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelBase.h" line="40" column="1" bodyfile="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelBase.cpp" bodystart="129" bodyend="163"/>
+        <references refid="classFilterWheelBase_1abdd8d3fc7dc39520b5bcf489f60e6463" compoundref="FilterWheelBase_8cpp" startline="381" endline="397">createMonitors_</references>
+      </memberdef>
+      <memberdef kind="function" id="classFilterWheelBase_1aafc5305c343da1276923a18d36a0422f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FilterWheelBase::init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <reimplementedby refid="classFilterWheel_1a2c74d690192a16f096ff0f4eb671d31b">init</reimplementedby>
+        <briefdescription>
+<para>Initialization procedure. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelBase.h" line="43" column="1" bodyfile="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelBase.cpp" bodystart="168" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="classFilterWheelBase_1ace32795069f15712e716b982b2830ae8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FilterWheelBase::halt</definition>
+        <argsstring>()</argsstring>
+        <name>halt</name>
+        <reimplementedby refid="classFilterWheel_1a355cea704c7fa02a32cea628ad051813">halt</reimplementedby>
+        <briefdescription>
+<para>Halting procedure. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelBase.h" line="46" column="1" bodyfile="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelBase.cpp" bodystart="195" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="classFilterWheelBase_1a3489759202f2bb34afe9bb3d7d4db353" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FilterWheelBase::shutdown</definition>
+        <argsstring>()</argsstring>
+        <name>shutdown</name>
+        <reimplementedby refid="classFilterWheel_1a5e104e7da271227096bb9c172b75106b">shutdown</reimplementedby>
+        <briefdescription>
+<para>Shutdown procedure. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelBase.h" line="49" column="1" bodyfile="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelBase.cpp" bodystart="219" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="classFilterWheelBase_1a567a3614438287acc2746277a2e72d41" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FilterWheelBase::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <reimplementedby refid="classFilterWheel_1a8e9bf1a0ac5d7ff4ef5f5319d1947b6c">reset</reimplementedby>
+        <briefdescription>
+<para>Reset procedure. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelBase.h" line="52" column="1" bodyfile="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelBase.cpp" bodystart="243" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="classFilterWheelBase_1a5ec901fdf33247a5dc48f5b469dd0e11" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FilterWheelBase::restore</definition>
+        <argsstring>()</argsstring>
+        <name>restore</name>
+        <briefdescription>
+<para>Restore procedure. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelBase.h" line="55" column="1" bodyfile="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelBase.cpp" bodystart="267" bodyend="297"/>
+      </memberdef>
+      <memberdef kind="function" id="classFilterWheelBase_1a034ff512467ba0c7ae74706244454cd0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FilterWheelBase::test</definition>
+        <argsstring>()</argsstring>
+        <name>test</name>
+        <reimplementedby refid="classFilterWheel_1a0a448b245f3841588b41f61a06285de0">test</reimplementedby>
+        <briefdescription>
+<para>Test procedure. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelBase.h" line="58" column="1" bodyfile="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelBase.cpp" bodystart="302" bodyend="324"/>
+      </memberdef>
+      <memberdef kind="function" id="classFilterWheelBase_1aa84125a4891782d2f155a9e82aba23c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FilterWheelBase::abort</definition>
+        <argsstring>()</argsstring>
+        <name>abort</name>
+        <reimplementedby refid="classFilterWheel_1a8fcebfa707996b4029701d2c24913c81">abort</reimplementedby>
+        <briefdescription>
+<para>Stops all commands and goes to fault. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelBase.h" line="61" column="1" bodyfile="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelBase.cpp" bodystart="329" bodyend="336"/>
+      </memberdef>
+      <memberdef kind="function" id="classFilterWheelBase_1afca143b72b25e39312267a967a049bfe" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>char *</type>
+        <definition>char * FilterWheelBase::report</definition>
+        <argsstring>(short level)</argsstring>
+        <name>report</name>
+        <reimplementedby refid="classFilterWheel_1a8a96b1a7fd31e26fd3ea89412e3f40f5">report</reimplementedby>
+        <param>
+          <type>short</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+<para>Report device info. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelBase.h" line="64" column="1" bodyfile="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelBase.cpp" bodystart="341" bodyend="367"/>
+        <references refid="classFilterWheelBase_1a50a4402a468508170ae0acbc708d6706" compoundref="FilterWheelBase_8cpp" startline="426" endline="436">filterWheelFilter</references>
+        <references refid="classFilterWheelBase_1a4f816ec06bdc1e05c66072140593512e" compoundref="FilterWheelBase_8cpp" startline="441" endline="451">filterWheelMoving</references>
+        <referencedby refid="classFilterWheel_1a8a96b1a7fd31e26fd3ea89412e3f40f5" compoundref="FilterWheel_8cpp" startline="225" endline="240">FilterWheel::report</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classFilterWheelBase_1a80b45825d8c5cf8db2b3b90a776cf0b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * FilterWheelBase::version</definition>
+        <argsstring>()</argsstring>
+        <name>version</name>
+        <briefdescription>
+<para>Reports device version. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelBase.h" line="67" column="1" bodyfile="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelBase.cpp" bodystart="372" bodyend="376"/>
+      </memberdef>
+      <memberdef kind="function" id="classFilterWheelBase_1a432c92056ae5225b886fb243f5edb9ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void FilterWheelBase::moveCommand</definition>
+        <argsstring>(short position)=0</argsstring>
+        <name>moveCommand</name>
+        <reimplementedby refid="classFilterWheel_1a87d4d14b45f71f802b47fc34ca05b322">moveCommand</reimplementedby>
+        <param>
+          <type>short</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+<para>void command </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelBase.h" line="74" column="1"/>
+        <referencedby refid="classFilterWheelAdapter_1a401cdf362ddd0fffbcbfec09a837fb7c" compoundref="FilterWheelAdapter_8cpp" startline="32" endline="42">FilterWheelAdapter::moveCommand</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classFilterWheelBase_1a50a4402a468508170ae0acbc708d6706" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>short</type>
+        <definition>short FilterWheelBase::filterWheelFilter</definition>
+        <argsstring>()</argsstring>
+        <name>filterWheelFilter</name>
+        <briefdescription>
+<para>FilterWheelFilter. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>magnitude:</title><para></para></simplesect>
+<simplesect kind="par"><title>description:FilterWheelFilter</title><para></para></simplesect>
+<simplesect kind="par"><title>maximum:7</title><para></para></simplesect>
+<simplesect kind="par"><title>minimum:0</title><para></para></simplesect>
+<simplesect kind="par"><title>units:None</title><para></para></simplesect>
+<simplesect kind="par"><title>sampling:0.2s</title><para></para></simplesect>
+<simplesect kind="par"><title>storage:60.0s</title><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelBase.h" line="89" column="1" bodyfile="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelBase.cpp" bodystart="426" bodyend="436"/>
+        <references refid="classFilterWheelBase_1ac432f4002a52f07353455f175c06b16b" compoundref="FilterWheelBase_8h" startline="116">filterWheelFilter_</references>
+        <referencedby refid="classFilterWheelBase_1abdd8d3fc7dc39520b5bcf489f60e6463" compoundref="FilterWheelBase_8cpp" startline="381" endline="397">createMonitors_</referencedby>
+        <referencedby refid="classFilterWheelAdapter_1a7220339f9f59bd553fa7af49b3590fb6" compoundref="FilterWheelAdapter_8cpp" startline="49" endline="52">FilterWheelAdapter::filterWheelFilter</referencedby>
+        <referencedby refid="classFilterWheelBase_1afca143b72b25e39312267a967a049bfe" compoundref="FilterWheelBase_8cpp" startline="341" endline="367">report</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classFilterWheelBase_1a4f816ec06bdc1e05c66072140593512e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool FilterWheelBase::filterWheelMoving</definition>
+        <argsstring>()</argsstring>
+        <name>filterWheelMoving</name>
+        <briefdescription>
+<para>FilterWheelMoving. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>magnitude:</title><para></para></simplesect>
+<simplesect kind="par"><title>description:FilterWheelMoving</title><para></para></simplesect>
+<simplesect kind="par"><title>maximum:true</title><para></para></simplesect>
+<simplesect kind="par"><title>minimum:false</title><para></para></simplesect>
+<simplesect kind="par"><title>units:None</title><para></para></simplesect>
+<simplesect kind="par"><title>sampling:0.2s</title><para></para></simplesect>
+<simplesect kind="par"><title>storage:60.0s</title><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelBase.h" line="102" column="1" bodyfile="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelBase.cpp" bodystart="441" bodyend="451"/>
+        <references refid="classFilterWheelBase_1ad3ad7198360e9c298b92d8ae414beef2" compoundref="FilterWheelBase_8h" startline="117">filterWheelMoving_</references>
+        <referencedby refid="classFilterWheelAdapter_1ac2b46f2f7733da6c75a023c24068553f" compoundref="FilterWheelAdapter_8cpp" startline="55" endline="58">FilterWheelAdapter::filterWheelMoving</referencedby>
+        <referencedby refid="classFilterWheelBase_1afca143b72b25e39312267a967a049bfe" compoundref="FilterWheelBase_8cpp" startline="341" endline="367">report</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classFilterWheelBase_1abdd8d3fc7dc39520b5bcf489f60e6463" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FilterWheelBase::createMonitors_</definition>
+        <argsstring>()</argsstring>
+        <name>createMonitors_</name>
+        <briefdescription>
+<para>Method to create monitors. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelBase.h" line="120" column="1" bodyfile="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelBase.cpp" bodystart="381" bodyend="397"/>
+        <references refid="classFilterWheelBase_1a8ec0287915338f45db06a390abb2faa6" compoundref="FilterWheelBase_8cpp" startline="12" endline="24">FilterWheelBase</references>
+        <references refid="classFilterWheelBase_1a50a4402a468508170ae0acbc708d6706" compoundref="FilterWheelBase_8cpp" startline="426" endline="436">filterWheelFilter</references>
+        <referencedby refid="classFilterWheel_1a56db65b608999a8997c48ece58571a8b" compoundref="FilterWheel_8cpp" startline="48" endline="82">FilterWheel::start</referencedby>
+        <referencedby refid="classFilterWheelBase_1a42e67bf520aaec1c0310d392eb4cb056" compoundref="FilterWheelBase_8cpp" startline="129" endline="163">start</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class is automaticaly regenerated when devBuilder-gev is invoked, and therefore it should not be edited by the developer. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="41">
+        <label>FilterWheelBase</label>
+        <link refid="classFilterWheelBase"/>
+        <childnode refid="42" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>FilterWheel</label>
+        <link refid="classFilterWheel"/>
+        <childnode refid="41" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>Device</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="44">
+        <label>FilterWheelBase</label>
+        <link refid="classFilterWheelBase"/>
+        <childnode refid="45" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>Device</label>
+      </node>
+    </collaborationgraph>
+    <location file="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelBase.h" line="16" column="1" bodyfile="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelBase.h" bodystart="15" bodyend="121"/>
+    <listofallmembers>
+      <member refid="classFilterWheelBase_1aa84125a4891782d2f155a9e82aba23c6" prot="public" virt="virtual"><scope>FilterWheelBase</scope><name>abort</name></member>
+      <member refid="classFilterWheelBase_1a273ecab6899be2705cca6f89ca6c4788" prot="public" virt="virtual"><scope>FilterWheelBase</scope><name>connect</name></member>
+      <member refid="classFilterWheelBase_1a260faa421241035ea51f6a67b05c3c1b" prot="protected" virt="non-virtual"><scope>FilterWheelBase</scope><name>corbaDebug_</name></member>
+      <member refid="classFilterWheelBase_1abdd8d3fc7dc39520b5bcf489f60e6463" prot="protected" virt="non-virtual"><scope>FilterWheelBase</scope><name>createMonitors_</name></member>
+      <member refid="classFilterWheelBase_1a8ec0287915338f45db06a390abb2faa6" prot="public" virt="non-virtual"><scope>FilterWheelBase</scope><name>FilterWheelBase</name></member>
+      <member refid="classFilterWheelBase_1a50a4402a468508170ae0acbc708d6706" prot="public" virt="virtual"><scope>FilterWheelBase</scope><name>filterWheelFilter</name></member>
+      <member refid="classFilterWheelBase_1ac432f4002a52f07353455f175c06b16b" prot="protected" virt="non-virtual"><scope>FilterWheelBase</scope><name>filterWheelFilter_</name></member>
+      <member refid="classFilterWheelBase_1a4f816ec06bdc1e05c66072140593512e" prot="public" virt="virtual"><scope>FilterWheelBase</scope><name>filterWheelMoving</name></member>
+      <member refid="classFilterWheelBase_1ad3ad7198360e9c298b92d8ae414beef2" prot="protected" virt="non-virtual"><scope>FilterWheelBase</scope><name>filterWheelMoving_</name></member>
+      <member refid="classFilterWheelBase_1ace32795069f15712e716b982b2830ae8" prot="public" virt="virtual"><scope>FilterWheelBase</scope><name>halt</name></member>
+      <member refid="classFilterWheelBase_1aafc5305c343da1276923a18d36a0422f" prot="public" virt="virtual"><scope>FilterWheelBase</scope><name>init</name></member>
+      <member refid="classFilterWheelBase_1a432c92056ae5225b886fb243f5edb9ec" prot="public" virt="pure-virtual"><scope>FilterWheelBase</scope><name>moveCommand</name></member>
+      <member refid="classFilterWheelBase_1afca143b72b25e39312267a967a049bfe" prot="public" virt="virtual"><scope>FilterWheelBase</scope><name>report</name></member>
+      <member refid="classFilterWheelBase_1a567a3614438287acc2746277a2e72d41" prot="public" virt="virtual"><scope>FilterWheelBase</scope><name>reset</name></member>
+      <member refid="classFilterWheelBase_1a5ec901fdf33247a5dc48f5b469dd0e11" prot="public" virt="virtual"><scope>FilterWheelBase</scope><name>restore</name></member>
+      <member refid="classFilterWheelBase_1a3489759202f2bb34afe9bb3d7d4db353" prot="public" virt="virtual"><scope>FilterWheelBase</scope><name>shutdown</name></member>
+      <member refid="classFilterWheelBase_1a42e67bf520aaec1c0310d392eb4cb056" prot="public" virt="virtual"><scope>FilterWheelBase</scope><name>start</name></member>
+      <member refid="classFilterWheelBase_1a034ff512467ba0c7ae74706244454cd0" prot="public" virt="virtual"><scope>FilterWheelBase</scope><name>test</name></member>
+      <member refid="classFilterWheelBase_1a07ef763d5ad181dfca1364cc8de6ce5f" prot="protected" virt="non-virtual"><scope>FilterWheelBase</scope><name>update_</name></member>
+      <member refid="classFilterWheelBase_1a80b45825d8c5cf8db2b3b90a776cf0b8" prot="public" virt="non-virtual"><scope>FilterWheelBase</scope><name>version</name></member>
+      <member refid="classFilterWheelBase_1af570338f3e76a5363c7d74ecaa2d5a21" prot="public" virt="virtual"><scope>FilterWheelBase</scope><name>~FilterWheelBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

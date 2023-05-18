@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="FilterWheelAdapter_8cpp" kind="file">
+    <compoundname>FilterWheelAdapter.cpp</compoundname>
+    <includes local="no">IDL_Adapters_DGT.h</includes>
+    <includes refid="FilterWheelAdapter_8h" local="yes">FilterWheelAdapter.h</includes>
+    <incdepgraph>
+      <node id="92">
+        <label>FilterWheelAdapter.h</label>
+        <link refid="FilterWheelAdapter_8h"/>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+      </node>
+      <node id="94">
+        <label>FILTERWHEELS.h</label>
+      </node>
+      <node id="95">
+        <label>FilterWheelBase.h</label>
+        <link refid="FilterWheelBase_8h"/>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+      </node>
+      <node id="90">
+        <label>FilterWheelAdapter.cpp</label>
+        <link refid="FilterWheelAdapter.cpp"/>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+      </node>
+      <node id="96">
+        <label>Device.h</label>
+      </node>
+      <node id="93">
+        <label>DeviceAdapter.h</label>
+      </node>
+      <node id="97">
+        <label>ConcreteArrays.h</label>
+      </node>
+      <node id="91">
+        <label>IDL_Adapters_DGT.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2023<sp/>Gran<sp/>Telescopio<sp/>Canarias,<sp/>S.A.<sp/>(GRANTECAN)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>All<sp/>Rights<sp/>Reserved</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Includes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;IDL_Adapters_DGT.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="FilterWheelAdapter_8h" kindref="compound">FilterWheelAdapter.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Constructor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="classFilterWheelAdapter_1a834f06b496779baeae26339cccaea4a7" refkind="member"><highlight class="normal"><ref refid="classFilterWheelAdapter_1a834f06b496779baeae26339cccaea4a7" kindref="member">FilterWheelAdapter::FilterWheelAdapter</ref>(<ref refid="classFilterWheelBase" kindref="compound">FilterWheelBase</ref>*<sp/>device)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">:<sp/>DeviceAdapter(device)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>device_=device;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Destructor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="classFilterWheelAdapter_1a116b4ce7e9cac9c99f9ef3caeb4dfafe" refkind="member"><highlight class="normal"><ref refid="classFilterWheelAdapter_1a116b4ce7e9cac9c99f9ef3caeb4dfafe" kindref="member">FilterWheelAdapter::~FilterWheelAdapter</ref>()</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Device<sp/>specific<sp/>operations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">//<sp/>moveCommand</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="classFilterWheelAdapter_1a401cdf362ddd0fffbcbfec09a837fb7c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFilterWheelAdapter_1a401cdf362ddd0fffbcbfec09a837fb7c" kindref="member">FilterWheelAdapter::moveCommand</ref>(CORBA::Short<sp/>position)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>device_-&gt;<ref refid="classFilterWheelBase_1a432c92056ae5225b886fb243f5edb9ec" kindref="member">moveCommand</ref>(position);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal">(GCSException&amp;<sp/>ex)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>toIDL(ex);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Monitorable<sp/>attributes<sp/>(device<sp/>magnitudes)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Monitor<sp/>filterWheelFilter</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="classFilterWheelAdapter_1a7220339f9f59bd553fa7af49b3590fb6" refkind="member"><highlight class="normal">CORBA::Short<sp/><ref refid="classFilterWheelAdapter_1a7220339f9f59bd553fa7af49b3590fb6" kindref="member">FilterWheelAdapter::filterWheelFilter</ref>()</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>device_-&gt;<ref refid="classFilterWheelBase_1a50a4402a468508170ae0acbc708d6706" kindref="member">filterWheelFilter</ref>();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Monitor<sp/>filterWheelMoving</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="classFilterWheelAdapter_1ac2b46f2f7733da6c75a023c24068553f" refkind="member"><highlight class="normal">CORBA::Boolean<sp/><ref refid="classFilterWheelAdapter_1ac2b46f2f7733da6c75a023c24068553f" kindref="member">FilterWheelAdapter::filterWheelMoving</ref>()</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>device_-&gt;<ref refid="classFilterWheelBase_1a4f816ec06bdc1e05c66072140593512e" kindref="member">filterWheelMoving</ref>();</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Configurable<sp/>attributes<sp/>(device<sp/>properties)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">/**************************************************************</highlight></codeline>
+<codeline lineno="66"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>private<sp/>methods<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="67"><highlight class="comment"><sp/>**************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelAdapter.cpp"/>
+  </compounddef>
+</doxygen>

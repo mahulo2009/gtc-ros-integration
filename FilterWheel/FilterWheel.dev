@@ -1,0 +1,96 @@
+// Copyright (c) 2001 Gran Telescopio de Canarias, S.A. (GRANTECAN)
+// All Rights Reserved
+
+/* $Log */
+
+package gtc.DSL.CK.GDEV;
+
+public abstract class FilterWheel
+{
+  //----------------------------------------------------------------------
+  //  Specific methods
+  //----------------------------------------------------------------------
+
+  /** void command */
+  abstract void moveCommand(short position);
+
+  //----------------------------------------------------------------------
+  //  Device Magnitudes
+  //----------------------------------------------------------------------
+
+  /**
+  * FilterWheelFilter
+  * @magnitude
+  * @description FilterWheelFilter
+  * @maximum     7
+  * @minimum     0
+  * @units       None
+  * @sampling    0.2s
+  * @storage     60.0s
+  */
+  protected short filterWheelFilter;
+
+  /**
+  * FilterWheelMoving
+  * @magnitude
+  * @description FilterWheelMoving
+  * @maximum     true
+  * @minimum     false
+  * @units       None
+  * @sampling    0.2s
+  * @storage     60.0s
+  */
+  protected boolean filterWheelMoving;
+
+  //----------------------------------------------------------------------
+  //  Device Alarms
+  //----------------------------------------------------------------------
+
+  /**
+  * Device Fault Alarm: raised when a Device enters the FAULT state
+  * @alarm
+  * @description DeviceFault
+  * @severity    LEVEL5
+  * @acknowledge  Yes
+  * @actions     "Check this Device"
+  */
+  private Alarm DeviceFault;
+
+
+  //----------------------------------------------------------------------
+  //  Instances of class FilterWheel
+  //----------------------------------------------------------------------
+
+  /**
+  * Example device instance 1
+  * @instance 
+  * @name      Osiris/FilterWheel_1
+  * @mode      INTEGRATED
+  * @priority  100
+  * @threads   4
+  */
+  private Device FilterWheel_1;
+
+  //----------------------------------------------------------------------
+  //  Application
+  //----------------------------------------------------------------------
+
+  /** 
+  * Test application is used to create the devices
+  * @application
+  * @name TestApplication
+  */
+  private Application Test_application;    
+
+  //----------------------------------------------------------------------
+  //  LCU
+  //----------------------------------------------------------------------
+
+  /** 
+  * The LCU starts the applications
+  * @lcu
+  * @name TestLCU
+  */
+  private LCU Test_lcu;
+}
+

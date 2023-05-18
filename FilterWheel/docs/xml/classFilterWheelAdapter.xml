@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classFilterWheelAdapter" kind="class" prot="public">
+    <compoundname>FilterWheelAdapter</compoundname>
+    <basecompoundref prot="public" virt="virtual">FilterWheel_ifce</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">DeviceAdapter</basecompoundref>
+    <includes refid="FilterWheelAdapter_8h" local="no">FilterWheelAdapter.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classFilterWheelAdapter_1a4e2392cee5abed421e27f0cb3ea31827" prot="private" static="no" mutable="no">
+        <type><ref refid="classFilterWheelBase" kindref="compound">FilterWheelBase</ref> *</type>
+        <definition>FilterWheelBase* FilterWheelAdapter::device_</definition>
+        <argsstring></argsstring>
+        <name>device_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelAdapter.h" line="51" column="1" bodyfile="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelAdapter.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFilterWheelAdapter_1a834f06b496779baeae26339cccaea4a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FilterWheelAdapter::FilterWheelAdapter</definition>
+        <argsstring>(FilterWheelBase *device)</argsstring>
+        <name>FilterWheelAdapter</name>
+        <param>
+          <type><ref refid="classFilterWheelBase" kindref="compound">FilterWheelBase</ref> *</type>
+          <declname>device</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelAdapter.h" line="24" column="1" bodyfile="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelAdapter.cpp" bodystart="11" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classFilterWheelAdapter_1a116b4ce7e9cac9c99f9ef3caeb4dfafe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FilterWheelAdapter::~FilterWheelAdapter</definition>
+        <argsstring>()</argsstring>
+        <name>~FilterWheelAdapter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelAdapter.h" line="27" column="1" bodyfile="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelAdapter.cpp" bodystart="20" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classFilterWheelAdapter_1a401cdf362ddd0fffbcbfec09a837fb7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FilterWheelAdapter::moveCommand</definition>
+        <argsstring>(CORBA::Short position)</argsstring>
+        <name>moveCommand</name>
+        <param>
+          <type>CORBA::Short</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelAdapter.h" line="33" column="1" bodyfile="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelAdapter.cpp" bodystart="32" bodyend="42"/>
+        <references refid="classFilterWheelBase_1a432c92056ae5225b886fb243f5edb9ec">FilterWheelBase::moveCommand</references>
+      </memberdef>
+      <memberdef kind="function" id="classFilterWheelAdapter_1a7220339f9f59bd553fa7af49b3590fb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CORBA::Short</type>
+        <definition>CORBA::Short FilterWheelAdapter::filterWheelFilter</definition>
+        <argsstring>()</argsstring>
+        <name>filterWheelFilter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelAdapter.h" line="38" column="1" bodyfile="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelAdapter.cpp" bodystart="49" bodyend="52"/>
+        <references refid="classFilterWheelBase_1a50a4402a468508170ae0acbc708d6706" compoundref="FilterWheelBase_8cpp" startline="426" endline="436">FilterWheelBase::filterWheelFilter</references>
+      </memberdef>
+      <memberdef kind="function" id="classFilterWheelAdapter_1ac2b46f2f7733da6c75a023c24068553f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CORBA::Boolean</type>
+        <definition>CORBA::Boolean FilterWheelAdapter::filterWheelMoving</definition>
+        <argsstring>()</argsstring>
+        <name>filterWheelMoving</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelAdapter.h" line="39" column="1" bodyfile="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelAdapter.cpp" bodystart="55" bodyend="58"/>
+        <references refid="classFilterWheelBase_1a4f816ec06bdc1e05c66072140593512e" compoundref="FilterWheelBase_8cpp" startline="441" endline="451">FilterWheelBase::filterWheelMoving</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="35">
+        <label>FilterWheelAdapter</label>
+        <link refid="classFilterWheelAdapter"/>
+        <childnode refid="36" relation="public-inheritance">
+        </childnode>
+        <childnode refid="37" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>POA_FILTERWHEEL::FilterWheel_ifce</label>
+      </node>
+      <node id="37">
+        <label>DeviceAdapter</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="38">
+        <label>FilterWheelAdapter</label>
+        <link refid="classFilterWheelAdapter"/>
+        <childnode refid="39" relation="public-inheritance">
+        </childnode>
+        <childnode refid="40" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>POA_FILTERWHEEL::FilterWheel_ifce</label>
+      </node>
+      <node id="40">
+        <label>DeviceAdapter</label>
+      </node>
+    </collaborationgraph>
+    <location file="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelAdapter.h" line="16" column="1" bodyfile="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelAdapter.h" bodystart="15" bodyend="52"/>
+    <listofallmembers>
+      <member refid="classFilterWheelAdapter_1a4e2392cee5abed421e27f0cb3ea31827" prot="private" virt="non-virtual"><scope>FilterWheelAdapter</scope><name>device_</name></member>
+      <member refid="classFilterWheelAdapter_1a834f06b496779baeae26339cccaea4a7" prot="public" virt="non-virtual"><scope>FilterWheelAdapter</scope><name>FilterWheelAdapter</name></member>
+      <member refid="classFilterWheelAdapter_1a7220339f9f59bd553fa7af49b3590fb6" prot="public" virt="non-virtual"><scope>FilterWheelAdapter</scope><name>filterWheelFilter</name></member>
+      <member refid="classFilterWheelAdapter_1ac2b46f2f7733da6c75a023c24068553f" prot="public" virt="non-virtual"><scope>FilterWheelAdapter</scope><name>filterWheelMoving</name></member>
+      <member refid="classFilterWheelAdapter_1a401cdf362ddd0fffbcbfec09a837fb7c" prot="public" virt="non-virtual"><scope>FilterWheelAdapter</scope><name>moveCommand</name></member>
+      <member refid="classFilterWheelAdapter_1a116b4ce7e9cac9c99f9ef3caeb4dfafe" prot="public" virt="non-virtual"><scope>FilterWheelAdapter</scope><name>~FilterWheelAdapter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

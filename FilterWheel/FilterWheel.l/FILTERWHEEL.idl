@@ -1,0 +1,27 @@
+// Copyright (c) 2023 Gran Telescopio Canarias, S.A. (GRANTECAN)
+// All Rights Reserved
+
+#ifndef _FILTERWHEEL_idl_
+#define _FILTERWHEEL_idl_
+
+#include "DCF.idl"
+
+#pragma prefix "gtc"
+
+module FILTERWHEEL
+{
+	interface FilterWheel_ifce : DCF::Device_ifce 
+	{
+		// Specific FilterWheel operations
+		void moveCommand(in short position) 
+			raises (DGT::GCSException); 
+
+		// Monitorable attributes (device magnitudes)
+		readonly attribute short   filterWheelFilter;
+		readonly attribute boolean filterWheelMoving;
+		
+		// Configurable attributes (device properties)
+	};
+};
+#endif // _FILTERWHEEL_idl_ 
+

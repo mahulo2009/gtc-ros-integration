@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="FilterWheelConfigAgent_8h" kind="file">
+    <compoundname>FilterWheelConfigAgent.h</compoundname>
+    <includes refid="FilterWheelBase_8h" local="yes">FilterWheelBase.h</includes>
+    <includes local="yes">Trace.h</includes>
+    <includes local="yes">ConfigAgent.h</includes>
+    <includedby refid="FilterWheelBase_8cpp" local="yes">FilterWheelBase.cpp</includedby>
+    <includedby refid="FilterWheelConfigAgent_8cpp" local="yes">FilterWheelConfigAgent.cpp</includedby>
+    <incdepgraph>
+      <node id="139">
+        <label>FilterWheelConfigAgent.h</label>
+        <link refid="FilterWheelConfigAgent.h"/>
+        <childnode refid="140" relation="include">
+        </childnode>
+        <childnode refid="143" relation="include">
+        </childnode>
+        <childnode refid="144" relation="include">
+        </childnode>
+      </node>
+      <node id="143">
+        <label>Trace.h</label>
+      </node>
+      <node id="144">
+        <label>ConfigAgent.h</label>
+      </node>
+      <node id="140">
+        <label>FilterWheelBase.h</label>
+        <link refid="FilterWheelBase_8h"/>
+        <childnode refid="141" relation="include">
+        </childnode>
+        <childnode refid="142" relation="include">
+        </childnode>
+      </node>
+      <node id="141">
+        <label>Device.h</label>
+      </node>
+      <node id="142">
+        <label>ConcreteArrays.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="145">
+        <label>FilterWheelConfigAgent.h</label>
+        <link refid="FilterWheelConfigAgent.h"/>
+        <childnode refid="146" relation="include">
+        </childnode>
+        <childnode refid="147" relation="include">
+        </childnode>
+      </node>
+      <node id="147">
+        <label>FilterWheelConfigAgent.cpp</label>
+        <link refid="FilterWheelConfigAgent_8cpp"/>
+      </node>
+      <node id="146">
+        <label>FilterWheelBase.cpp</label>
+        <link refid="FilterWheelBase_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classFilterWheelConfigAgent" prot="public">FilterWheelConfigAgent</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2023<sp/>Gran<sp/>Telescopio<sp/>Canarias,<sp/>S.A.<sp/>(GRANTECAN)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>All<sp/>Rights<sp/>Reserved</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_FilterWheelConfigAgent_h_</highlight></codeline>
+<codeline lineno="5"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_FilterWheelConfigAgent_h_</highlight></codeline>
+<codeline lineno="6"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Includes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="FilterWheelBase_8h" kindref="compound">FilterWheelBase.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Trace.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ConfigAgent.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classFilterWheel" kindref="compound">FilterWheel</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Class<sp/>used<sp/>to<sp/>configure<sp/>FilterWheelConfigAgent<sp/>objects</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="classFilterWheelConfigAgent" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classFilterWheelConfigAgent" kindref="compound">FilterWheelConfigAgent</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>ConfigAgent</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/></highlight><highlight class="comment">//--------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>public<sp/>section<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/></highlight><highlight class="comment">//--------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Constructor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classFilterWheelConfigAgent_1aa9b7cb150c8094b9dbb9c5247282c478" kindref="member">FilterWheelConfigAgent</ref>(<ref refid="classFilterWheelBase" kindref="compound">FilterWheelBase</ref>*<sp/>device,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mode,<sp/>TimerEngine*<sp/>timer);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Destructor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classFilterWheelConfigAgent_1a7b2c5b89625a0f0495c7cbf1bc4f73ba" kindref="member">~FilterWheelConfigAgent</ref>();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>This<sp/>method<sp/>applies<sp/>the<sp/>stored<sp/>configuration<sp/>to<sp/>the<sp/>Device</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFilterWheelConfigAgent_1a2f8da0daaaf4d3be259b2df4cd5333a9" kindref="member">applyProperties</ref>();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>This<sp/>method<sp/>obtains<sp/>the<sp/>properties<sp/>from<sp/>the<sp/>Device</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classFilterWheelConfigAgent_1a2c40e64ac102a97b06cc3fce4d6d2cb6" kindref="member">readProperties</ref>();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Converts<sp/>the<sp/>Device<sp/>properties<sp/>to<sp/>a<sp/>Configuration</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFilterWheelConfigAgent_1a89225bf4f324c1fd67b296edce54c824" kindref="member">toConfiguration</ref>(CONFIG::Configuration&amp;<sp/>c);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Converts<sp/>a<sp/>Configuration<sp/>to<sp/>the<sp/>Device<sp/>format</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFilterWheelConfigAgent_1ac6f44547cd91f786c0912ff92ebc798c" kindref="member">fromConfiguration</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>CONFIG::Configuration&amp;<sp/>c);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/></highlight><highlight class="comment">//-----------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>protected<sp/>section<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/></highlight><highlight class="comment">//-----------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="47" refid="classFilterWheelConfigAgent_1a0bb2d314f567512e8635b40319b9faf5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Trace<sp/><ref refid="classFilterWheelConfigAgent_1a0bb2d314f567512e8635b40319b9faf5" kindref="member">trace_</ref>;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/></highlight><highlight class="comment">//--------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>private<sp/>section<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/></highlight><highlight class="comment">//--------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classFilterWheelBase" kindref="compound">FilterWheelBase</ref>*<sp/>device_;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>_FilterWheelConfigAgent_h_<sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelConfigAgent.h"/>
+  </compounddef>
+</doxygen>

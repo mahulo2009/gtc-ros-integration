@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.5">
+  <compound refid="classFilterWheel" kind="class"><name>FilterWheel</name>
+    <member refid="classFilterWheel_1a447633bc7313bfe2b53c150a41369c34" kind="function"><name>FilterWheel</name></member>
+    <member refid="classFilterWheel_1abefe15fa6435bcade878bd9a343f48cb" kind="function"><name>~FilterWheel</name></member>
+    <member refid="classFilterWheel_1ac00c8bf7d5417e6dfd2148365685116d" kind="function"><name>connect</name></member>
+    <member refid="classFilterWheel_1a56db65b608999a8997c48ece58571a8b" kind="function"><name>start</name></member>
+    <member refid="classFilterWheel_1a2c74d690192a16f096ff0f4eb671d31b" kind="function"><name>init</name></member>
+    <member refid="classFilterWheel_1a355cea704c7fa02a32cea628ad051813" kind="function"><name>halt</name></member>
+    <member refid="classFilterWheel_1a5e104e7da271227096bb9c172b75106b" kind="function"><name>shutdown</name></member>
+    <member refid="classFilterWheel_1a8e9bf1a0ac5d7ff4ef5f5319d1947b6c" kind="function"><name>reset</name></member>
+    <member refid="classFilterWheel_1a0a448b245f3841588b41f61a06285de0" kind="function"><name>test</name></member>
+    <member refid="classFilterWheel_1a8fcebfa707996b4029701d2c24913c81" kind="function"><name>abort</name></member>
+    <member refid="classFilterWheel_1a8a96b1a7fd31e26fd3ea89412e3f40f5" kind="function"><name>report</name></member>
+    <member refid="classFilterWheel_1a87d4d14b45f71f802b47fc34ca05b322" kind="function"><name>moveCommand</name></member>
+  </compound>
+  <compound refid="interfaceFILTERWHEEL_1_1FilterWheel__ifce" kind="interface"><name>FILTERWHEEL::FilterWheel_ifce</name>
+    <member refid="interfaceFILTERWHEEL_1_1FilterWheel__ifce_1ae6e7271bbeede9f657ca7f9bcff66bca" kind="variable"><name>filterWheelFilter</name></member>
+    <member refid="interfaceFILTERWHEEL_1_1FilterWheel__ifce_1a7743bdfb489fc4117c1d058cb0011307" kind="variable"><name>filterWheelMoving</name></member>
+    <member refid="interfaceFILTERWHEEL_1_1FilterWheel__ifce_1a2cbbee41cc8c690c41e73841cb49f3e4" kind="function"><name>moveCommand</name></member>
+  </compound>
+  <compound refid="classFilterWheelAdapter" kind="class"><name>FilterWheelAdapter</name>
+    <member refid="classFilterWheelAdapter_1a4e2392cee5abed421e27f0cb3ea31827" kind="variable"><name>device_</name></member>
+    <member refid="classFilterWheelAdapter_1a834f06b496779baeae26339cccaea4a7" kind="function"><name>FilterWheelAdapter</name></member>
+    <member refid="classFilterWheelAdapter_1a116b4ce7e9cac9c99f9ef3caeb4dfafe" kind="function"><name>~FilterWheelAdapter</name></member>
+    <member refid="classFilterWheelAdapter_1a401cdf362ddd0fffbcbfec09a837fb7c" kind="function"><name>moveCommand</name></member>
+    <member refid="classFilterWheelAdapter_1a7220339f9f59bd553fa7af49b3590fb6" kind="function"><name>filterWheelFilter</name></member>
+    <member refid="classFilterWheelAdapter_1ac2b46f2f7733da6c75a023c24068553f" kind="function"><name>filterWheelMoving</name></member>
+  </compound>
+  <compound refid="classFilterWheelBase" kind="class"><name>FilterWheelBase</name>
+    <member refid="classFilterWheelBase_1a260faa421241035ea51f6a67b05c3c1b" kind="variable"><name>corbaDebug_</name></member>
+    <member refid="classFilterWheelBase_1a07ef763d5ad181dfca1364cc8de6ce5f" kind="variable"><name>update_</name></member>
+    <member refid="classFilterWheelBase_1ac432f4002a52f07353455f175c06b16b" kind="variable"><name>filterWheelFilter_</name></member>
+    <member refid="classFilterWheelBase_1ad3ad7198360e9c298b92d8ae414beef2" kind="variable"><name>filterWheelMoving_</name></member>
+    <member refid="classFilterWheelBase_1a8ec0287915338f45db06a390abb2faa6" kind="function"><name>FilterWheelBase</name></member>
+    <member refid="classFilterWheelBase_1af570338f3e76a5363c7d74ecaa2d5a21" kind="function"><name>~FilterWheelBase</name></member>
+    <member refid="classFilterWheelBase_1a273ecab6899be2705cca6f89ca6c4788" kind="function"><name>connect</name></member>
+    <member refid="classFilterWheelBase_1a42e67bf520aaec1c0310d392eb4cb056" kind="function"><name>start</name></member>
+    <member refid="classFilterWheelBase_1aafc5305c343da1276923a18d36a0422f" kind="function"><name>init</name></member>
+    <member refid="classFilterWheelBase_1ace32795069f15712e716b982b2830ae8" kind="function"><name>halt</name></member>
+    <member refid="classFilterWheelBase_1a3489759202f2bb34afe9bb3d7d4db353" kind="function"><name>shutdown</name></member>
+    <member refid="classFilterWheelBase_1a567a3614438287acc2746277a2e72d41" kind="function"><name>reset</name></member>
+    <member refid="classFilterWheelBase_1a5ec901fdf33247a5dc48f5b469dd0e11" kind="function"><name>restore</name></member>
+    <member refid="classFilterWheelBase_1a034ff512467ba0c7ae74706244454cd0" kind="function"><name>test</name></member>
+    <member refid="classFilterWheelBase_1aa84125a4891782d2f155a9e82aba23c6" kind="function"><name>abort</name></member>
+    <member refid="classFilterWheelBase_1afca143b72b25e39312267a967a049bfe" kind="function"><name>report</name></member>
+    <member refid="classFilterWheelBase_1a80b45825d8c5cf8db2b3b90a776cf0b8" kind="function"><name>version</name></member>
+    <member refid="classFilterWheelBase_1a432c92056ae5225b886fb243f5edb9ec" kind="function"><name>moveCommand</name></member>
+    <member refid="classFilterWheelBase_1a50a4402a468508170ae0acbc708d6706" kind="function"><name>filterWheelFilter</name></member>
+    <member refid="classFilterWheelBase_1a4f816ec06bdc1e05c66072140593512e" kind="function"><name>filterWheelMoving</name></member>
+    <member refid="classFilterWheelBase_1abdd8d3fc7dc39520b5bcf489f60e6463" kind="function"><name>createMonitors_</name></member>
+  </compound>
+  <compound refid="classFilterWheelConfigAgent" kind="class"><name>FilterWheelConfigAgent</name>
+    <member refid="classFilterWheelConfigAgent_1a0bb2d314f567512e8635b40319b9faf5" kind="variable"><name>trace_</name></member>
+    <member refid="classFilterWheelConfigAgent_1a38fd24046c8cdf50ca56ba067e06a79d" kind="variable"><name>device_</name></member>
+    <member refid="classFilterWheelConfigAgent_1aa9b7cb150c8094b9dbb9c5247282c478" kind="function"><name>FilterWheelConfigAgent</name></member>
+    <member refid="classFilterWheelConfigAgent_1a7b2c5b89625a0f0495c7cbf1bc4f73ba" kind="function"><name>~FilterWheelConfigAgent</name></member>
+    <member refid="classFilterWheelConfigAgent_1a2f8da0daaaf4d3be259b2df4cd5333a9" kind="function"><name>applyProperties</name></member>
+    <member refid="classFilterWheelConfigAgent_1a2c40e64ac102a97b06cc3fce4d6d2cb6" kind="function"><name>readProperties</name></member>
+    <member refid="classFilterWheelConfigAgent_1a89225bf4f324c1fd67b296edce54c824" kind="function"><name>toConfiguration</name></member>
+    <member refid="classFilterWheelConfigAgent_1ac6f44547cd91f786c0912ff92ebc798c" kind="function"><name>fromConfiguration</name></member>
+  </compound>
+  <compound refid="namespaceFILTERWHEEL" kind="namespace"><name>FILTERWHEEL</name>
+  </compound>
+  <compound refid="FilterWheel_8cpp" kind="file"><name>FilterWheel.cpp</name>
+  </compound>
+  <compound refid="FilterWheel_8h" kind="file"><name>FilterWheel.h</name>
+  </compound>
+  <compound refid="FILTERWHEEL_8idl" kind="file"><name>FILTERWHEEL.idl</name>
+  </compound>
+  <compound refid="FilterWheelAdapter_8cpp" kind="file"><name>FilterWheelAdapter.cpp</name>
+  </compound>
+  <compound refid="FilterWheelAdapter_8h" kind="file"><name>FilterWheelAdapter.h</name>
+  </compound>
+  <compound refid="FilterWheelBase_8cpp" kind="file"><name>FilterWheelBase.cpp</name>
+  </compound>
+  <compound refid="FilterWheelBase_8h" kind="file"><name>FilterWheelBase.h</name>
+  </compound>
+  <compound refid="FilterWheelConfigAgent_8cpp" kind="file"><name>FilterWheelConfigAgent.cpp</name>
+  </compound>
+  <compound refid="FilterWheelConfigAgent_8h" kind="file"><name>FilterWheelConfigAgent.h</name>
+  </compound>
+  <compound refid="dir_3007ad6fbcc706598b08724c1376acb1" kind="dir"><name>FilterWheel.l</name>
+  </compound>
+</doxygenindex>
