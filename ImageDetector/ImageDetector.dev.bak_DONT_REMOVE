@@ -1,0 +1,99 @@
+// Copyright (c) 2001 Gran Telescopio de Canarias, S.A. (GRANTECAN)
+// All Rights Reserved
+
+/* $Log */
+
+package gtc.DSL.CK.GDEV;
+
+public abstract class ImageDetector
+{
+  //----------------------------------------------------------------------
+  //  Specific methods
+  //----------------------------------------------------------------------
+
+  /** Expose */
+  abstract void expose();
+
+  /** Set exposure time in seconds */
+  abstract void setExposureTimeSeconds(double time);
+
+  //----------------------------------------------------------------------
+  //  Device Magnitudes
+  //----------------------------------------------------------------------
+
+  /**
+  * ImageDetectorExposing
+  * @magnitude
+  * @description ImageDetectorExposing
+  * @maximum     true
+  * @minimum     false
+  * @units       None
+  * @sampling    100s
+  * @storage     600s
+  */
+  protected boolean idExposing;
+
+  /**
+  * ImageDetectorExposureTimeLeft
+  * @magnitude
+  * @description ImageDetectorExposureTimeLeft
+  * @maximum     true
+  * @minimum     false
+  * @units       Second
+  * @sampling    2s
+  * @storage     60.0s
+  */
+  protected boolean idExposureTimeLeft;
+
+  //----------------------------------------------------------------------
+  //  Device Alarms
+  //----------------------------------------------------------------------
+
+  /**
+  * Device Fault Alarm: raised when a Device enters the FAULT state
+  * @alarm
+  * @description DeviceFault
+  * @severity    LEVEL5
+  * @acknowledge  Yes
+  * @actions     "Check this Device"
+  */
+  private Alarm DeviceFault;
+
+
+  //----------------------------------------------------------------------
+  //  Instances of class ImageDetector
+  //----------------------------------------------------------------------
+
+  /**
+  * Example device instance 1
+  * @instance 
+  * @name      Osiris/ImageDetector_1
+  * @mode      INTEGRATED
+  * @priority  100
+  * @threads   4
+  */
+  private Device ImageDetector_1;
+
+  //----------------------------------------------------------------------
+  //  Application
+  //----------------------------------------------------------------------
+
+  /** 
+  * Test application is used to create the devices
+  * @application
+  * @name TestApplication
+  */
+  private Application Test_application;    
+
+  //----------------------------------------------------------------------
+  //  LCU
+  //----------------------------------------------------------------------
+
+  /** 
+  * The LCU starts the applications
+  * @lcu
+  * @name TestLCU
+  */
+  private LCU Test_lcu;
+}
+

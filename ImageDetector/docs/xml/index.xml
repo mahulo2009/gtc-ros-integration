@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.5">
+  <compound refid="classFrameAgent" kind="class"><name>FrameAgent</name>
+    <member refid="classFrameAgent_1af29d1a85ba29ef1c95e2936fc4e6c926" kind="variable"><name>name_</name></member>
+    <member refid="classFrameAgent_1a0eb6f98815f556d310a6b4b3e115fc86" kind="variable"><name>dfAgentConnector_</name></member>
+    <member refid="classFrameAgent_1a8552342c51d8924d471b5ade0d1600c0" kind="variable"><name>dfManagerConnector_</name></member>
+    <member refid="classFrameAgent_1a20ef1132636ab3369c8f72d9cf62bc25" kind="variable"><name>trace_</name></member>
+    <member refid="classFrameAgent_1a135df96a62a729e539973f3f09357c3f" kind="function"><name>FrameAgent</name></member>
+    <member refid="classFrameAgent_1a7dd969b89dba3be024e9871d8c85680c" kind="function"><name>~FrameAgent</name></member>
+    <member refid="classFrameAgent_1a440a10ac5136bf3904f7a012f9206cea" kind="function"><name>connect</name></member>
+    <member refid="classFrameAgent_1aecd40869cb415a418632d03f7bef7340" kind="function"><name>disconnect</name></member>
+    <member refid="classFrameAgent_1aa5cfa766dcf643c74b15f99eaf195a29" kind="function"><name>sendFrame</name></member>
+    <member refid="classFrameAgent_1a6167df6a136ec0280be5792e761b3fa5" kind="function"><name>sendFitsFile</name></member>
+  </compound>
+  <compound refid="classImageDetector" kind="class"><name>ImageDetector</name>
+    <member refid="classImageDetector_1a8b4b0693674bb3fbf85ad97c91d80a23" kind="variable"><name>numberOfExposures_</name></member>
+    <member refid="classImageDetector_1a6127da82483e25073b5feaec010beec3" kind="variable"><name>exposureTimeSeconds_</name></member>
+    <member refid="classImageDetector_1ada44094b2d772b39295e6d8d1ecb7f97" kind="variable"><name>abortAcquisition_</name></member>
+    <member refid="classImageDetector_1a466aed0c256e814e0568327a533688c9" kind="variable"><name>windows_</name></member>
+    <member refid="classImageDetector_1a704c44016444ac979bc3c32922182620" kind="variable"><name>frameAgent_</name></member>
+    <member refid="classImageDetector_1a63c8886bd6358a1009585298075edeb6" kind="function"><name>ImageDetector</name></member>
+    <member refid="classImageDetector_1aa4c1e0d3deef2e14c097d83da32641d6" kind="function"><name>~ImageDetector</name></member>
+    <member refid="classImageDetector_1a066b3a7203616275f6489fa4c3fea53b" kind="function"><name>connect</name></member>
+    <member refid="classImageDetector_1ab79c73fb43aeecb665783fd546dea7ee" kind="function"><name>start</name></member>
+    <member refid="classImageDetector_1a6abdb497a8e309ac1bf986fd69103665" kind="function"><name>init</name></member>
+    <member refid="classImageDetector_1a42f2bceb3247a47bd08072e85cb32a51" kind="function"><name>halt</name></member>
+    <member refid="classImageDetector_1a0470fd3b3f6d147d667336e5c34d41c2" kind="function"><name>shutdown</name></member>
+    <member refid="classImageDetector_1ae3219de53c6bfeff0020db3034d97859" kind="function"><name>reset</name></member>
+    <member refid="classImageDetector_1ac1b77057fc0df217af27f81abd856d21" kind="function"><name>test</name></member>
+    <member refid="classImageDetector_1aa962e3c12d4f6e546560ab2a3296989c" kind="function"><name>abort</name></member>
+    <member refid="classImageDetector_1ab42a461656723360f4cc3ad71beec763" kind="function"><name>report</name></member>
+    <member refid="classImageDetector_1a7b16b3ab1bfc8b819764f440b4ca0dab" kind="function"><name>expose</name></member>
+    <member refid="classImageDetector_1a0664b23196bd0b18fefc4eed721c9101" kind="function"><name>setExposureTimeSeconds</name></member>
+    <member refid="classImageDetector_1af4917c633b4e9ded6ac14cf52f4aa5c4" kind="function"><name>expose_</name></member>
+    <member refid="classImageDetector_1af511520c53f7508cbed8371c0ecf6f8b" kind="function"><name>buildFrame_</name></member>
+  </compound>
+  <compound refid="interfaceIMAGEDETECTOR_1_1ImageDetector__ifce" kind="interface"><name>IMAGEDETECTOR::ImageDetector_ifce</name>
+    <member refid="interfaceIMAGEDETECTOR_1_1ImageDetector__ifce_1a57f4d34d2326f32b701f82b1d2d90289" kind="variable"><name>idExposing</name></member>
+    <member refid="interfaceIMAGEDETECTOR_1_1ImageDetector__ifce_1aa8b56524d3c8656faa3e3e6d9616a54a" kind="variable"><name>idExposureTimeLeft</name></member>
+    <member refid="interfaceIMAGEDETECTOR_1_1ImageDetector__ifce_1ae0721d035eb386b159a9e5984b0faa5b" kind="function"><name>expose</name></member>
+    <member refid="interfaceIMAGEDETECTOR_1_1ImageDetector__ifce_1afccf5103fa7cfce59d4f87db105f7fb1" kind="function"><name>setExposureTimeSeconds</name></member>
+  </compound>
+  <compound refid="classImageDetectorAdapter" kind="class"><name>ImageDetectorAdapter</name>
+    <member refid="classImageDetectorAdapter_1a2ff5be7468154c9a390166cfb4db0366" kind="variable"><name>device_</name></member>
+    <member refid="classImageDetectorAdapter_1ac7f005f4e93d190f054bc97d7652f70b" kind="function"><name>ImageDetectorAdapter</name></member>
+    <member refid="classImageDetectorAdapter_1a9bc0f25ec428d2f1f59fc68a3a762493" kind="function"><name>~ImageDetectorAdapter</name></member>
+    <member refid="classImageDetectorAdapter_1a0ee56b57a97f466f5d5b4ffbfb9f038e" kind="function"><name>expose</name></member>
+    <member refid="classImageDetectorAdapter_1ae53c2ced7d1fea1e90b2af596026b95d" kind="function"><name>setExposureTimeSeconds</name></member>
+    <member refid="classImageDetectorAdapter_1a02c035d438ba0531aea88830de8c25e5" kind="function"><name>idExposing</name></member>
+    <member refid="classImageDetectorAdapter_1a279071f8e1c6705c7ebaaf722339ac49" kind="function"><name>idExposureTimeLeft</name></member>
+  </compound>
+  <compound refid="classImageDetectorBase" kind="class"><name>ImageDetectorBase</name>
+    <member refid="classImageDetectorBase_1ab0168f46cb53bc1af3e83d7b3d5f7554" kind="variable"><name>corbaDebug_</name></member>
+    <member refid="classImageDetectorBase_1a804460a890f5e6318fa3cf8ee2fd19f9" kind="variable"><name>update_</name></member>
+    <member refid="classImageDetectorBase_1aff1c28be4c10daf711d6009f7c5fc252" kind="variable"><name>idExposing_</name></member>
+    <member refid="classImageDetectorBase_1a9a800ece4d7aad44bde9cf12fbb37ca3" kind="variable"><name>idExposureTimeLeft_</name></member>
+    <member refid="classImageDetectorBase_1a0e0e93f0c65dc6d5871914a604d36e50" kind="function"><name>ImageDetectorBase</name></member>
+    <member refid="classImageDetectorBase_1aede21b2050ed2d19181d30d482c7cca7" kind="function"><name>~ImageDetectorBase</name></member>
+    <member refid="classImageDetectorBase_1a6531ea02cc65dcf1e1a8b31190b4b8ae" kind="function"><name>connect</name></member>
+    <member refid="classImageDetectorBase_1a9aee78fd52284771f640e82ed04af18d" kind="function"><name>start</name></member>
+    <member refid="classImageDetectorBase_1ab6e005a2cba52862f022961aa4162292" kind="function"><name>init</name></member>
+    <member refid="classImageDetectorBase_1a5cb1f05835fc875e447f4cef379adba7" kind="function"><name>halt</name></member>
+    <member refid="classImageDetectorBase_1a1335a1517f319867b5c3f02ada9366c4" kind="function"><name>shutdown</name></member>
+    <member refid="classImageDetectorBase_1aca3b0524cab576cfcd581b07df7d11e8" kind="function"><name>reset</name></member>
+    <member refid="classImageDetectorBase_1ae909acd0cb5713d743754377d891a0b0" kind="function"><name>restore</name></member>
+    <member refid="classImageDetectorBase_1a3bca0627c613ff96098d0f46d82f725b" kind="function"><name>test</name></member>
+    <member refid="classImageDetectorBase_1a7a860695b02270f599084e6aad367f3c" kind="function"><name>abort</name></member>
+    <member refid="classImageDetectorBase_1a131ef38d9b156310e3e1e501d1f5488c" kind="function"><name>report</name></member>
+    <member refid="classImageDetectorBase_1aaba62a227a4a41ea27dc074746c70822" kind="function"><name>version</name></member>
+    <member refid="classImageDetectorBase_1a6455c2f261337e54f58fda82170089c8" kind="function"><name>expose</name></member>
+    <member refid="classImageDetectorBase_1a9f1e986b8273fbb74d28d221875fe17f" kind="function"><name>setExposureTimeSeconds</name></member>
+    <member refid="classImageDetectorBase_1a6d9e906545dcdad707723c6780bc538b" kind="function"><name>idExposing</name></member>
+    <member refid="classImageDetectorBase_1aab9155b3b56114daba6537dc81a822fc" kind="function"><name>idExposureTimeLeft</name></member>
+    <member refid="classImageDetectorBase_1a1d92cfa3bff6b65138f1c452cd183131" kind="function"><name>createMonitors_</name></member>
+  </compound>
+  <compound refid="classImageDetectorConfigAgent" kind="class"><name>ImageDetectorConfigAgent</name>
+    <member refid="classImageDetectorConfigAgent_1a83ee318537a35ed63419f7ff18333eed" kind="variable"><name>trace_</name></member>
+    <member refid="classImageDetectorConfigAgent_1a1b1206df83f52a618217bb081d8139b4" kind="variable"><name>device_</name></member>
+    <member refid="classImageDetectorConfigAgent_1a7568a3e121218eae3e667df6bee3442c" kind="function"><name>ImageDetectorConfigAgent</name></member>
+    <member refid="classImageDetectorConfigAgent_1a6a019479382943bf6aa859bab52cadf4" kind="function"><name>~ImageDetectorConfigAgent</name></member>
+    <member refid="classImageDetectorConfigAgent_1a8e1320591c4452a4a0093013031c92a8" kind="function"><name>applyProperties</name></member>
+    <member refid="classImageDetectorConfigAgent_1acbadf7fd390d4233c57104b8b3eb2f83" kind="function"><name>readProperties</name></member>
+    <member refid="classImageDetectorConfigAgent_1a331b73850701a1b7d6b75182e90c56c5" kind="function"><name>toConfiguration</name></member>
+    <member refid="classImageDetectorConfigAgent_1ac5b88209b721767994264141cf95a912" kind="function"><name>fromConfiguration</name></member>
+  </compound>
+  <compound refid="namespaceIMAGEDETECTOR" kind="namespace"><name>IMAGEDETECTOR</name>
+  </compound>
+  <compound refid="FrameAgent_8cpp" kind="file"><name>FrameAgent.cpp</name>
+  </compound>
+  <compound refid="FrameAgent_8h" kind="file"><name>FrameAgent.h</name>
+  </compound>
+  <compound refid="ImageDetector_8cpp" kind="file"><name>ImageDetector.cpp</name>
+  </compound>
+  <compound refid="ImageDetector_8h" kind="file"><name>ImageDetector.h</name>
+  </compound>
+  <compound refid="IMAGEDETECTOR_8idl" kind="file"><name>IMAGEDETECTOR.idl</name>
+  </compound>
+  <compound refid="ImageDetectorAdapter_8cpp" kind="file"><name>ImageDetectorAdapter.cpp</name>
+  </compound>
+  <compound refid="ImageDetectorAdapter_8h" kind="file"><name>ImageDetectorAdapter.h</name>
+  </compound>
+  <compound refid="ImageDetectorBase_8cpp" kind="file"><name>ImageDetectorBase.cpp</name>
+  </compound>
+  <compound refid="ImageDetectorBase_8h" kind="file"><name>ImageDetectorBase.h</name>
+  </compound>
+  <compound refid="ImageDetectorConfigAgent_8cpp" kind="file"><name>ImageDetectorConfigAgent.cpp</name>
+  </compound>
+  <compound refid="ImageDetectorConfigAgent_8h" kind="file"><name>ImageDetectorConfigAgent.h</name>
+  </compound>
+  <compound refid="dir_bba2ca0abe036267dde89958517f2c0f" kind="dir"><name>ImageDetector.l</name>
+  </compound>
+</doxygenindex>

@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="ImageDetectorBase_8h" kind="file">
+    <compoundname>ImageDetectorBase.h</compoundname>
+    <includes local="no">Device.h</includes>
+    <includes local="no">ConcreteArrays.h</includes>
+    <includedby refid="ImageDetector_8h" local="yes">ImageDetector.h</includedby>
+    <includedby refid="ImageDetectorAdapter_8h" local="yes">ImageDetectorAdapter.h</includedby>
+    <includedby refid="ImageDetectorConfigAgent_8h" local="yes">ImageDetectorConfigAgent.h</includedby>
+    <incdepgraph>
+      <node id="248">
+        <label>ImageDetectorBase.h</label>
+        <link refid="ImageDetectorBase.h"/>
+        <childnode refid="249" relation="include">
+        </childnode>
+        <childnode refid="250" relation="include">
+        </childnode>
+      </node>
+      <node id="249">
+        <label>Device.h</label>
+      </node>
+      <node id="250">
+        <label>ConcreteArrays.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="252">
+        <label>ImageDetector.h</label>
+        <link refid="ImageDetector_8h"/>
+        <childnode refid="253" relation="include">
+        </childnode>
+        <childnode refid="254" relation="include">
+        </childnode>
+      </node>
+      <node id="258">
+        <label>ImageDetectorConfigAgent.cpp</label>
+        <link refid="ImageDetectorConfigAgent_8cpp"/>
+      </node>
+      <node id="254">
+        <label>ImageDetectorBase.cpp</label>
+        <link refid="ImageDetectorBase_8cpp"/>
+      </node>
+      <node id="251">
+        <label>ImageDetectorBase.h</label>
+        <link refid="ImageDetectorBase.h"/>
+        <childnode refid="252" relation="include">
+        </childnode>
+        <childnode refid="255" relation="include">
+        </childnode>
+        <childnode refid="257" relation="include">
+        </childnode>
+      </node>
+      <node id="256">
+        <label>ImageDetectorAdapter.cpp</label>
+        <link refid="ImageDetectorAdapter_8cpp"/>
+      </node>
+      <node id="253">
+        <label>ImageDetector.cpp</label>
+        <link refid="ImageDetector_8cpp"/>
+      </node>
+      <node id="255">
+        <label>ImageDetectorAdapter.h</label>
+        <link refid="ImageDetectorAdapter_8h"/>
+        <childnode refid="256" relation="include">
+        </childnode>
+        <childnode refid="254" relation="include">
+        </childnode>
+      </node>
+      <node id="257">
+        <label>ImageDetectorConfigAgent.h</label>
+        <link refid="ImageDetectorConfigAgent_8h"/>
+        <childnode refid="254" relation="include">
+        </childnode>
+        <childnode refid="258" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classImageDetectorBase" prot="public">ImageDetectorBase</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2023<sp/>Gran<sp/>Telescopio<sp/>Canarias,<sp/>S.A.<sp/>(GRANTECAN)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>All<sp/>Rights<sp/>Reserved</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_ImageDetectorBase_h_</highlight></codeline>
+<codeline lineno="5"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_ImageDetectorBase_h_</highlight></codeline>
+<codeline lineno="6"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Includes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Device.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ConcreteArrays.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="classImageDetectorBase" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classImageDetectorBase" kindref="compound">ImageDetectorBase</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Device</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//-----------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>public<sp/>section<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//-----------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//########################<sp/>SPECIFIC<sp/>TYPES<sp/>##############################</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//#######################<sp/>CONSTRUCTOR<sp/>&amp;<sp/>DESTRUCTOR<sp/>#####################</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classImageDetectorBase_1a0e0e93f0c65dc6d5871914a604d36e50" kindref="member">ImageDetectorBase</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>name);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classImageDetectorBase_1aede21b2050ed2d19181d30d482c7cca7" kindref="member">~ImageDetectorBase</ref>();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//##########################<sp/>DEVICE<sp/>METHODS<sp/>############################</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><ref refid="classImageDetectorBase_1a6531ea02cc65dcf1e1a8b31190b4b8ae" kindref="member">connect</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>orbname,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>corbaDebug,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>threads,<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>priority,</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>mode<sp/><sp/><sp/><sp/><sp/><sp/>=Device::INTEGRATED,</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>update<sp/><sp/><sp/><sp/>=Device::DO_NOT_UPDATE);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><ref refid="classImageDetectorBase_1a9aee78fd52284771f640e82ed04af18d" kindref="member">start</ref>();</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><ref refid="classImageDetectorBase_1ab6e005a2cba52862f022961aa4162292" kindref="member">init</ref>();</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><ref refid="classImageDetectorBase_1a5cb1f05835fc875e447f4cef379adba7" kindref="member">halt</ref>();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><ref refid="classImageDetectorBase_1a1335a1517f319867b5c3f02ada9366c4" kindref="member">shutdown</ref>();</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><ref refid="classImageDetectorBase_1aca3b0524cab576cfcd581b07df7d11e8" kindref="member">reset</ref>();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><ref refid="classImageDetectorBase_1ae909acd0cb5713d743754377d891a0b0" kindref="member">restore</ref>();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><ref refid="classImageDetectorBase_1a3bca0627c613ff96098d0f46d82f725b" kindref="member">test</ref>();</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><ref refid="classImageDetectorBase_1a7a860695b02270f599084e6aad367f3c" kindref="member">abort</ref>();</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classImageDetectorBase_1a131ef38d9b156310e3e1e501d1f5488c" kindref="member">report</ref>(</highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>level);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classImageDetectorBase_1aaba62a227a4a41ea27dc074746c70822" kindref="member">version</ref>();</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//#######################<sp/>SPECIFIC<sp/>METHODS<sp/>#############################</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classImageDetectorBase_1a6455c2f261337e54f58fda82170089c8" kindref="member">expose</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classImageDetectorBase_1a9f1e986b8273fbb74d28d221875fe17f" kindref="member">setExposureTimeSeconds</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>time)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//#######################<sp/>MONITORS<sp/>#####################################</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classImageDetectorBase_1a6d9e906545dcdad707723c6780bc538b" kindref="member">idExposing</ref>();</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classImageDetectorBase_1aab9155b3b56114daba6537dc81a822fc" kindref="member">idExposureTimeLeft</ref>();</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//#######################<sp/>PROPERTIES<sp/>##################################</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="comment">//-----------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="comment">//<sp/>protected<sp/>section<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="comment">//-----------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117" refid="classImageDetectorBase_1ab0168f46cb53bc1af3e83d7b3d5f7554" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classImageDetectorBase_1ab0168f46cb53bc1af3e83d7b3d5f7554" kindref="member">corbaDebug_</ref>;<sp/></highlight></codeline>
+<codeline lineno="118" refid="classImageDetectorBase_1a804460a890f5e6318fa3cf8ee2fd19f9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classImageDetectorBase_1a804460a890f5e6318fa3cf8ee2fd19f9" kindref="member">update_</ref><sp/><sp/><sp/><sp/>;<sp/></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Read-only<sp/>attributes<sp/>(monitorable<sp/>magnitudes)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121" refid="classImageDetectorBase_1aff1c28be4c10daf711d6009f7c5fc252" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classImageDetectorBase_1aff1c28be4c10daf711d6009f7c5fc252" kindref="member">idExposing_</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>;<sp/></highlight></codeline>
+<codeline lineno="122" refid="classImageDetectorBase_1a9a800ece4d7aad44bde9cf12fbb37ca3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classImageDetectorBase_1a9a800ece4d7aad44bde9cf12fbb37ca3" kindref="member">idExposureTimeLeft_</ref>;<sp/></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classImageDetectorBase_1a1d92cfa3bff6b65138f1c452cd183131" kindref="member">createMonitors_</ref>();</highlight></codeline>
+<codeline lineno="126"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>_ImageDetectorBase_h_<sp/></highlight></codeline>
+<codeline lineno="129"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorBase.h"/>
+  </compounddef>
+</doxygen>

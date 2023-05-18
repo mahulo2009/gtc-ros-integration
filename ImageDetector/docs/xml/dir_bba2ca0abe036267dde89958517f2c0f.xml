@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="dir_bba2ca0abe036267dde89958517f2c0f" kind="dir">
+    <compoundname>ImageDetector.l</compoundname>
+    <innerfile refid="FrameAgent_8cpp">FrameAgent.cpp</innerfile>
+    <innerfile refid="FrameAgent_8h">FrameAgent.h</innerfile>
+    <innerfile refid="ImageDetector_8cpp">ImageDetector.cpp</innerfile>
+    <innerfile refid="ImageDetector_8h">ImageDetector.h</innerfile>
+    <innerfile refid="IMAGEDETECTOR_8idl">IMAGEDETECTOR.idl</innerfile>
+    <innerfile refid="ImageDetectorAdapter_8cpp">ImageDetectorAdapter.cpp</innerfile>
+    <innerfile refid="ImageDetectorAdapter_8h">ImageDetectorAdapter.h</innerfile>
+    <innerfile refid="ImageDetectorBase_8cpp">ImageDetectorBase.cpp</innerfile>
+    <innerfile refid="ImageDetectorBase_8h">ImageDetectorBase.h</innerfile>
+    <innerfile refid="ImageDetectorConfigAgent_8cpp">ImageDetectorConfigAgent.cpp</innerfile>
+    <innerfile refid="ImageDetectorConfigAgent_8h">ImageDetectorConfigAgent.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/"/>
+  </compounddef>
+</doxygen>

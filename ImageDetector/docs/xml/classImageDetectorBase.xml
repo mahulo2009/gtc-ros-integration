@@ -1,0 +1,448 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classImageDetectorBase" kind="class" prot="public" abstract="yes">
+    <compoundname>ImageDetectorBase</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Device</basecompoundref>
+    <derivedcompoundref refid="classImageDetector" prot="public" virt="non-virtual">ImageDetector</derivedcompoundref>
+    <includes refid="ImageDetectorBase_8h" local="no">ImageDetectorBase.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classImageDetectorBase_1ab0168f46cb53bc1af3e83d7b3d5f7554" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImageDetectorBase::corbaDebug_</definition>
+        <argsstring></argsstring>
+        <name>corbaDebug_</name>
+        <briefdescription>
+<para>Activate/deactivate corba debugging. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorBase.h" line="117" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorBase.h" bodystart="117" bodyend="-1"/>
+        <referencedby refid="classImageDetectorBase_1a6531ea02cc65dcf1e1a8b31190b4b8ae" compoundref="ImageDetectorBase_8cpp" startline="45" endline="124">connect</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classImageDetectorBase_1a804460a890f5e6318fa3cf8ee2fd19f9" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImageDetectorBase::update_</definition>
+        <argsstring></argsstring>
+        <name>update_</name>
+        <briefdescription>
+<para>Activate/deactivate profile updating. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorBase.h" line="118" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorBase.h" bodystart="118" bodyend="-1"/>
+        <referencedby refid="classImageDetectorBase_1a6531ea02cc65dcf1e1a8b31190b4b8ae" compoundref="ImageDetectorBase_8cpp" startline="45" endline="124">connect</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classImageDetectorBase_1aff1c28be4c10daf711d6009f7c5fc252" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImageDetectorBase::idExposing_</definition>
+        <argsstring></argsstring>
+        <name>idExposing_</name>
+        <briefdescription>
+<para>ImageDetectorExposing. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorBase.h" line="121" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorBase.h" bodystart="121" bodyend="-1"/>
+        <referencedby refid="classImageDetector_1a7b16b3ab1bfc8b819764f440b4ca0dab" compoundref="ImageDetector_8cpp" startline="275" endline="314">ImageDetector::expose</referencedby>
+        <referencedby refid="classImageDetectorBase_1a6d9e906545dcdad707723c6780bc538b" compoundref="ImageDetectorBase_8cpp" startline="425" endline="435">idExposing</referencedby>
+        <referencedby refid="classImageDetectorBase_1a0e0e93f0c65dc6d5871914a604d36e50" compoundref="ImageDetectorBase_8cpp" startline="12" endline="24">ImageDetectorBase</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classImageDetectorBase_1a9a800ece4d7aad44bde9cf12fbb37ca3" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImageDetectorBase::idExposureTimeLeft_</definition>
+        <argsstring></argsstring>
+        <name>idExposureTimeLeft_</name>
+        <briefdescription>
+<para>ImageDetectorExposureTimeLeft. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorBase.h" line="122" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorBase.h" bodystart="122" bodyend="-1"/>
+        <referencedby refid="classImageDetector_1a7b16b3ab1bfc8b819764f440b4ca0dab" compoundref="ImageDetector_8cpp" startline="275" endline="314">ImageDetector::expose</referencedby>
+        <referencedby refid="classImageDetectorBase_1aab9155b3b56114daba6537dc81a822fc" compoundref="ImageDetectorBase_8cpp" startline="440" endline="450">idExposureTimeLeft</referencedby>
+        <referencedby refid="classImageDetectorBase_1a0e0e93f0c65dc6d5871914a604d36e50" compoundref="ImageDetectorBase_8cpp" startline="12" endline="24">ImageDetectorBase</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classImageDetectorBase_1a0e0e93f0c65dc6d5871914a604d36e50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ImageDetectorBase::ImageDetectorBase</definition>
+        <argsstring>(string name)</argsstring>
+        <name>ImageDetectorBase</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Device Constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorBase.h" line="27" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorBase.cpp" bodystart="12" bodyend="24"/>
+        <references refid="classImageDetectorBase_1aff1c28be4c10daf711d6009f7c5fc252" compoundref="ImageDetectorBase_8h" startline="121">idExposing_</references>
+        <references refid="classImageDetectorBase_1a9a800ece4d7aad44bde9cf12fbb37ca3" compoundref="ImageDetectorBase_8h" startline="122">idExposureTimeLeft_</references>
+      </memberdef>
+      <memberdef kind="function" id="classImageDetectorBase_1aede21b2050ed2d19181d30d482c7cca7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>ImageDetectorBase::~ImageDetectorBase</definition>
+        <argsstring>()</argsstring>
+        <name>~ImageDetectorBase</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorBase.h" line="30" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorBase.cpp" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classImageDetectorBase_1a6531ea02cc65dcf1e1a8b31190b4b8ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ImageDetectorBase::connect</definition>
+        <argsstring>(string orbname, bool corbaDebug, unsigned threads, long priority, bool mode=Device::INTEGRATED, bool update=Device::DO_NOT_UPDATE)</argsstring>
+        <name>connect</name>
+        <reimplementedby refid="classImageDetector_1a066b3a7203616275f6489fa4c3fea53b">connect</reimplementedby>
+        <param>
+          <type>string</type>
+          <declname>orbname</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>corbaDebug</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>threads</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>priority</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>mode</declname>
+          <defval>Device::INTEGRATED</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>update</declname>
+          <defval>Device::DO_NOT_UPDATE</defval>
+        </param>
+        <briefdescription>
+<para>Connects the device with a CORBA and other GCS Services. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorBase.h" line="35" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorBase.cpp" bodystart="45" bodyend="124"/>
+        <references refid="classImageDetectorBase_1ab0168f46cb53bc1af3e83d7b3d5f7554" compoundref="ImageDetectorBase_8h" startline="117">corbaDebug_</references>
+        <references refid="classImageDetectorBase_1a804460a890f5e6318fa3cf8ee2fd19f9" compoundref="ImageDetectorBase_8h" startline="118">update_</references>
+        <referencedby refid="classImageDetector_1a066b3a7203616275f6489fa4c3fea53b" compoundref="ImageDetector_8cpp" startline="49" endline="56">ImageDetector::connect</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classImageDetectorBase_1a9aee78fd52284771f640e82ed04af18d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ImageDetectorBase::start</definition>
+        <argsstring>()</argsstring>
+        <name>start</name>
+        <reimplementedby refid="classImageDetector_1ab79c73fb43aeecb665783fd546dea7ee">start</reimplementedby>
+        <briefdescription>
+<para>Starting procedure. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorBase.h" line="40" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorBase.cpp" bodystart="129" bodyend="163"/>
+        <references refid="classImageDetectorBase_1a1d92cfa3bff6b65138f1c452cd183131" compoundref="ImageDetectorBase_8cpp" startline="381" endline="396">createMonitors_</references>
+      </memberdef>
+      <memberdef kind="function" id="classImageDetectorBase_1ab6e005a2cba52862f022961aa4162292" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ImageDetectorBase::init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <reimplementedby refid="classImageDetector_1a6abdb497a8e309ac1bf986fd69103665">init</reimplementedby>
+        <briefdescription>
+<para>Initialization procedure. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorBase.h" line="43" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorBase.cpp" bodystart="168" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="classImageDetectorBase_1a5cb1f05835fc875e447f4cef379adba7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ImageDetectorBase::halt</definition>
+        <argsstring>()</argsstring>
+        <name>halt</name>
+        <reimplementedby refid="classImageDetector_1a42f2bceb3247a47bd08072e85cb32a51">halt</reimplementedby>
+        <briefdescription>
+<para>Halting procedure. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorBase.h" line="46" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorBase.cpp" bodystart="195" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="classImageDetectorBase_1a1335a1517f319867b5c3f02ada9366c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ImageDetectorBase::shutdown</definition>
+        <argsstring>()</argsstring>
+        <name>shutdown</name>
+        <reimplementedby refid="classImageDetector_1a0470fd3b3f6d147d667336e5c34d41c2">shutdown</reimplementedby>
+        <briefdescription>
+<para>Shutdown procedure. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorBase.h" line="49" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorBase.cpp" bodystart="219" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="classImageDetectorBase_1aca3b0524cab576cfcd581b07df7d11e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ImageDetectorBase::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <reimplementedby refid="classImageDetector_1ae3219de53c6bfeff0020db3034d97859">reset</reimplementedby>
+        <briefdescription>
+<para>Reset procedure. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorBase.h" line="52" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorBase.cpp" bodystart="243" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="classImageDetectorBase_1ae909acd0cb5713d743754377d891a0b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ImageDetectorBase::restore</definition>
+        <argsstring>()</argsstring>
+        <name>restore</name>
+        <briefdescription>
+<para>Restore procedure. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorBase.h" line="55" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorBase.cpp" bodystart="267" bodyend="297"/>
+      </memberdef>
+      <memberdef kind="function" id="classImageDetectorBase_1a3bca0627c613ff96098d0f46d82f725b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ImageDetectorBase::test</definition>
+        <argsstring>()</argsstring>
+        <name>test</name>
+        <reimplementedby refid="classImageDetector_1ac1b77057fc0df217af27f81abd856d21">test</reimplementedby>
+        <briefdescription>
+<para>Test procedure. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorBase.h" line="58" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorBase.cpp" bodystart="302" bodyend="324"/>
+      </memberdef>
+      <memberdef kind="function" id="classImageDetectorBase_1a7a860695b02270f599084e6aad367f3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ImageDetectorBase::abort</definition>
+        <argsstring>()</argsstring>
+        <name>abort</name>
+        <reimplementedby refid="classImageDetector_1aa962e3c12d4f6e546560ab2a3296989c">abort</reimplementedby>
+        <briefdescription>
+<para>Stops all commands and goes to fault. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorBase.h" line="61" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorBase.cpp" bodystart="329" bodyend="336"/>
+      </memberdef>
+      <memberdef kind="function" id="classImageDetectorBase_1a131ef38d9b156310e3e1e501d1f5488c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>char *</type>
+        <definition>char * ImageDetectorBase::report</definition>
+        <argsstring>(short level)</argsstring>
+        <name>report</name>
+        <reimplementedby refid="classImageDetector_1ab42a461656723360f4cc3ad71beec763">report</reimplementedby>
+        <param>
+          <type>short</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+<para>Report device info. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorBase.h" line="64" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorBase.cpp" bodystart="341" bodyend="367"/>
+        <references refid="classImageDetectorBase_1a6d9e906545dcdad707723c6780bc538b" compoundref="ImageDetectorBase_8cpp" startline="425" endline="435">idExposing</references>
+        <references refid="classImageDetectorBase_1aab9155b3b56114daba6537dc81a822fc" compoundref="ImageDetectorBase_8cpp" startline="440" endline="450">idExposureTimeLeft</references>
+        <referencedby refid="classImageDetector_1ab42a461656723360f4cc3ad71beec763" compoundref="ImageDetector_8cpp" startline="238" endline="253">ImageDetector::report</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classImageDetectorBase_1aaba62a227a4a41ea27dc074746c70822" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * ImageDetectorBase::version</definition>
+        <argsstring>()</argsstring>
+        <name>version</name>
+        <briefdescription>
+<para>Reports device version. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorBase.h" line="67" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorBase.cpp" bodystart="372" bodyend="376"/>
+      </memberdef>
+      <memberdef kind="function" id="classImageDetectorBase_1a6455c2f261337e54f58fda82170089c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void ImageDetectorBase::expose</definition>
+        <argsstring>()=0</argsstring>
+        <name>expose</name>
+        <reimplementedby refid="classImageDetector_1a7b16b3ab1bfc8b819764f440b4ca0dab">expose</reimplementedby>
+        <briefdescription>
+<para>Expose. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorBase.h" line="74" column="1"/>
+        <referencedby refid="classImageDetectorAdapter_1a0ee56b57a97f466f5d5b4ffbfb9f038e" compoundref="ImageDetectorAdapter_8cpp" startline="32" endline="42">ImageDetectorAdapter::expose</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classImageDetectorBase_1a9f1e986b8273fbb74d28d221875fe17f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void ImageDetectorBase::setExposureTimeSeconds</definition>
+        <argsstring>(double time)=0</argsstring>
+        <name>setExposureTimeSeconds</name>
+        <reimplementedby refid="classImageDetector_1a0664b23196bd0b18fefc4eed721c9101">setExposureTimeSeconds</reimplementedby>
+        <param>
+          <type>double</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+<para>Set exposure time in seconds. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorBase.h" line="79" column="1"/>
+        <referencedby refid="classImageDetectorAdapter_1ae53c2ced7d1fea1e90b2af596026b95d" compoundref="ImageDetectorAdapter_8cpp" startline="46" endline="56">ImageDetectorAdapter::setExposureTimeSeconds</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classImageDetectorBase_1a6d9e906545dcdad707723c6780bc538b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ImageDetectorBase::idExposing</definition>
+        <argsstring>()</argsstring>
+        <name>idExposing</name>
+        <briefdescription>
+<para>ImageDetectorExposing. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>magnitude:</title><para></para></simplesect>
+<simplesect kind="par"><title>description:ImageDetectorExposing</title><para></para></simplesect>
+<simplesect kind="par"><title>maximum:true</title><para></para></simplesect>
+<simplesect kind="par"><title>minimum:false</title><para></para></simplesect>
+<simplesect kind="par"><title>units:None</title><para></para></simplesect>
+<simplesect kind="par"><title>sampling:100s</title><para></para></simplesect>
+<simplesect kind="par"><title>storage:600s</title><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorBase.h" line="94" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorBase.cpp" bodystart="425" bodyend="435"/>
+        <references refid="classImageDetectorBase_1aff1c28be4c10daf711d6009f7c5fc252" compoundref="ImageDetectorBase_8h" startline="121">idExposing_</references>
+        <referencedby refid="classImageDetectorAdapter_1a02c035d438ba0531aea88830de8c25e5" compoundref="ImageDetectorAdapter_8cpp" startline="63" endline="66">ImageDetectorAdapter::idExposing</referencedby>
+        <referencedby refid="classImageDetectorBase_1a131ef38d9b156310e3e1e501d1f5488c" compoundref="ImageDetectorBase_8cpp" startline="341" endline="367">report</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classImageDetectorBase_1aab9155b3b56114daba6537dc81a822fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool ImageDetectorBase::idExposureTimeLeft</definition>
+        <argsstring>()</argsstring>
+        <name>idExposureTimeLeft</name>
+        <briefdescription>
+<para>ImageDetectorExposureTimeLeft. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>magnitude:</title><para></para></simplesect>
+<simplesect kind="par"><title>description:ImageDetectorExposureTimeLeft</title><para></para></simplesect>
+<simplesect kind="par"><title>maximum:true</title><para></para></simplesect>
+<simplesect kind="par"><title>minimum:false</title><para></para></simplesect>
+<simplesect kind="par"><title>units:Second</title><para></para></simplesect>
+<simplesect kind="par"><title>sampling:2s</title><para></para></simplesect>
+<simplesect kind="par"><title>storage:60.0s</title><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorBase.h" line="107" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorBase.cpp" bodystart="440" bodyend="450"/>
+        <references refid="classImageDetectorBase_1a9a800ece4d7aad44bde9cf12fbb37ca3" compoundref="ImageDetectorBase_8h" startline="122">idExposureTimeLeft_</references>
+        <referencedby refid="classImageDetectorAdapter_1a279071f8e1c6705c7ebaaf722339ac49" compoundref="ImageDetectorAdapter_8cpp" startline="69" endline="72">ImageDetectorAdapter::idExposureTimeLeft</referencedby>
+        <referencedby refid="classImageDetectorBase_1a131ef38d9b156310e3e1e501d1f5488c" compoundref="ImageDetectorBase_8cpp" startline="341" endline="367">report</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classImageDetectorBase_1a1d92cfa3bff6b65138f1c452cd183131" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImageDetectorBase::createMonitors_</definition>
+        <argsstring>()</argsstring>
+        <name>createMonitors_</name>
+        <briefdescription>
+<para>Method to create monitors. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorBase.h" line="125" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorBase.cpp" bodystart="381" bodyend="396"/>
+        <referencedby refid="classImageDetector_1ab79c73fb43aeecb665783fd546dea7ee" compoundref="ImageDetector_8cpp" startline="61" endline="95">ImageDetector::start</referencedby>
+        <referencedby refid="classImageDetectorBase_1a9aee78fd52284771f640e82ed04af18d" compoundref="ImageDetectorBase_8cpp" startline="129" endline="163">start</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class is automaticaly regenerated when devBuilder-gev is invoked, and therefore it should not be edited by the developer. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="45">
+        <label>ImageDetectorBase</label>
+        <link refid="classImageDetectorBase"/>
+        <childnode refid="46" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>Device</label>
+      </node>
+      <node id="47">
+        <label>ImageDetector</label>
+        <link refid="classImageDetector"/>
+        <childnode refid="45" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="48">
+        <label>ImageDetectorBase</label>
+        <link refid="classImageDetectorBase"/>
+        <childnode refid="49" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>Device</label>
+      </node>
+    </collaborationgraph>
+    <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorBase.h" line="16" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorBase.h" bodystart="15" bodyend="126"/>
+    <listofallmembers>
+      <member refid="classImageDetectorBase_1a7a860695b02270f599084e6aad367f3c" prot="public" virt="virtual"><scope>ImageDetectorBase</scope><name>abort</name></member>
+      <member refid="classImageDetectorBase_1a6531ea02cc65dcf1e1a8b31190b4b8ae" prot="public" virt="virtual"><scope>ImageDetectorBase</scope><name>connect</name></member>
+      <member refid="classImageDetectorBase_1ab0168f46cb53bc1af3e83d7b3d5f7554" prot="protected" virt="non-virtual"><scope>ImageDetectorBase</scope><name>corbaDebug_</name></member>
+      <member refid="classImageDetectorBase_1a1d92cfa3bff6b65138f1c452cd183131" prot="protected" virt="non-virtual"><scope>ImageDetectorBase</scope><name>createMonitors_</name></member>
+      <member refid="classImageDetectorBase_1a6455c2f261337e54f58fda82170089c8" prot="public" virt="pure-virtual"><scope>ImageDetectorBase</scope><name>expose</name></member>
+      <member refid="classImageDetectorBase_1a5cb1f05835fc875e447f4cef379adba7" prot="public" virt="virtual"><scope>ImageDetectorBase</scope><name>halt</name></member>
+      <member refid="classImageDetectorBase_1a6d9e906545dcdad707723c6780bc538b" prot="public" virt="virtual"><scope>ImageDetectorBase</scope><name>idExposing</name></member>
+      <member refid="classImageDetectorBase_1aff1c28be4c10daf711d6009f7c5fc252" prot="protected" virt="non-virtual"><scope>ImageDetectorBase</scope><name>idExposing_</name></member>
+      <member refid="classImageDetectorBase_1aab9155b3b56114daba6537dc81a822fc" prot="public" virt="virtual"><scope>ImageDetectorBase</scope><name>idExposureTimeLeft</name></member>
+      <member refid="classImageDetectorBase_1a9a800ece4d7aad44bde9cf12fbb37ca3" prot="protected" virt="non-virtual"><scope>ImageDetectorBase</scope><name>idExposureTimeLeft_</name></member>
+      <member refid="classImageDetectorBase_1a0e0e93f0c65dc6d5871914a604d36e50" prot="public" virt="non-virtual"><scope>ImageDetectorBase</scope><name>ImageDetectorBase</name></member>
+      <member refid="classImageDetectorBase_1ab6e005a2cba52862f022961aa4162292" prot="public" virt="virtual"><scope>ImageDetectorBase</scope><name>init</name></member>
+      <member refid="classImageDetectorBase_1a131ef38d9b156310e3e1e501d1f5488c" prot="public" virt="virtual"><scope>ImageDetectorBase</scope><name>report</name></member>
+      <member refid="classImageDetectorBase_1aca3b0524cab576cfcd581b07df7d11e8" prot="public" virt="virtual"><scope>ImageDetectorBase</scope><name>reset</name></member>
+      <member refid="classImageDetectorBase_1ae909acd0cb5713d743754377d891a0b0" prot="public" virt="virtual"><scope>ImageDetectorBase</scope><name>restore</name></member>
+      <member refid="classImageDetectorBase_1a9f1e986b8273fbb74d28d221875fe17f" prot="public" virt="pure-virtual"><scope>ImageDetectorBase</scope><name>setExposureTimeSeconds</name></member>
+      <member refid="classImageDetectorBase_1a1335a1517f319867b5c3f02ada9366c4" prot="public" virt="virtual"><scope>ImageDetectorBase</scope><name>shutdown</name></member>
+      <member refid="classImageDetectorBase_1a9aee78fd52284771f640e82ed04af18d" prot="public" virt="virtual"><scope>ImageDetectorBase</scope><name>start</name></member>
+      <member refid="classImageDetectorBase_1a3bca0627c613ff96098d0f46d82f725b" prot="public" virt="virtual"><scope>ImageDetectorBase</scope><name>test</name></member>
+      <member refid="classImageDetectorBase_1a804460a890f5e6318fa3cf8ee2fd19f9" prot="protected" virt="non-virtual"><scope>ImageDetectorBase</scope><name>update_</name></member>
+      <member refid="classImageDetectorBase_1aaba62a227a4a41ea27dc074746c70822" prot="public" virt="non-virtual"><scope>ImageDetectorBase</scope><name>version</name></member>
+      <member refid="classImageDetectorBase_1aede21b2050ed2d19181d30d482c7cca7" prot="public" virt="virtual"><scope>ImageDetectorBase</scope><name>~ImageDetectorBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

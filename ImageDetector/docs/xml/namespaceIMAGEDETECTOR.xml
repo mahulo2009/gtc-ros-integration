@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="namespaceIMAGEDETECTOR" kind="namespace">
+    <compoundname>IMAGEDETECTOR</compoundname>
+    <innerclass refid="interfaceIMAGEDETECTOR_1_1ImageDetector__ifce" prot="public">IMAGEDETECTOR::ImageDetector_ifce</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/IMAGEDETECTOR.idl" line="12" column="1"/>
+  </compounddef>
+</doxygen>

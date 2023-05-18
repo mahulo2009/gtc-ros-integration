@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="interfaceIMAGEDETECTOR_1_1ImageDetector__ifce" kind="interface" prot="public">
+    <compoundname>IMAGEDETECTOR::ImageDetector_ifce</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Device_ifce</basecompoundref>
+    <includes refid="IMAGEDETECTOR_8idl" local="no">IMAGEDETECTOR.idl</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="interfaceIMAGEDETECTOR_1_1ImageDetector__ifce_1a57f4d34d2326f32b701f82b1d2d90289" prot="public" static="no" mutable="no">
+        <type>readonly attribute boolean</type>
+        <definition>readonly attribute boolean IMAGEDETECTOR::ImageDetector_ifce::idExposing</definition>
+        <argsstring></argsstring>
+        <name>idExposing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/IMAGEDETECTOR.idl" line="23" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/IMAGEDETECTOR.idl" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interfaceIMAGEDETECTOR_1_1ImageDetector__ifce_1aa8b56524d3c8656faa3e3e6d9616a54a" prot="public" static="no" mutable="no">
+        <type>readonly attribute boolean</type>
+        <definition>readonly attribute boolean IMAGEDETECTOR::ImageDetector_ifce::idExposureTimeLeft</definition>
+        <argsstring></argsstring>
+        <name>idExposureTimeLeft</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/IMAGEDETECTOR.idl" line="24" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/IMAGEDETECTOR.idl" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interfaceIMAGEDETECTOR_1_1ImageDetector__ifce_1ae0721d035eb386b159a9e5984b0faa5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMAGEDETECTOR::ImageDetector_ifce::expose</definition>
+        <argsstring>()</argsstring>
+        <name>expose</name>
+        <exceptions> raises (DGT::GCSException)</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/IMAGEDETECTOR.idl" line="16" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interfaceIMAGEDETECTOR_1_1ImageDetector__ifce_1afccf5103fa7cfce59d4f87db105f7fb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IMAGEDETECTOR::ImageDetector_ifce::setExposureTimeSeconds</definition>
+        <argsstring>(in double time)</argsstring>
+        <name>setExposureTimeSeconds</name>
+        <param>
+          <type>in double</type>
+          <declname>time</declname>
+        </param>
+        <exceptions> raises (DGT::GCSException)</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/IMAGEDETECTOR.idl" line="19" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="35">
+        <label>IMAGEDETECTOR::ImageDetector_ifce</label>
+        <link refid="interfaceIMAGEDETECTOR_1_1ImageDetector__ifce"/>
+        <childnode refid="36" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>DCF::Device_ifce</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="37">
+        <label>IMAGEDETECTOR::ImageDetector_ifce</label>
+        <link refid="interfaceIMAGEDETECTOR_1_1ImageDetector__ifce"/>
+        <childnode refid="38" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>DCF::Device_ifce</label>
+      </node>
+    </collaborationgraph>
+    <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/IMAGEDETECTOR.idl" line="14" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/IMAGEDETECTOR.idl" bodystart="13" bodyend="27"/>
+    <listofallmembers>
+      <member refid="interfaceIMAGEDETECTOR_1_1ImageDetector__ifce_1ae0721d035eb386b159a9e5984b0faa5b" prot="public" virt="non-virtual"><scope>IMAGEDETECTOR::ImageDetector_ifce</scope><name>expose</name></member>
+      <member refid="interfaceIMAGEDETECTOR_1_1ImageDetector__ifce_1a57f4d34d2326f32b701f82b1d2d90289" prot="public" virt="non-virtual"><scope>IMAGEDETECTOR::ImageDetector_ifce</scope><name>idExposing</name></member>
+      <member refid="interfaceIMAGEDETECTOR_1_1ImageDetector__ifce_1aa8b56524d3c8656faa3e3e6d9616a54a" prot="public" virt="non-virtual"><scope>IMAGEDETECTOR::ImageDetector_ifce</scope><name>idExposureTimeLeft</name></member>
+      <member refid="interfaceIMAGEDETECTOR_1_1ImageDetector__ifce_1afccf5103fa7cfce59d4f87db105f7fb1" prot="public" virt="non-virtual"><scope>IMAGEDETECTOR::ImageDetector_ifce</scope><name>setExposureTimeSeconds</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

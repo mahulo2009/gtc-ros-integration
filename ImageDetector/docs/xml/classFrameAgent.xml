@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classFrameAgent" kind="class" prot="public">
+    <compoundname>FrameAgent</compoundname>
+    <includes refid="FrameAgent_8h" local="no">FrameAgent.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classFrameAgent_1af29d1a85ba29ef1c95e2936fc4e6c926" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string FrameAgent::name_</definition>
+        <argsstring></argsstring>
+        <name>name_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/FrameAgent.h" line="55" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/FrameAgent.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFrameAgent_1a0eb6f98815f556d310a6b4b3e115fc86" prot="private" static="no" mutable="no">
+        <type>IntegratedCORBAConnector&lt; DFAGENT::DFAgent_ifce &gt;</type>
+        <definition>IntegratedCORBAConnector&lt;DFAGENT::DFAgent_ifce&gt; FrameAgent::dfAgentConnector_</definition>
+        <argsstring></argsstring>
+        <name>dfAgentConnector_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/FrameAgent.h" line="56" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/FrameAgent.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFrameAgent_1a8552342c51d8924d471b5ade0d1600c0" prot="private" static="no" mutable="no">
+        <type>IntegratedCORBAConnector&lt; DF::Manager_ifce &gt;</type>
+        <definition>IntegratedCORBAConnector&lt;DF::Manager_ifce&gt; FrameAgent::dfManagerConnector_</definition>
+        <argsstring></argsstring>
+        <name>dfManagerConnector_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/FrameAgent.h" line="57" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/FrameAgent.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFrameAgent_1a20ef1132636ab3369c8f72d9cf62bc25" prot="private" static="no" mutable="no">
+        <type>Trace</type>
+        <definition>Trace FrameAgent::trace_</definition>
+        <argsstring></argsstring>
+        <name>trace_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/FrameAgent.h" line="58" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/FrameAgent.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFrameAgent_1a135df96a62a729e539973f3f09357c3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FrameAgent::FrameAgent</definition>
+        <argsstring>(string name, string dfAgentName)</argsstring>
+        <name>FrameAgent</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>dfAgentName</declname>
+        </param>
+        <briefdescription>
+<para>Device Constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/FrameAgent.h" line="31" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/FrameAgent.cpp" bodystart="17" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classFrameAgent_1a7dd969b89dba3be024e9871d8c85680c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>FrameAgent::~FrameAgent</definition>
+        <argsstring>()</argsstring>
+        <name>~FrameAgent</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/FrameAgent.h" line="34" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/FrameAgent.cpp" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classFrameAgent_1a440a10ac5136bf3904f7a012f9206cea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FrameAgent::connect</definition>
+        <argsstring>(LogAgent *logAgent, AlarmAgent *alarmAgent, std::string dataFactoryAgentInstanceCorbaName, std::string dataFactoryManagerInstanceCorbaName)</argsstring>
+        <name>connect</name>
+        <param>
+          <type>LogAgent *</type>
+          <declname>logAgent</declname>
+        </param>
+        <param>
+          <type>AlarmAgent *</type>
+          <declname>alarmAgent</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>dataFactoryAgentInstanceCorbaName</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>dataFactoryManagerInstanceCorbaName</declname>
+        </param>
+        <briefdescription>
+<para>Connects the DF components - DFAgent and DFManager. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/FrameAgent.h" line="38" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/FrameAgent.cpp" bodystart="37" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classFrameAgent_1aecd40869cb415a418632d03f7bef7340" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FrameAgent::disconnect</definition>
+        <argsstring>()</argsstring>
+        <name>disconnect</name>
+        <briefdescription>
+<para>Disconnects the DF components - DFAgent and DFManager. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/FrameAgent.h" line="41" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/FrameAgent.cpp" bodystart="83" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classFrameAgent_1aa5cfa766dcf643c74b15f99eaf195a29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FrameAgent::sendFrame</definition>
+        <argsstring>(const Frame&lt; double, 2 &gt; &amp;frame, double exposureTimeSeconds, ShortArray2D windows)</argsstring>
+        <name>sendFrame</name>
+        <param>
+          <type>const Frame&lt; double, 2 &gt; &amp;</type>
+          <declname>frame</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>exposureTimeSeconds</declname>
+        </param>
+        <param>
+          <type>ShortArray2D</type>
+          <declname>windows</declname>
+        </param>
+        <briefdescription>
+<para>sendFrame </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/FrameAgent.h" line="46" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/FrameAgent.cpp" bodystart="113" bodyend="178"/>
+        <referencedby refid="classImageDetector_1a7b16b3ab1bfc8b819764f440b4ca0dab" compoundref="ImageDetector_8cpp" startline="275" endline="314">ImageDetector::expose</referencedby>
+        <referencedby refid="classFrameAgent_1a6167df6a136ec0280be5792e761b3fa5" compoundref="FrameAgent_8cpp" startline="181" endline="212">sendFitsFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classFrameAgent_1a6167df6a136ec0280be5792e761b3fa5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FrameAgent::sendFitsFile</definition>
+        <argsstring>(string fitsFilename, double exposureTimeSeconds, ShortArray2D windows)</argsstring>
+        <name>sendFitsFile</name>
+        <param>
+          <type>string</type>
+          <declname>fitsFilename</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>exposureTimeSeconds</declname>
+        </param>
+        <param>
+          <type>ShortArray2D</type>
+          <declname>windows</declname>
+        </param>
+        <briefdescription>
+<para>sendFitsFile </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/FrameAgent.h" line="51" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/FrameAgent.cpp" bodystart="181" bodyend="212"/>
+        <references refid="classFrameAgent_1aa5cfa766dcf643c74b15f99eaf195a29" compoundref="FrameAgent_8cpp" startline="113" endline="178">sendFrame</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/FrameAgent.h" line="22" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/FrameAgent.h" bodystart="21" bodyend="59"/>
+    <listofallmembers>
+      <member refid="classFrameAgent_1a440a10ac5136bf3904f7a012f9206cea" prot="public" virt="non-virtual"><scope>FrameAgent</scope><name>connect</name></member>
+      <member refid="classFrameAgent_1a0eb6f98815f556d310a6b4b3e115fc86" prot="private" virt="non-virtual"><scope>FrameAgent</scope><name>dfAgentConnector_</name></member>
+      <member refid="classFrameAgent_1a8552342c51d8924d471b5ade0d1600c0" prot="private" virt="non-virtual"><scope>FrameAgent</scope><name>dfManagerConnector_</name></member>
+      <member refid="classFrameAgent_1aecd40869cb415a418632d03f7bef7340" prot="public" virt="non-virtual"><scope>FrameAgent</scope><name>disconnect</name></member>
+      <member refid="classFrameAgent_1a135df96a62a729e539973f3f09357c3f" prot="public" virt="non-virtual"><scope>FrameAgent</scope><name>FrameAgent</name></member>
+      <member refid="classFrameAgent_1af29d1a85ba29ef1c95e2936fc4e6c926" prot="private" virt="non-virtual"><scope>FrameAgent</scope><name>name_</name></member>
+      <member refid="classFrameAgent_1a6167df6a136ec0280be5792e761b3fa5" prot="public" virt="non-virtual"><scope>FrameAgent</scope><name>sendFitsFile</name></member>
+      <member refid="classFrameAgent_1aa5cfa766dcf643c74b15f99eaf195a29" prot="public" virt="non-virtual"><scope>FrameAgent</scope><name>sendFrame</name></member>
+      <member refid="classFrameAgent_1a20ef1132636ab3369c8f72d9cf62bc25" prot="private" virt="non-virtual"><scope>FrameAgent</scope><name>trace_</name></member>
+      <member refid="classFrameAgent_1a7dd969b89dba3be024e9871d8c85680c" prot="public" virt="virtual"><scope>FrameAgent</scope><name>~FrameAgent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

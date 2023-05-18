@@ -1,0 +1,30 @@
+// Copyright (c) 2023 Gran Telescopio Canarias, S.A. (GRANTECAN)
+// All Rights Reserved
+
+#ifndef _IMAGEDETECTOR_idl_
+#define _IMAGEDETECTOR_idl_
+
+#include "DCF.idl"
+
+#pragma prefix "gtc"
+
+module IMAGEDETECTOR
+{
+	interface ImageDetector_ifce : DCF::Device_ifce 
+	{
+		// Specific ImageDetector operations
+		void expose() 
+			raises (DGT::GCSException); 
+
+		void setExposureTimeSeconds(in double time) 
+			raises (DGT::GCSException); 
+
+		// Monitorable attributes (device magnitudes)
+		readonly attribute boolean idExposing;
+		readonly attribute boolean idExposureTimeLeft;
+		
+		// Configurable attributes (device properties)
+	};
+};
+#endif // _IMAGEDETECTOR_idl_ 
+

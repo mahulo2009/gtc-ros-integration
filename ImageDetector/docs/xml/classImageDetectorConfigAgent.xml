@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="classImageDetectorConfigAgent" kind="class" prot="public">
+    <compoundname>ImageDetectorConfigAgent</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ConfigAgent</basecompoundref>
+    <includes refid="ImageDetectorConfigAgent_8h" local="no">ImageDetectorConfigAgent.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classImageDetectorConfigAgent_1a83ee318537a35ed63419f7ff18333eed" prot="protected" static="no" mutable="no">
+        <type>Trace</type>
+        <definition>Trace ImageDetectorConfigAgent::trace_</definition>
+        <argsstring></argsstring>
+        <name>trace_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorConfigAgent.h" line="47" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorConfigAgent.h" bodystart="47" bodyend="-1"/>
+        <referencedby refid="classImageDetectorConfigAgent_1a8e1320591c4452a4a0093013031c92a8" compoundref="ImageDetectorConfigAgent_8cpp" startline="28" endline="42">applyProperties</referencedby>
+        <referencedby refid="classImageDetectorConfigAgent_1ac5b88209b721767994264141cf95a912" compoundref="ImageDetectorConfigAgent_8cpp" startline="88" endline="104">fromConfiguration</referencedby>
+        <referencedby refid="classImageDetectorConfigAgent_1acbadf7fd390d4233c57104b8b3eb2f83" compoundref="ImageDetectorConfigAgent_8cpp" startline="47" endline="62">readProperties</referencedby>
+        <referencedby refid="classImageDetectorConfigAgent_1a331b73850701a1b7d6b75182e90c56c5" compoundref="ImageDetectorConfigAgent_8cpp" startline="67" endline="83">toConfiguration</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classImageDetectorConfigAgent_1a1b1206df83f52a618217bb081d8139b4" prot="private" static="no" mutable="no">
+        <type><ref refid="classImageDetectorBase" kindref="compound">ImageDetectorBase</ref> *</type>
+        <definition>ImageDetectorBase* ImageDetectorConfigAgent::device_</definition>
+        <argsstring></argsstring>
+        <name>device_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorConfigAgent.h" line="56" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorConfigAgent.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classImageDetectorConfigAgent_1a7568a3e121218eae3e667df6bee3442c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ImageDetectorConfigAgent::ImageDetectorConfigAgent</definition>
+        <argsstring>(ImageDetectorBase *device, const int mode, TimerEngine *timer)</argsstring>
+        <name>ImageDetectorConfigAgent</name>
+        <param>
+          <type><ref refid="classImageDetectorBase" kindref="compound">ImageDetectorBase</ref> *</type>
+          <declname>device</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>TimerEngine *</type>
+          <declname>timer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorConfigAgent.h" line="24" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorConfigAgent.cpp" bodystart="10" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classImageDetectorConfigAgent_1a6a019479382943bf6aa859bab52cadf4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>ImageDetectorConfigAgent::~ImageDetectorConfigAgent</definition>
+        <argsstring>()</argsstring>
+        <name>~ImageDetectorConfigAgent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorConfigAgent.h" line="27" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorConfigAgent.cpp" bodystart="21" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classImageDetectorConfigAgent_1a8e1320591c4452a4a0093013031c92a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImageDetectorConfigAgent::applyProperties</definition>
+        <argsstring>()</argsstring>
+        <name>applyProperties</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorConfigAgent.h" line="30" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorConfigAgent.cpp" bodystart="28" bodyend="42"/>
+        <references refid="classImageDetectorConfigAgent_1a83ee318537a35ed63419f7ff18333eed" compoundref="ImageDetectorConfigAgent_8h" startline="47">trace_</references>
+      </memberdef>
+      <memberdef kind="function" id="classImageDetectorConfigAgent_1acbadf7fd390d4233c57104b8b3eb2f83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ImageDetectorConfigAgent::readProperties</definition>
+        <argsstring>()</argsstring>
+        <name>readProperties</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorConfigAgent.h" line="33" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorConfigAgent.cpp" bodystart="47" bodyend="62"/>
+        <references refid="classImageDetectorConfigAgent_1a83ee318537a35ed63419f7ff18333eed" compoundref="ImageDetectorConfigAgent_8h" startline="47">trace_</references>
+      </memberdef>
+      <memberdef kind="function" id="classImageDetectorConfigAgent_1a331b73850701a1b7d6b75182e90c56c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImageDetectorConfigAgent::toConfiguration</definition>
+        <argsstring>(CONFIG::Configuration &amp;c)</argsstring>
+        <name>toConfiguration</name>
+        <param>
+          <type>CONFIG::Configuration &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorConfigAgent.h" line="36" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorConfigAgent.cpp" bodystart="67" bodyend="83"/>
+        <references refid="classImageDetectorConfigAgent_1a83ee318537a35ed63419f7ff18333eed" compoundref="ImageDetectorConfigAgent_8h" startline="47">trace_</references>
+      </memberdef>
+      <memberdef kind="function" id="classImageDetectorConfigAgent_1ac5b88209b721767994264141cf95a912" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImageDetectorConfigAgent::fromConfiguration</definition>
+        <argsstring>(const CONFIG::Configuration &amp;c)</argsstring>
+        <name>fromConfiguration</name>
+        <param>
+          <type>const CONFIG::Configuration &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorConfigAgent.h" line="39" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorConfigAgent.cpp" bodystart="88" bodyend="104"/>
+        <references refid="classImageDetectorConfigAgent_1a83ee318537a35ed63419f7ff18333eed" compoundref="ImageDetectorConfigAgent_8h" startline="47">trace_</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="51">
+        <label>ConfigAgent</label>
+      </node>
+      <node id="50">
+        <label>ImageDetectorConfigAgent</label>
+        <link refid="classImageDetectorConfigAgent"/>
+        <childnode refid="51" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="53">
+        <label>ConfigAgent</label>
+      </node>
+      <node id="52">
+        <label>ImageDetectorConfigAgent</label>
+        <link refid="classImageDetectorConfigAgent"/>
+        <childnode refid="53" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorConfigAgent.h" line="16" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetectorConfigAgent.h" bodystart="15" bodyend="57"/>
+    <listofallmembers>
+      <member refid="classImageDetectorConfigAgent_1a8e1320591c4452a4a0093013031c92a8" prot="public" virt="non-virtual"><scope>ImageDetectorConfigAgent</scope><name>applyProperties</name></member>
+      <member refid="classImageDetectorConfigAgent_1a1b1206df83f52a618217bb081d8139b4" prot="private" virt="non-virtual"><scope>ImageDetectorConfigAgent</scope><name>device_</name></member>
+      <member refid="classImageDetectorConfigAgent_1ac5b88209b721767994264141cf95a912" prot="public" virt="non-virtual"><scope>ImageDetectorConfigAgent</scope><name>fromConfiguration</name></member>
+      <member refid="classImageDetectorConfigAgent_1a7568a3e121218eae3e667df6bee3442c" prot="public" virt="non-virtual"><scope>ImageDetectorConfigAgent</scope><name>ImageDetectorConfigAgent</name></member>
+      <member refid="classImageDetectorConfigAgent_1acbadf7fd390d4233c57104b8b3eb2f83" prot="public" virt="non-virtual"><scope>ImageDetectorConfigAgent</scope><name>readProperties</name></member>
+      <member refid="classImageDetectorConfigAgent_1a331b73850701a1b7d6b75182e90c56c5" prot="public" virt="non-virtual"><scope>ImageDetectorConfigAgent</scope><name>toConfiguration</name></member>
+      <member refid="classImageDetectorConfigAgent_1a83ee318537a35ed63419f7ff18333eed" prot="protected" virt="non-virtual"><scope>ImageDetectorConfigAgent</scope><name>trace_</name></member>
+      <member refid="classImageDetectorConfigAgent_1a6a019479382943bf6aa859bab52cadf4" prot="public" virt="virtual"><scope>ImageDetectorConfigAgent</scope><name>~ImageDetectorConfigAgent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
