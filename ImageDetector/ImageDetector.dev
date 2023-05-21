@@ -43,7 +43,7 @@ public abstract class ImageDetector
   * @sampling    2s
   * @storage     60.0s
   */
-  protected float idExposureTimeLeft;
+  protected double idExposureTimeLeft;
 
   //----------------------------------------------------------------------
   //  Device Alarms

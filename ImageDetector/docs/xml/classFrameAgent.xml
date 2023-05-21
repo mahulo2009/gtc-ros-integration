@@ -120,6 +120,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/FrameAgent.h" line="38" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/FrameAgent.cpp" bodystart="37" bodyend="77"/>
+        <referencedby refid="classImageDetector_1a6abdb497a8e309ac1bf986fd69103665" compoundref="ImageDetector_8cpp" startline="100" endline="123">ImageDetector::init</referencedby>
       </memberdef>
       <memberdef kind="function" id="classFrameAgent_1aecd40869cb415a418632d03f7bef7340" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -158,7 +159,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/FrameAgent.h" line="46" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/FrameAgent.cpp" bodystart="113" bodyend="178"/>
-        <referencedby refid="classImageDetector_1a7b16b3ab1bfc8b819764f440b4ca0dab" compoundref="ImageDetector_8cpp" startline="275" endline="314">ImageDetector::expose</referencedby>
+        <referencedby refid="classImageDetector_1a7b16b3ab1bfc8b819764f440b4ca0dab" compoundref="ImageDetector_8cpp" startline="276" endline="315">ImageDetector::expose</referencedby>
         <referencedby refid="classFrameAgent_1a6167df6a136ec0280be5792e761b3fa5" compoundref="FrameAgent_8cpp" startline="181" endline="212">sendFitsFile</referencedby>
       </memberdef>
       <memberdef kind="function" id="classFrameAgent_1a6167df6a136ec0280be5792e761b3fa5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">

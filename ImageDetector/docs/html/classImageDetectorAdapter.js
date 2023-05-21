@@ -5,5 +5,5 @@ var classImageDetectorAdapter =
     [ "expose", "classImageDetectorAdapter.html#a0ee56b57a97f466f5d5b4ffbfb9f038e", null ],
     [ "setExposureTimeSeconds", "classImageDetectorAdapter.html#ae53c2ced7d1fea1e90b2af596026b95d", null ],
     [ "idExposing", "classImageDetectorAdapter.html#a02c035d438ba0531aea88830de8c25e5", null ],
-    [ "idExposureTimeLeft", "classImageDetectorAdapter.html#a279071f8e1c6705c7ebaaf722339ac49", null ]
+    [ "idExposureTimeLeft", "classImageDetectorAdapter.html#aa90da16f9d7db4f167176a128888c258", null ]
 ];

@@ -210,7 +210,7 @@ IMAGEDETECTOR::ImageDetector_ifce::idExposing (
 // TAO_IDL - Generated from
 // be/be_visitor_operation/operation_cs.cpp:91
 
-::CORBA::Boolean
+::CORBA::Double
 IMAGEDETECTOR::ImageDetector_ifce::idExposureTimeLeft (
   void)
 {
@@ -219,7 +219,7 @@ IMAGEDETECTOR::ImageDetector_ifce::idExposureTimeLeft (
       ::CORBA::Object::tao_object_initialize (this);
     }
   
-  TAO::Arg_Traits< ::ACE_InputCDR::to_boolean>::ret_val _tao_retval;
+  TAO::Arg_Traits< ::CORBA::Double>::ret_val _tao_retval;
 
   TAO::Argument *_the_tao_operation_signature [] =
     {

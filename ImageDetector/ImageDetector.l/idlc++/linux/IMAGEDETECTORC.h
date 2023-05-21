@@ -150,7 +150,7 @@ namespace IMAGEDETECTOR
     virtual ::CORBA::Boolean idExposing (
       void);
 
-    virtual ::CORBA::Boolean idExposureTimeLeft (
+    virtual ::CORBA::Double idExposureTimeLeft (
       void);
 
     // TAO_IDL - Generated from

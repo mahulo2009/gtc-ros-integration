@@ -16,10 +16,10 @@ var classImageDetectorBase =
     [ "expose", "classImageDetectorBase.html#a6455c2f261337e54f58fda82170089c8", null ],
     [ "setExposureTimeSeconds", "classImageDetectorBase.html#a9f1e986b8273fbb74d28d221875fe17f", null ],
     [ "idExposing", "classImageDetectorBase.html#a6d9e906545dcdad707723c6780bc538b", null ],
-    [ "idExposureTimeLeft", "classImageDetectorBase.html#aab9155b3b56114daba6537dc81a822fc", null ],
+    [ "idExposureTimeLeft", "classImageDetectorBase.html#a8534c96b2cfa02f463e4560f9d589f86", null ],
     [ "createMonitors_", "classImageDetectorBase.html#a1d92cfa3bff6b65138f1c452cd183131", null ],
     [ "corbaDebug_", "classImageDetectorBase.html#ab0168f46cb53bc1af3e83d7b3d5f7554", null ],
     [ "update_", "classImageDetectorBase.html#a804460a890f5e6318fa3cf8ee2fd19f9", null ],
     [ "idExposing_", "classImageDetectorBase.html#aff1c28be4c10daf711d6009f7c5fc252", null ],
-    [ "idExposureTimeLeft_", "classImageDetectorBase.html#a9a800ece4d7aad44bde9cf12fbb37ca3", null ]
+    [ "idExposureTimeLeft_", "classImageDetectorBase.html#a86712b3e4804cd84676f168ad27349fc", null ]
 ];

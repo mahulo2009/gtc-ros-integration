@@ -105,23 +105,28 @@ $(document).ready(function(){initNavTree('ImageDetectorAdapter_8h_source.html','
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">// Monitorable attributes (device magnitudes) </span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">//----------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    CORBA::Boolean <a class="code" href="classImageDetectorAdapter.html#a02c035d438ba0531aea88830de8c25e5">idExposing</a>        ();</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    CORBA::Boolean <a class="code" href="classImageDetectorAdapter.html#a279071f8e1c6705c7ebaaf722339ac49">idExposureTimeLeft</a>();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    CORBA::Double  <a class="code" href="classImageDetectorAdapter.html#aa90da16f9d7db4f167176a128888c258">idExposureTimeLeft</a>();</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">//----------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">// Configurable attributes (device properties) </span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">//----------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">//--------------------------------------------------</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">// private section </span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">//--------------------------------------------------</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; <span class="comment">//-----------------------------------------------------------------</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; <span class="comment">// protected section </span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; <span class="comment">//-----------------------------------------------------------------</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; <span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="classImageDetectorBase.html">ImageDetectorBase</a>* device_;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif // _ImageDetectorAdapter_h_ </span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">//--------------------------------------------------</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">// private section </span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">//--------------------------------------------------</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="classImageDetectorBase.html">ImageDetectorBase</a>* device_;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;};</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif // _ImageDetectorAdapter_h_ </span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor"></span></div>
 <div class="ttc" id="classImageDetectorAdapter_html_ae53c2ced7d1fea1e90b2af596026b95d"><div class="ttname"><a href="classImageDetectorAdapter.html#ae53c2ced7d1fea1e90b2af596026b95d">ImageDetectorAdapter::setExposureTimeSeconds</a></div><div class="ttdeci">void setExposureTimeSeconds(CORBA::Double time)</div><div class="ttdef"><b>Definition:</b> ImageDetectorAdapter.cpp:46</div></div>
 <div class="ttc" id="classImageDetectorAdapter_html_a02c035d438ba0531aea88830de8c25e5"><div class="ttname"><a href="classImageDetectorAdapter.html#a02c035d438ba0531aea88830de8c25e5">ImageDetectorAdapter::idExposing</a></div><div class="ttdeci">CORBA::Boolean idExposing()</div><div class="ttdef"><b>Definition:</b> ImageDetectorAdapter.cpp:63</div></div>
 <div class="ttc" id="classImageDetectorAdapter_html_a9bc0f25ec428d2f1f59fc68a3a762493"><div class="ttname"><a href="classImageDetectorAdapter.html#a9bc0f25ec428d2f1f59fc68a3a762493">ImageDetectorAdapter::~ImageDetectorAdapter</a></div><div class="ttdeci">~ImageDetectorAdapter()</div><div class="ttdef"><b>Definition:</b> ImageDetectorAdapter.cpp:20</div></div>
@@ -129,8 +134,8 @@ $(document).ready(function(){initNavTree('ImageDetectorAdapter_8h_source.html','
 <div class="ttc" id="classImageDetectorAdapter_html_a0ee56b57a97f466f5d5b4ffbfb9f038e"><div class="ttname"><a href="classImageDetectorAdapter.html#a0ee56b57a97f466f5d5b4ffbfb9f038e">ImageDetectorAdapter::expose</a></div><div class="ttdeci">void expose()</div><div class="ttdef"><b>Definition:</b> ImageDetectorAdapter.cpp:32</div></div>
 <div class="ttc" id="ImageDetectorBase_8h_html"><div class="ttname"><a href="ImageDetectorBase_8h.html">ImageDetectorBase.h</a></div></div>
 <div class="ttc" id="classImageDetectorAdapter_html"><div class="ttname"><a href="classImageDetectorAdapter.html">ImageDetectorAdapter</a></div><div class="ttdef"><b>Definition:</b> ImageDetectorAdapter.h:15</div></div>
-<div class="ttc" id="classImageDetectorAdapter_html_a279071f8e1c6705c7ebaaf722339ac49"><div class="ttname"><a href="classImageDetectorAdapter.html#a279071f8e1c6705c7ebaaf722339ac49">ImageDetectorAdapter::idExposureTimeLeft</a></div><div class="ttdeci">CORBA::Boolean idExposureTimeLeft()</div><div class="ttdef"><b>Definition:</b> ImageDetectorAdapter.cpp:69</div></div>
 <div class="ttc" id="classImageDetectorAdapter_html_ac7f005f4e93d190f054bc97d7652f70b"><div class="ttname"><a href="classImageDetectorAdapter.html#ac7f005f4e93d190f054bc97d7652f70b">ImageDetectorAdapter::ImageDetectorAdapter</a></div><div class="ttdeci">ImageDetectorAdapter(ImageDetectorBase *device)</div><div class="ttdef"><b>Definition:</b> ImageDetectorAdapter.cpp:11</div></div>
+<div class="ttc" id="classImageDetectorAdapter_html_aa90da16f9d7db4f167176a128888c258"><div class="ttname"><a href="classImageDetectorAdapter.html#aa90da16f9d7db4f167176a128888c258">ImageDetectorAdapter::idExposureTimeLeft</a></div><div class="ttdeci">CORBA::Double idExposureTimeLeft()</div><div class="ttdef"><b>Definition:</b> ImageDetectorAdapter.cpp:69</div></div>
 <div class="ttc" id="classImageDetectorBase_html"><div class="ttname"><a href="classImageDetectorBase.html">ImageDetectorBase</a></div><div class="ttdoc">This class is automaticaly regenerated when devBuilder-gev is invoked, and therefore it should not be...</div><div class="ttdef"><b>Definition:</b> ImageDetectorBase.h:15</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -138,7 +143,7 @@ $(document).ready(function(){initNavTree('ImageDetectorAdapter_8h_source.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_bba2ca0abe036267dde89958517f2c0f.html">ImageDetector.l</a></li><li class="navelem"><a class="el" href="ImageDetectorAdapter_8h.html">ImageDetectorAdapter.h</a></li>
-    <li class="footer">Generated on Thu May 18 2023 18:57:14 for ImageDetector by
+    <li class="footer">Generated on Sun May 21 2023 12:39:57 for ImageDetector by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

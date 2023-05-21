@@ -21,7 +21,7 @@ module IMAGEDETECTOR
 
 		// Monitorable attributes (device magnitudes)
 		readonly attribute boolean idExposing;
-		readonly attribute boolean idExposureTimeLeft;
+		readonly attribute double  idExposureTimeLeft;
 		
 		// Configurable attributes (device properties)
 	};

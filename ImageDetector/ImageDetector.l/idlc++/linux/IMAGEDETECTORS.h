@@ -161,7 +161,7 @@ namespace POA_IMAGEDETECTOR
     // TAO_IDL - Generated from
     // be/be_visitor_operation/operation_sh.cpp:39
 
-    virtual ::CORBA::Boolean idExposureTimeLeft (
+    virtual ::CORBA::Double idExposureTimeLeft (
       void) = 0;
 
     static void _get_idExposureTimeLeft_skel (

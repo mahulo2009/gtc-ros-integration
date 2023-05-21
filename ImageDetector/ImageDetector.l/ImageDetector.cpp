@@ -295,6 +295,7 @@ void ImageDetector::expose()
 			buildFrame_(frame);
 			frameAgent_.sendFrame(frame,exposureTimeSeconds_, windows_);
 			idExposing_ = false;
+			idExposureTimeLeft_ = 0;
 
 			
 			logInfo_("expose() completed successfully");

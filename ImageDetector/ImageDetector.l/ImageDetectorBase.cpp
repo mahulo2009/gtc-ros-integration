@@ -386,6 +386,7 @@ void ImageDetectorBase::createMonitors_()
 	{
 		if (monitorAgent_ != NULL)
 		{
+			monitorAgent_->createMonitor<ImageDetectorBase,double>(this,"idExposureTimeLeft",&ImageDetectorBase::idExposureTimeLeft);
 		}
 	}
 	catch(GCSException& ex)
@@ -437,14 +438,14 @@ bool ImageDetectorBase::idExposing()
 //----------------------------------------------------------------------
 // Get idExposureTimeLeft Monitor
 //----------------------------------------------------------------------
-bool ImageDetectorBase::idExposureTimeLeft()
+double ImageDetectorBase::idExposureTimeLeft()
 {
 	//trace_.out("idExposureTimeLeft()\n");
 	
 	// ## Obtain the idExposureTimeLeft_ value, if required. Example:
-	// idExposureTimeLeft_ = memoryMap.bit(15);
-	// If value has changed use:
-	//magnitudeChange_("idExposureTimeLeft",idExposureTimeLeft_); // inform of change
+	// idExposureTimeLeft_ = adcConversion();
+	
+	// ## check ranges: use magnitudeLowerLimit_() and magnitudeUpperLimit_()
 	
 	return idExposureTimeLeft_;
 }

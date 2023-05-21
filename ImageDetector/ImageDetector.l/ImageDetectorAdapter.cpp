@@ -66,7 +66,7 @@ CORBA::Boolean ImageDetectorAdapter::idExposing()
 }
 //----------------------------------------------------------------------
 // Monitor idExposureTimeLeft
-CORBA::Boolean ImageDetectorAdapter::idExposureTimeLeft()
+CORBA::Double ImageDetectorAdapter::idExposureTimeLeft()
 {
 	return device_->idExposureTimeLeft();
 }

@@ -37,12 +37,17 @@ class ImageDetectorAdapter : public virtual POA_IMAGEDETECTOR::ImageDetector_ifc
 	// Monitorable attributes (device magnitudes) 
 	//----------------------------------------------------------------------
 	CORBA::Boolean idExposing        ();
-	CORBA::Boolean idExposureTimeLeft();
+	CORBA::Double  idExposureTimeLeft();
 
 	//----------------------------------------------------------------------
 	// Configurable attributes (device properties) 
 	//----------------------------------------------------------------------
 
+
+ //-----------------------------------------------------------------
+ // protected section 
+ //-----------------------------------------------------------------
+ protected:
 
 	//--------------------------------------------------
 	// private section 

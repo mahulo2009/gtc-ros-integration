@@ -69,7 +69,7 @@ omniORB.registerType(ImageDetector_ifce._NP_RepositoryId, _0_IMAGEDETECTOR._d_Im
 ImageDetector_ifce._d_expose = ((), (), {_0_DGT.GCSException._NP_RepositoryId: _0_DGT._d_GCSException})
 ImageDetector_ifce._d_setExposureTimeSeconds = ((omniORB.tcInternal.tv_double, ), (), {_0_DGT.GCSException._NP_RepositoryId: _0_DGT._d_GCSException})
 ImageDetector_ifce._d__get_idExposing = ((),(omniORB.tcInternal.tv_boolean,),None)
-ImageDetector_ifce._d__get_idExposureTimeLeft = ((),(omniORB.tcInternal.tv_boolean,),None)
+ImageDetector_ifce._d__get_idExposureTimeLeft = ((),(omniORB.tcInternal.tv_double,),None)
 
 # ImageDetector_ifce object reference
 class _objref_ImageDetector_ifce (_0_DCF._objref_Device_ifce):

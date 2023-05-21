@@ -18,9 +18,9 @@
         </inbodydescription>
         <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/IMAGEDETECTOR.idl" line="23" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/IMAGEDETECTOR.idl" bodystart="23" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="interfaceIMAGEDETECTOR_1_1ImageDetector__ifce_1aa8b56524d3c8656faa3e3e6d9616a54a" prot="public" static="no" mutable="no">
-        <type>readonly attribute boolean</type>
-        <definition>readonly attribute boolean IMAGEDETECTOR::ImageDetector_ifce::idExposureTimeLeft</definition>
+      <memberdef kind="variable" id="interfaceIMAGEDETECTOR_1_1ImageDetector__ifce_1a6ee88211d318a54516f6cf6f39bf3e13" prot="public" static="no" mutable="no">
+        <type>readonly attribute double</type>
+        <definition>readonly attribute double IMAGEDETECTOR::ImageDetector_ifce::idExposureTimeLeft</definition>
         <argsstring></argsstring>
         <name>idExposureTimeLeft</name>
         <briefdescription>
@@ -96,7 +96,7 @@
     <listofallmembers>
       <member refid="interfaceIMAGEDETECTOR_1_1ImageDetector__ifce_1ae0721d035eb386b159a9e5984b0faa5b" prot="public" virt="non-virtual"><scope>IMAGEDETECTOR::ImageDetector_ifce</scope><name>expose</name></member>
       <member refid="interfaceIMAGEDETECTOR_1_1ImageDetector__ifce_1a57f4d34d2326f32b701f82b1d2d90289" prot="public" virt="non-virtual"><scope>IMAGEDETECTOR::ImageDetector_ifce</scope><name>idExposing</name></member>
-      <member refid="interfaceIMAGEDETECTOR_1_1ImageDetector__ifce_1aa8b56524d3c8656faa3e3e6d9616a54a" prot="public" virt="non-virtual"><scope>IMAGEDETECTOR::ImageDetector_ifce</scope><name>idExposureTimeLeft</name></member>
+      <member refid="interfaceIMAGEDETECTOR_1_1ImageDetector__ifce_1a6ee88211d318a54516f6cf6f39bf3e13" prot="public" virt="non-virtual"><scope>IMAGEDETECTOR::ImageDetector_ifce</scope><name>idExposureTimeLeft</name></member>
       <member refid="interfaceIMAGEDETECTOR_1_1ImageDetector__ifce_1afccf5103fa7cfce59d4f87db105f7fb1" prot="public" virt="non-virtual"><scope>IMAGEDETECTOR::ImageDetector_ifce</scope><name>setExposureTimeSeconds</name></member>
     </listofallmembers>
   </compounddef>

@@ -120,9 +120,9 @@
 <codeline lineno="66"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="67"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Monitor<sp/>idExposureTimeLeft</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="69" refid="classImageDetectorAdapter_1a279071f8e1c6705c7ebaaf722339ac49" refkind="member"><highlight class="normal">CORBA::Boolean<sp/><ref refid="classImageDetectorAdapter_1a279071f8e1c6705c7ebaaf722339ac49" kindref="member">ImageDetectorAdapter::idExposureTimeLeft</ref>()</highlight></codeline>
+<codeline lineno="69" refid="classImageDetectorAdapter_1aa90da16f9d7db4f167176a128888c258" refkind="member"><highlight class="normal">CORBA::Double<sp/><ref refid="classImageDetectorAdapter_1aa90da16f9d7db4f167176a128888c258" kindref="member">ImageDetectorAdapter::idExposureTimeLeft</ref>()</highlight></codeline>
 <codeline lineno="70"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>device_-&gt;<ref refid="classImageDetectorBase_1aab9155b3b56114daba6537dc81a822fc" kindref="member">idExposureTimeLeft</ref>();</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>device_-&gt;<ref refid="classImageDetectorBase_1a8534c96b2cfa02f463e4560f9d589f86" kindref="member">idExposureTimeLeft</ref>();</highlight></codeline>
 <codeline lineno="72"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="73"><highlight class="normal"></highlight></codeline>
 <codeline lineno="74"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>

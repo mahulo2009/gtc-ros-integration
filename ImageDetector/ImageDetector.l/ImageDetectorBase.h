@@ -98,13 +98,13 @@ class ImageDetectorBase : public Device
 	*
 	* @magnitude:
 	* @description:ImageDetectorExposureTimeLeft
-	* @maximum:true
-	* @minimum:false
+	* @maximum:100000
+	* @minimum:0
 	* @units:Second
 	* @sampling:2s
 	* @storage:60.0s
 	*/
-	virtual bool idExposureTimeLeft();
+	virtual double idExposureTimeLeft();
 	
 	//####################### PROPERTIES ##################################
 	
@@ -118,8 +118,8 @@ protected:
 	bool update_    ; ///<Activate/deactivate profile updating
 	
 	// Read-only attributes (monitorable magnitudes)
-	bool idExposing_        ; ///<ImageDetectorExposing
-	bool idExposureTimeLeft_; ///<ImageDetectorExposureTimeLeft
+	bool   idExposing_        ; ///<ImageDetectorExposing
+	double idExposureTimeLeft_; ///<ImageDetectorExposureTimeLeft
 	
 	/// Method to create monitors
 	void createMonitors_();

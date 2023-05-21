@@ -5,7 +5,12 @@
 #include "testImageDetector.h"
 #include "ConcreteArrays.h"
 
+#ifdef VXWORKS
+/// This function can be called directly from the VxWorks shell
+int testImageDetector(char* devicename,int updateProfile,int mode,long priority,unsigned threads,int corbaDebug)
+#else
 int main(int argc, char** argv)
+#endif
 {
 	ImageDetector *device;
 	bool quit=false;
@@ -15,6 +20,9 @@ int main(int argc, char** argv)
 	// Init ACE
 	ACE::init();
 
+#ifdef VXWORKS
+	if(priority==0) priority=128; if(threads==0) threads=4; // Default
+#else
 	char* devicename;
 	int updateProfile=0;
 	int corbaDebug=0;
@@ -29,6 +37,7 @@ int main(int argc, char** argv)
 	priority = atoi(cl.getOption("-p", "128"));
 	threads = atoi(cl.getOption("-t", "4"));
 	devicename = cl.getOption("-name", "Test/ImageDetector_1");
+#endif
 
 	// Start test
 	printf("---------------------------------------------------------------------\n");

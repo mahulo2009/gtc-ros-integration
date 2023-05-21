@@ -511,8 +511,8 @@ namespace POA_IMAGEDETECTOR
 
     virtual void execute (void)
     {
-      TAO::SArg_Traits< ::ACE_InputCDR::to_boolean>::ret_arg_type retval =
-        TAO::Portable_Server::get_ret_arg< ::ACE_InputCDR::to_boolean> (
+      TAO::SArg_Traits< ::CORBA::Double>::ret_arg_type retval =
+        TAO::Portable_Server::get_ret_arg< ::CORBA::Double> (
           this->operation_details_,
           this->args_);
       
@@ -540,7 +540,7 @@ void POA_IMAGEDETECTOR::ImageDetector_ifce::_get_idExposureTimeLeft_skel (
   static ::CORBA::ULong const nexceptions = 0;
 #endif /* TAO_HAS_INTERCEPTORS */
 
-  TAO::SArg_Traits< ::ACE_InputCDR::to_boolean>::ret_val retval;
+  TAO::SArg_Traits< ::CORBA::Double>::ret_val retval;
 
   TAO::Argument * const args[] =
     {

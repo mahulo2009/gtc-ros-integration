@@ -36,7 +36,7 @@
   </compound>
   <compound refid="interfaceIMAGEDETECTOR_1_1ImageDetector__ifce" kind="interface"><name>IMAGEDETECTOR::ImageDetector_ifce</name>
     <member refid="interfaceIMAGEDETECTOR_1_1ImageDetector__ifce_1a57f4d34d2326f32b701f82b1d2d90289" kind="variable"><name>idExposing</name></member>
-    <member refid="interfaceIMAGEDETECTOR_1_1ImageDetector__ifce_1aa8b56524d3c8656faa3e3e6d9616a54a" kind="variable"><name>idExposureTimeLeft</name></member>
+    <member refid="interfaceIMAGEDETECTOR_1_1ImageDetector__ifce_1a6ee88211d318a54516f6cf6f39bf3e13" kind="variable"><name>idExposureTimeLeft</name></member>
     <member refid="interfaceIMAGEDETECTOR_1_1ImageDetector__ifce_1ae0721d035eb386b159a9e5984b0faa5b" kind="function"><name>expose</name></member>
     <member refid="interfaceIMAGEDETECTOR_1_1ImageDetector__ifce_1afccf5103fa7cfce59d4f87db105f7fb1" kind="function"><name>setExposureTimeSeconds</name></member>
   </compound>
@@ -47,13 +47,13 @@
     <member refid="classImageDetectorAdapter_1a0ee56b57a97f466f5d5b4ffbfb9f038e" kind="function"><name>expose</name></member>
     <member refid="classImageDetectorAdapter_1ae53c2ced7d1fea1e90b2af596026b95d" kind="function"><name>setExposureTimeSeconds</name></member>
     <member refid="classImageDetectorAdapter_1a02c035d438ba0531aea88830de8c25e5" kind="function"><name>idExposing</name></member>
-    <member refid="classImageDetectorAdapter_1a279071f8e1c6705c7ebaaf722339ac49" kind="function"><name>idExposureTimeLeft</name></member>
+    <member refid="classImageDetectorAdapter_1aa90da16f9d7db4f167176a128888c258" kind="function"><name>idExposureTimeLeft</name></member>
   </compound>
   <compound refid="classImageDetectorBase" kind="class"><name>ImageDetectorBase</name>
     <member refid="classImageDetectorBase_1ab0168f46cb53bc1af3e83d7b3d5f7554" kind="variable"><name>corbaDebug_</name></member>
     <member refid="classImageDetectorBase_1a804460a890f5e6318fa3cf8ee2fd19f9" kind="variable"><name>update_</name></member>
     <member refid="classImageDetectorBase_1aff1c28be4c10daf711d6009f7c5fc252" kind="variable"><name>idExposing_</name></member>
-    <member refid="classImageDetectorBase_1a9a800ece4d7aad44bde9cf12fbb37ca3" kind="variable"><name>idExposureTimeLeft_</name></member>
+    <member refid="classImageDetectorBase_1a86712b3e4804cd84676f168ad27349fc" kind="variable"><name>idExposureTimeLeft_</name></member>
     <member refid="classImageDetectorBase_1a0e0e93f0c65dc6d5871914a604d36e50" kind="function"><name>ImageDetectorBase</name></member>
     <member refid="classImageDetectorBase_1aede21b2050ed2d19181d30d482c7cca7" kind="function"><name>~ImageDetectorBase</name></member>
     <member refid="classImageDetectorBase_1a6531ea02cc65dcf1e1a8b31190b4b8ae" kind="function"><name>connect</name></member>
@@ -70,7 +70,7 @@
     <member refid="classImageDetectorBase_1a6455c2f261337e54f58fda82170089c8" kind="function"><name>expose</name></member>
     <member refid="classImageDetectorBase_1a9f1e986b8273fbb74d28d221875fe17f" kind="function"><name>setExposureTimeSeconds</name></member>
     <member refid="classImageDetectorBase_1a6d9e906545dcdad707723c6780bc538b" kind="function"><name>idExposing</name></member>
-    <member refid="classImageDetectorBase_1aab9155b3b56114daba6537dc81a822fc" kind="function"><name>idExposureTimeLeft</name></member>
+    <member refid="classImageDetectorBase_1a8534c96b2cfa02f463e4560f9d589f86" kind="function"><name>idExposureTimeLeft</name></member>
     <member refid="classImageDetectorBase_1a1d92cfa3bff6b65138f1c452cd183131" kind="function"><name>createMonitors_</name></member>
   </compound>
   <compound refid="classImageDetectorConfigAgent" kind="class"><name>ImageDetectorConfigAgent</name>

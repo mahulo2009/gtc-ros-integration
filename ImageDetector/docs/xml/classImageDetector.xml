@@ -30,9 +30,9 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetector.h" line="80" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetector.h" bodystart="80" bodyend="-1"/>
-        <referencedby refid="classImageDetector_1a7b16b3ab1bfc8b819764f440b4ca0dab" compoundref="ImageDetector_8cpp" startline="275" endline="314">expose</referencedby>
-        <referencedby refid="classImageDetector_1a6abdb497a8e309ac1bf986fd69103665" compoundref="ImageDetector_8cpp" startline="100" endline="122">init</referencedby>
-        <referencedby refid="classImageDetector_1a0664b23196bd0b18fefc4eed721c9101" compoundref="ImageDetector_8cpp" startline="346" endline="381">setExposureTimeSeconds</referencedby>
+        <referencedby refid="classImageDetector_1a7b16b3ab1bfc8b819764f440b4ca0dab" compoundref="ImageDetector_8cpp" startline="276" endline="315">expose</referencedby>
+        <referencedby refid="classImageDetector_1a6abdb497a8e309ac1bf986fd69103665" compoundref="ImageDetector_8cpp" startline="100" endline="123">init</referencedby>
+        <referencedby refid="classImageDetector_1a0664b23196bd0b18fefc4eed721c9101" compoundref="ImageDetector_8cpp" startline="347" endline="382">setExposureTimeSeconds</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classImageDetector_1ada44094b2d772b39295e6d8d1ecb7f97" prot="protected" static="no" mutable="no">
         <type>bool</type>
@@ -59,7 +59,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetector.h" line="82" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetector.h" bodystart="82" bodyend="-1"/>
-        <referencedby refid="classImageDetector_1a7b16b3ab1bfc8b819764f440b4ca0dab" compoundref="ImageDetector_8cpp" startline="275" endline="314">expose</referencedby>
+        <referencedby refid="classImageDetector_1a7b16b3ab1bfc8b819764f440b4ca0dab" compoundref="ImageDetector_8cpp" startline="276" endline="315">expose</referencedby>
         <referencedby refid="classImageDetector_1a63c8886bd6358a1009585298075edeb6" compoundref="ImageDetector_8cpp" startline="16" endline="28">ImageDetector</referencedby>
       </memberdef>
       </sectiondef>
@@ -164,7 +164,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetector.h" line="39" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetector.cpp" bodystart="61" bodyend="95"/>
-        <references refid="classImageDetectorBase_1a1d92cfa3bff6b65138f1c452cd183131" compoundref="ImageDetectorBase_8cpp" startline="381" endline="396">ImageDetectorBase::createMonitors_</references>
+        <references refid="classImageDetectorBase_1a1d92cfa3bff6b65138f1c452cd183131" compoundref="ImageDetectorBase_8cpp" startline="381" endline="397">ImageDetectorBase::createMonitors_</references>
       </memberdef>
       <memberdef kind="function" id="classImageDetector_1a6abdb497a8e309ac1bf986fd69103665" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -178,7 +178,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetector.h" line="42" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetector.cpp" bodystart="100" bodyend="122"/>
+        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetector.h" line="42" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetector.cpp" bodystart="100" bodyend="123"/>
+        <references refid="classFrameAgent_1a440a10ac5136bf3904f7a012f9206cea" compoundref="FrameAgent_8cpp" startline="37" endline="77">FrameAgent::connect</references>
         <references refid="classImageDetector_1a6127da82483e25073b5feaec010beec3" compoundref="ImageDetector_8h" startline="80">exposureTimeSeconds_</references>
       </memberdef>
       <memberdef kind="function" id="classImageDetector_1a42f2bceb3247a47bd08072e85cb32a51" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
@@ -193,7 +194,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetector.h" line="45" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetector.cpp" bodystart="127" bodyend="146"/>
+        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetector.h" line="45" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetector.cpp" bodystart="128" bodyend="147"/>
       </memberdef>
       <memberdef kind="function" id="classImageDetector_1a0470fd3b3f6d147d667336e5c34d41c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -207,7 +208,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetector.h" line="48" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetector.cpp" bodystart="151" bodyend="170"/>
+        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetector.h" line="48" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetector.cpp" bodystart="152" bodyend="171"/>
       </memberdef>
       <memberdef kind="function" id="classImageDetector_1ae3219de53c6bfeff0020db3034d97859" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -221,7 +222,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetector.h" line="51" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetector.cpp" bodystart="175" bodyend="194"/>
+        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetector.h" line="51" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetector.cpp" bodystart="176" bodyend="195"/>
       </memberdef>
       <memberdef kind="function" id="classImageDetector_1ac1b77057fc0df217af27f81abd856d21" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -235,7 +236,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetector.h" line="54" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetector.cpp" bodystart="199" bodyend="221"/>
+        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetector.h" line="54" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetector.cpp" bodystart="200" bodyend="222"/>
       </memberdef>
       <memberdef kind="function" id="classImageDetector_1aa962e3c12d4f6e546560ab2a3296989c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -249,7 +250,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetector.h" line="57" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetector.cpp" bodystart="226" bodyend="233"/>
+        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetector.h" line="57" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetector.cpp" bodystart="227" bodyend="234"/>
       </memberdef>
       <memberdef kind="function" id="classImageDetector_1ab42a461656723360f4cc3ad71beec763" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>char *</type>
@@ -267,7 +268,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetector.h" line="60" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetector.cpp" bodystart="238" bodyend="253"/>
+        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetector.h" line="60" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetector.cpp" bodystart="239" bodyend="254"/>
         <references refid="classImageDetectorBase_1a131ef38d9b156310e3e1e501d1f5488c" compoundref="ImageDetectorBase_8cpp" startline="341" endline="367">ImageDetectorBase::report</references>
       </memberdef>
       <memberdef kind="function" id="classImageDetector_1a7b16b3ab1bfc8b819764f440b4ca0dab" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
@@ -282,10 +283,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetector.h" line="67" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetector.cpp" bodystart="275" bodyend="314"/>
+        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetector.h" line="67" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetector.cpp" bodystart="276" bodyend="315"/>
         <references refid="classImageDetector_1a6127da82483e25073b5feaec010beec3" compoundref="ImageDetector_8h" startline="80">exposureTimeSeconds_</references>
         <references refid="classImageDetectorBase_1aff1c28be4c10daf711d6009f7c5fc252" compoundref="ImageDetectorBase_8h" startline="121">ImageDetectorBase::idExposing_</references>
-        <references refid="classImageDetectorBase_1a9a800ece4d7aad44bde9cf12fbb37ca3" compoundref="ImageDetectorBase_8h" startline="122">ImageDetectorBase::idExposureTimeLeft_</references>
+        <references refid="classImageDetectorBase_1a86712b3e4804cd84676f168ad27349fc" compoundref="ImageDetectorBase_8h" startline="122">ImageDetectorBase::idExposureTimeLeft_</references>
         <references refid="classFrameAgent_1aa5cfa766dcf643c74b15f99eaf195a29" compoundref="FrameAgent_8cpp" startline="113" endline="178">FrameAgent::sendFrame</references>
         <references refid="classImageDetector_1a466aed0c256e814e0568327a533688c9" compoundref="ImageDetector_8h" startline="82">windows_</references>
       </memberdef>
@@ -305,7 +306,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetector.h" line="72" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetector.cpp" bodystart="346" bodyend="381"/>
+        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetector.h" line="72" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetector.cpp" bodystart="347" bodyend="382"/>
         <references refid="classImageDetector_1a6127da82483e25073b5feaec010beec3" compoundref="ImageDetector_8h" startline="80">exposureTimeSeconds_</references>
       </memberdef>
       </sectiondef>
@@ -338,7 +339,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetector.h" line="89" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetector.cpp" bodystart="316" bodyend="340"/>
+        <location file="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetector.h" line="89" column="1" bodyfile="/work/gcsop/src_c++/gtc/ImageDetector/ImageDetector.l/ImageDetector.cpp" bodystart="317" bodyend="341"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -394,8 +395,8 @@
       <member refid="classImageDetector_1a42f2bceb3247a47bd08072e85cb32a51" prot="public" virt="virtual"><scope>ImageDetector</scope><name>halt</name></member>
       <member refid="classImageDetectorBase_1a6d9e906545dcdad707723c6780bc538b" prot="public" virt="virtual"><scope>ImageDetector</scope><name>idExposing</name></member>
       <member refid="classImageDetectorBase_1aff1c28be4c10daf711d6009f7c5fc252" prot="protected" virt="non-virtual"><scope>ImageDetector</scope><name>idExposing_</name></member>
-      <member refid="classImageDetectorBase_1aab9155b3b56114daba6537dc81a822fc" prot="public" virt="virtual"><scope>ImageDetector</scope><name>idExposureTimeLeft</name></member>
-      <member refid="classImageDetectorBase_1a9a800ece4d7aad44bde9cf12fbb37ca3" prot="protected" virt="non-virtual"><scope>ImageDetector</scope><name>idExposureTimeLeft_</name></member>
+      <member refid="classImageDetectorBase_1a8534c96b2cfa02f463e4560f9d589f86" prot="public" virt="virtual"><scope>ImageDetector</scope><name>idExposureTimeLeft</name></member>
+      <member refid="classImageDetectorBase_1a86712b3e4804cd84676f168ad27349fc" prot="protected" virt="non-virtual"><scope>ImageDetector</scope><name>idExposureTimeLeft_</name></member>
       <member refid="classImageDetector_1a63c8886bd6358a1009585298075edeb6" prot="public" virt="non-virtual"><scope>ImageDetector</scope><name>ImageDetector</name></member>
       <member refid="classImageDetectorBase_1a0e0e93f0c65dc6d5871914a604d36e50" prot="public" virt="non-virtual"><scope>ImageDetector</scope><name>ImageDetectorBase</name></member>
       <member refid="classImageDetector_1a6abdb497a8e309ac1bf986fd69103665" prot="public" virt="virtual"><scope>ImageDetector</scope><name>init</name></member>
