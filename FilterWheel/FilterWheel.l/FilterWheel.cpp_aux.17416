@@ -1,0 +1,2 @@
+void FilterWheelBase::moveCommand(Filter position)
+		logError_("FilterWheelBase::moveCommand() exception - %s\n", ex.toString());

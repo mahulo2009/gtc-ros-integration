@@ -251,8 +251,8 @@ namespace POA_FILTERWHEEL
 
     virtual void execute (void)
     {
-      TAO::SArg_Traits< ::CORBA::Short>::in_arg_type arg_1 =
-        TAO::Portable_Server::get_in_arg< ::CORBA::Short> (
+      TAO::SArg_Traits< ::FILTERWHEEL::Filter>::in_arg_type arg_1 =
+        TAO::Portable_Server::get_in_arg< ::FILTERWHEEL::Filter> (
           this->operation_details_,
           this->args_,
           1);
@@ -285,7 +285,7 @@ void POA_FILTERWHEEL::FilterWheel_ifce::moveCommand_skel (
 #endif /* TAO_HAS_INTERCEPTORS */
 
   TAO::SArg_Traits< void>::ret_val retval;
-  TAO::SArg_Traits< ::CORBA::Short>::in_arg_val _tao_position;
+  TAO::SArg_Traits< ::FILTERWHEEL::Filter>::in_arg_val _tao_position;
 
   TAO::Argument * const args[] =
     {
@@ -345,8 +345,8 @@ namespace POA_FILTERWHEEL
 
     virtual void execute (void)
     {
-      TAO::SArg_Traits< ::CORBA::Short>::ret_arg_type retval =
-        TAO::Portable_Server::get_ret_arg< ::CORBA::Short> (
+      TAO::SArg_Traits< ::FILTERWHEEL::Filter>::ret_arg_type retval =
+        TAO::Portable_Server::get_ret_arg< ::FILTERWHEEL::Filter> (
           this->operation_details_,
           this->args_);
       
@@ -374,7 +374,7 @@ void POA_FILTERWHEEL::FilterWheel_ifce::_get_filterWheelFilter_skel (
   static ::CORBA::ULong const nexceptions = 0;
 #endif /* TAO_HAS_INTERCEPTORS */
 
-  TAO::SArg_Traits< ::CORBA::Short>::ret_val retval;
+  TAO::SArg_Traits< ::FILTERWHEEL::Filter>::ret_val retval;
 
   TAO::Argument * const args[] =
     {

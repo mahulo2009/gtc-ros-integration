@@ -5,45 +5,45 @@
     <includes local="no">IDL_Adapters_DGT.h</includes>
     <includes refid="FilterWheelAdapter_8h" local="yes">FilterWheelAdapter.h</includes>
     <incdepgraph>
-      <node id="92">
+      <node id="96">
         <label>FilterWheelAdapter.h</label>
         <link refid="FilterWheelAdapter_8h"/>
-        <childnode refid="93" relation="include">
+        <childnode refid="97" relation="include">
         </childnode>
-        <childnode refid="94" relation="include">
+        <childnode refid="98" relation="include">
         </childnode>
-        <childnode refid="95" relation="include">
+        <childnode refid="99" relation="include">
+        </childnode>
+      </node>
+      <node id="98">
+        <label>FILTERWHEELS.h</label>
+      </node>
+      <node id="99">
+        <label>FilterWheelBase.h</label>
+        <link refid="FilterWheelBase_8h"/>
+        <childnode refid="100" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
         </childnode>
       </node>
       <node id="94">
-        <label>FILTERWHEELS.h</label>
-      </node>
-      <node id="95">
-        <label>FilterWheelBase.h</label>
-        <link refid="FilterWheelBase_8h"/>
-        <childnode refid="96" relation="include">
-        </childnode>
-        <childnode refid="97" relation="include">
-        </childnode>
-      </node>
-      <node id="90">
         <label>FilterWheelAdapter.cpp</label>
         <link refid="FilterWheelAdapter.cpp"/>
-        <childnode refid="91" relation="include">
+        <childnode refid="95" relation="include">
         </childnode>
-        <childnode refid="92" relation="include">
+        <childnode refid="96" relation="include">
         </childnode>
       </node>
-      <node id="96">
+      <node id="100">
         <label>Device.h</label>
       </node>
-      <node id="93">
+      <node id="97">
         <label>DeviceAdapter.h</label>
       </node>
-      <node id="97">
+      <node id="101">
         <label>ConcreteArrays.h</label>
       </node>
-      <node id="91">
+      <node id="95">
         <label>IDL_Adapters_DGT.h</label>
       </node>
     </incdepgraph>
@@ -83,11 +83,11 @@
 <codeline lineno="29"><highlight class="normal"></highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">//<sp/>moveCommand</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="32" refid="classFilterWheelAdapter_1a401cdf362ddd0fffbcbfec09a837fb7c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFilterWheelAdapter_1a401cdf362ddd0fffbcbfec09a837fb7c" kindref="member">FilterWheelAdapter::moveCommand</ref>(CORBA::Short<sp/>position)</highlight></codeline>
+<codeline lineno="32" refid="classFilterWheelAdapter_1a56871477837f680562fb29d2cecf5ceb" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFilterWheelAdapter_1a56871477837f680562fb29d2cecf5ceb" kindref="member">FilterWheelAdapter::moveCommand</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceFILTERWHEEL_1a253d702802e8e62d6e25c76b0ae3fdc1" kindref="member">FILTERWHEEL::Filter</ref><sp/>position)</highlight></codeline>
 <codeline lineno="33"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>device_-&gt;<ref refid="classFilterWheelBase_1a432c92056ae5225b886fb243f5edb9ec" kindref="member">moveCommand</ref>(position);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>device_-&gt;<ref refid="classFilterWheelBase_1a57bbeb569296f8bb046ab54f4e80df65" kindref="member">moveCommand</ref>((<ref refid="classFilterWheelBase_1aabeaa7c1c1c37b9238074de959e2d9c6" kindref="member">FilterWheelBase::Filter</ref>)position);</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal">(GCSException&amp;<sp/>ex)</highlight></codeline>
 <codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -100,26 +100,27 @@
 <codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="48"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Monitor<sp/>filterWheelFilter</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="49" refid="classFilterWheelAdapter_1a7220339f9f59bd553fa7af49b3590fb6" refkind="member"><highlight class="normal">CORBA::Short<sp/><ref refid="classFilterWheelAdapter_1a7220339f9f59bd553fa7af49b3590fb6" kindref="member">FilterWheelAdapter::filterWheelFilter</ref>()</highlight></codeline>
+<codeline lineno="49" refid="classFilterWheelAdapter_1af048d09b073f0cfacfbc071513baa039" refkind="member"><highlight class="normal"><ref refid="namespaceFILTERWHEEL_1a253d702802e8e62d6e25c76b0ae3fdc1" kindref="member">FILTERWHEEL::Filter</ref><sp/><ref refid="classFilterWheelAdapter_1af048d09b073f0cfacfbc071513baa039" kindref="member">FilterWheelAdapter::filterWheelFilter</ref>()</highlight></codeline>
 <codeline lineno="50"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>device_-&gt;<ref refid="classFilterWheelBase_1a50a4402a468508170ae0acbc708d6706" kindref="member">filterWheelFilter</ref>();</highlight></codeline>
-<codeline lineno="52"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Monitor<sp/>filterWheelMoving</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="55" refid="classFilterWheelAdapter_1ac2b46f2f7733da6c75a023c24068553f" refkind="member"><highlight class="normal">CORBA::Boolean<sp/><ref refid="classFilterWheelAdapter_1ac2b46f2f7733da6c75a023c24068553f" kindref="member">FilterWheelAdapter::filterWheelMoving</ref>()</highlight></codeline>
-<codeline lineno="56"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>device_-&gt;<ref refid="classFilterWheelBase_1a4f816ec06bdc1e05c66072140593512e" kindref="member">filterWheelMoving</ref>();</highlight></codeline>
-<codeline lineno="58"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="59"><highlight class="normal"></highlight></codeline>
-<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Configurable<sp/>attributes<sp/>(device<sp/>properties)<sp/></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>enumerated<sp/>=<sp/>(int)device_-&gt;<ref refid="classFilterWheelBase_1a1dc261090690549d79172583214584a6" kindref="member">filterWheelFilter</ref>();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="namespaceFILTERWHEEL_1a253d702802e8e62d6e25c76b0ae3fdc1" kindref="member">FILTERWHEEL::Filter</ref>)enumerated;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Monitor<sp/>filterWheelMoving</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="classFilterWheelAdapter_1ac2b46f2f7733da6c75a023c24068553f" refkind="member"><highlight class="normal">CORBA::Boolean<sp/><ref refid="classFilterWheelAdapter_1ac2b46f2f7733da6c75a023c24068553f" kindref="member">FilterWheelAdapter::filterWheelMoving</ref>()</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>device_-&gt;<ref refid="classFilterWheelBase_1a4f816ec06bdc1e05c66072140593512e" kindref="member">filterWheelMoving</ref>();</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Configurable<sp/>attributes<sp/>(device<sp/>properties)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="64"><highlight class="normal"></highlight></codeline>
-<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">/**************************************************************</highlight></codeline>
-<codeline lineno="66"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>private<sp/>methods<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
-<codeline lineno="67"><highlight class="comment"><sp/>**************************************************************/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">/**************************************************************</highlight></codeline>
+<codeline lineno="67"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>private<sp/>methods<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="68"><highlight class="comment"><sp/>**************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelAdapter.cpp"/>
   </compounddef>

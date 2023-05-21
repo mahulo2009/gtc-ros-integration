@@ -1,0 +1,20 @@
+#-------------------------------------------------------------------------------
+# Application specific libraries
+#-------------------------------------------------------------------------------
+ld < libFilterWheel.so
+#cd "MODULE_DIR"
+ld < tests/testFilterWheel.p/vx.O/testFilterWheel
+ld < examples/runFilterWheel.p/vx.O/runFilterWheel
+#ld < examples/useFilterWheel.p/vx.O/useFilterWheel
+
+# moduleShow
+#-------------------------------------------------------------------------------
+# start_LCU    -> starts LCU services and applications
+# start_LCU(1) -> performs the update of the Devices
+
+# testFilterWheel DEVICE_NAME,UPDATE,MODE,PRIORITY,THREADS
+# testFilterWheel "Osiris/FilterWheel_1",0,0,100,4
+# testFilterWheel "Osiris/FilterWheel_1",1,1,100,4
+# testFilterWheel "Osiris/FilterWheel_1",0,1,100,4
+
+#-------------------------------------------------------------------------------

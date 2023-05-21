@@ -12,7 +12,7 @@ public abstract class FilterWheel
   //----------------------------------------------------------------------
 
   /** void command */
-  abstract void moveCommand(short position);
+  abstract void moveCommand(enum_Filter position);
 
   //----------------------------------------------------------------------
   //  Device Magnitudes
@@ -22,13 +22,11 @@ public abstract class FilterWheel
   * FilterWheelFilter
   * @magnitude
   * @description FilterWheelFilter
-  * @maximum     7
-  * @minimum     0
-  * @units       None
-  * @sampling    0.2s
-  * @storage     60.0s
+  * @values UV, PURPLE, BLUE, GREEN, YELLOW, ORANGE, RED, IR
+  * @sampling    1s
+  * @storage     600.0s
   */
-  protected short filterWheelFilter;
+  protected enum_Filter filterWheelFilter;
 
   /**
   * FilterWheelMoving

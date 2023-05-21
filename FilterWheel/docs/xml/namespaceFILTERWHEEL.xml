@@ -3,6 +3,74 @@
   <compounddef id="namespaceFILTERWHEEL" kind="namespace">
     <compoundname>FILTERWHEEL</compoundname>
     <innerclass refid="interfaceFILTERWHEEL_1_1FilterWheel__ifce" prot="public">FILTERWHEEL::FilterWheel_ifce</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespaceFILTERWHEEL_1a253d702802e8e62d6e25c76b0ae3fdc1" prot="public" static="no">
+        <name>Filter</name>
+        <enumvalue id="namespaceFILTERWHEEL_1a253d702802e8e62d6e25c76b0ae3fdc1aaf35169ba705cb619056e88e7b6c7206" prot="public">
+          <name>UV</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceFILTERWHEEL_1a253d702802e8e62d6e25c76b0ae3fdc1aa97acce3766769b7f5d2c45e2a3f1ed4" prot="public">
+          <name>PURPLE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceFILTERWHEEL_1a253d702802e8e62d6e25c76b0ae3fdc1aec304c21bde6396e9aa081f14478f6c3" prot="public">
+          <name>BLUE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceFILTERWHEEL_1a253d702802e8e62d6e25c76b0ae3fdc1a8b7cfce89f9e96e95cdfd2954d843e4d" prot="public">
+          <name>GREEN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceFILTERWHEEL_1a253d702802e8e62d6e25c76b0ae3fdc1a9ccfbd7a56de664f4e6074f614c09645" prot="public">
+          <name>YELLOW</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceFILTERWHEEL_1a253d702802e8e62d6e25c76b0ae3fdc1a1c34b415add80bc7ef55344844df37c9" prot="public">
+          <name>ORANGE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceFILTERWHEEL_1a253d702802e8e62d6e25c76b0ae3fdc1a1dcc3e198d31ae0d199a1ee16156f0a1" prot="public">
+          <name>RED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceFILTERWHEEL_1a253d702802e8e62d6e25c76b0ae3fdc1aa51268c89158d4e44e8dee49c74e5ed2" prot="public">
+          <name>IR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FILTERWHEEL.idl" line="14" column="1" bodyfile="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FILTERWHEEL.idl" bodystart="13" bodyend="16"/>
+      </memberdef>
+      </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

@@ -19,7 +19,6 @@ FilterWheelBase::FilterWheelBase(string name)
 	// Init some properties with hardcoded values
 	
 	// Init monitors to avoid they contain garbage
-	filterWheelFilter_  = 0;
 	filterWheelMoving_  = 0;
 }
 
@@ -356,7 +355,6 @@ char* FilterWheelBase::report(short level)
 	
 	ost << endl << "Device Magnitudes" << endl;   
 	ost << "-------------------------------------------------------" << endl;
-	ost << "filterWheelFilter   :" << filterWheelFilter() << endl;
 	ost << "filterWheelMoving   :" << filterWheelMoving() << endl;
 	// ## Add here your other monitors
 	
@@ -386,7 +384,6 @@ void FilterWheelBase::createMonitors_()
 	{
 		if (monitorAgent_ != NULL)
 		{
-			monitorAgent_->createMonitor<FilterWheelBase,short>(this,"filterWheelFilter",&FilterWheelBase::filterWheelFilter);
 		}
 	}
 	catch(GCSException& ex)
@@ -423,7 +420,7 @@ void FilterWheelBase::createMonitors_()
 //----------------------------------------------------------------------
 // Get filterWheelFilter Monitor
 //----------------------------------------------------------------------
-short FilterWheelBase::filterWheelFilter()
+FilterWheelBase::Filter FilterWheelBase::filterWheelFilter()
 {
 	//trace_.out("filterWheelFilter()\n");
 	

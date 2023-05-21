@@ -11,5 +11,5 @@ var classFilterWheel =
     [ "test", "classFilterWheel.html#a0a448b245f3841588b41f61a06285de0", null ],
     [ "abort", "classFilterWheel.html#a8fcebfa707996b4029701d2c24913c81", null ],
     [ "report", "classFilterWheel.html#a8a96b1a7fd31e26fd3ea89412e3f40f5", null ],
-    [ "moveCommand", "classFilterWheel.html#a87d4d14b45f71f802b47fc34ca05b322", null ]
+    [ "moveCommand", "classFilterWheel.html#a77911884afba09cffa7e64cbd7ad7ecd", null ]
 ];

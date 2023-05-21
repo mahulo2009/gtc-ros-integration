@@ -1,0 +1,1 @@
+LDLIBS += -lImageDetectorCorba $(DSLPRO_DEV_LIBS) $(TAO_LIBS) $(SSL_LIBS)

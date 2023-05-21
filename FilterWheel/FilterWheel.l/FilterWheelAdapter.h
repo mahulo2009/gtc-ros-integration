@@ -30,18 +30,23 @@ class FilterWheelAdapter : public virtual POA_FILTERWHEEL::FilterWheel_ifce,  pu
 	//----------------------------------------------------------------------
 	// Device specific operations
 	//----------------------------------------------------------------------
-	void   moveCommand(CORBA::Short position);
+	void   moveCommand(const FILTERWHEEL::Filter position);
 
 	//----------------------------------------------------------------------
 	// Monitorable attributes (device magnitudes) 
 	//----------------------------------------------------------------------
-	CORBA::Short   filterWheelFilter();
+	FILTERWHEEL::Filter         filterWheelFilter();
 	CORBA::Boolean filterWheelMoving();
 
 	//----------------------------------------------------------------------
 	// Configurable attributes (device properties) 
 	//----------------------------------------------------------------------
 
+
+ //-----------------------------------------------------------------
+ // protected section 
+ //-----------------------------------------------------------------
+ protected:
 
 	//--------------------------------------------------
 	// private section 

@@ -48,6 +48,21 @@ _0_FILTERWHEEL = omniORB.openModule("FILTERWHEEL", r"/work/gcsop/src_c++/gtc/Fil
 _0_FILTERWHEEL__POA = omniORB.openModule("FILTERWHEEL__POA", r"/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FILTERWHEEL.idl")
 
 
+# enum Filter
+_0_FILTERWHEEL.UV = omniORB.EnumItem("UV", 0)
+_0_FILTERWHEEL.PURPLE = omniORB.EnumItem("PURPLE", 1)
+_0_FILTERWHEEL.BLUE = omniORB.EnumItem("BLUE", 2)
+_0_FILTERWHEEL.GREEN = omniORB.EnumItem("GREEN", 3)
+_0_FILTERWHEEL.YELLOW = omniORB.EnumItem("YELLOW", 4)
+_0_FILTERWHEEL.ORANGE = omniORB.EnumItem("ORANGE", 5)
+_0_FILTERWHEEL.RED = omniORB.EnumItem("RED", 6)
+_0_FILTERWHEEL.IR = omniORB.EnumItem("IR", 7)
+_0_FILTERWHEEL.Filter = omniORB.Enum("IDL:gtc/FILTERWHEEL/Filter:1.0", (_0_FILTERWHEEL.UV, _0_FILTERWHEEL.PURPLE, _0_FILTERWHEEL.BLUE, _0_FILTERWHEEL.GREEN, _0_FILTERWHEEL.YELLOW, _0_FILTERWHEEL.ORANGE, _0_FILTERWHEEL.RED, _0_FILTERWHEEL.IR,))
+
+_0_FILTERWHEEL._d_Filter  = (omniORB.tcInternal.tv_enum, _0_FILTERWHEEL.Filter._NP_RepositoryId, "Filter", _0_FILTERWHEEL.Filter._items)
+_0_FILTERWHEEL._tc_Filter = omniORB.tcInternal.createTypeCode(_0_FILTERWHEEL._d_Filter)
+omniORB.registerType(_0_FILTERWHEEL.Filter._NP_RepositoryId, _0_FILTERWHEEL._d_Filter, _0_FILTERWHEEL._tc_Filter)
+
 # interface FilterWheel_ifce
 _0_FILTERWHEEL._d_FilterWheel_ifce = (omniORB.tcInternal.tv_objref, "IDL:gtc/FILTERWHEEL/FilterWheel_ifce:1.0", "FilterWheel_ifce")
 omniORB.typeMapping["IDL:gtc/FILTERWHEEL/FilterWheel_ifce:1.0"] = _0_FILTERWHEEL._d_FilterWheel_ifce
@@ -66,8 +81,8 @@ _0_FILTERWHEEL._tc_FilterWheel_ifce = omniORB.tcInternal.createTypeCode(_0_FILTE
 omniORB.registerType(FilterWheel_ifce._NP_RepositoryId, _0_FILTERWHEEL._d_FilterWheel_ifce, _0_FILTERWHEEL._tc_FilterWheel_ifce)
 
 # FilterWheel_ifce operations and attributes
-FilterWheel_ifce._d_moveCommand = ((omniORB.tcInternal.tv_short, ), (), {_0_DGT.GCSException._NP_RepositoryId: _0_DGT._d_GCSException})
-FilterWheel_ifce._d__get_filterWheelFilter = ((),(omniORB.tcInternal.tv_short,),None)
+FilterWheel_ifce._d_moveCommand = ((omniORB.typeMapping["IDL:gtc/FILTERWHEEL/Filter:1.0"], ), (), {_0_DGT.GCSException._NP_RepositoryId: _0_DGT._d_GCSException})
+FilterWheel_ifce._d__get_filterWheelFilter = ((),(omniORB.typeMapping["IDL:gtc/FILTERWHEEL/Filter:1.0"],),None)
 FilterWheel_ifce._d__get_filterWheelMoving = ((),(omniORB.tcInternal.tv_boolean,),None)
 
 # FilterWheel_ifce object reference

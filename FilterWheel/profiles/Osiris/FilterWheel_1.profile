@@ -1,6 +1,6 @@
 #--------------------------------------------------------------
 # Osiris/FilterWheel_1 Device profile
-# File generated: 18/4/2023  
+# File generated: 21/4/2023  
 #--------------------------------------------------------------
 
 [ Header Osiris/FilterWheel_1.header ]
@@ -20,11 +20,11 @@ ifr_id     = IDL:gtc/FILTERWHEEL/FilterWheel_ifce:1.0
 [ Magnitude Osiris/FilterWheel_1.filterWheelFilter ]
 description     = FilterWheelFilter
 units           = None
-type            = short
-upper_limit     = short : 7
-lower_limit     = short : 0
-default_sampling_period = TimeValue : 0.2s
-default_storage_period  = TimeValue : 60.0s
+type            = enum
+upper_limit     = Filter : 0
+lower_limit     = Filter : 0
+default_sampling_period = TimeValue : 1s
+default_storage_period  = TimeValue : 600.0s
 
 [ Magnitude Osiris/FilterWheel_1.filterWheelMoving ]
 description     = FilterWheelMoving

@@ -29,11 +29,11 @@ FilterWheelAdapter::~FilterWheelAdapter()
 
 //----------------------------------------------------------------------
 // moveCommand
-void FilterWheelAdapter::moveCommand(CORBA::Short position)
+void FilterWheelAdapter::moveCommand(const FILTERWHEEL::Filter position)
 {
 	try
 	{
-		device_->moveCommand(position);
+		device_->moveCommand((FilterWheelBase::Filter)position);
 	}
 	catch(GCSException& ex)
 	{
@@ -46,9 +46,10 @@ void FilterWheelAdapter::moveCommand(CORBA::Short position)
 //----------------------------------------------------------------------
 //----------------------------------------------------------------------
 // Monitor filterWheelFilter
-CORBA::Short FilterWheelAdapter::filterWheelFilter()
+FILTERWHEEL::Filter FilterWheelAdapter::filterWheelFilter()
 {
-	return device_->filterWheelFilter();
+	int enumerated = (int)device_->filterWheelFilter();
+	return (FILTERWHEEL::Filter)enumerated;
 }
 //----------------------------------------------------------------------
 // Monitor filterWheelMoving

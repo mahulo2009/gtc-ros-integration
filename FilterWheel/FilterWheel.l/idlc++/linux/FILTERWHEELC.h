@@ -52,6 +52,7 @@
 #include "tao/Basic_Arguments.h"
 #include "tao/Special_Basic_Arguments.h"
 #include "tao/Any_Insert_Policy_T.h"
+#include "tao/Basic_Argument_T.h"
 #include "tao/Fixed_Size_Argument_T.h"
 #include "tao/Var_Size_Argument_T.h"
 #include "tao/Object_Argument_T.h"
@@ -89,6 +90,28 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 namespace FILTERWHEEL
 {
+
+  // TAO_IDL - Generated from
+  // be/be_visitor_enum/enum_ch.cpp:47
+
+  enum Filter
+  {
+    UV,
+    PURPLE,
+    BLUE,
+    GREEN,
+    YELLOW,
+    ORANGE,
+    RED,
+    IR
+  };
+
+  typedef Filter &Filter_out;
+
+  // TAO_IDL - Generated from
+  // be/be_visitor_typecode/typecode_decl.cpp:37
+
+  extern  ::CORBA::TypeCode_ptr const _tc_Filter;
 
   // TAO_IDL - Generated from
   // be/be_interface.cpp:750
@@ -142,9 +165,9 @@ namespace FILTERWHEEL
     static FilterWheel_ifce_ptr _nil (void);
 
     virtual void moveCommand (
-      ::CORBA::Short position);
+      ::FILTERWHEEL::Filter position);
 
-    virtual ::CORBA::Short filterWheelFilter (
+    virtual ::FILTERWHEEL::Filter filterWheelFilter (
       void);
 
     virtual ::CORBA::Boolean filterWheelMoving (
@@ -201,6 +224,19 @@ TAO_BEGIN_VERSIONED_NAMESPACE_DECL
 // Arg traits specializations.
 namespace TAO
 {
+
+  // TAO_IDL - Generated from
+  // be/be_visitor_arg_traits.cpp:904
+
+  template<>
+  class Arg_Traits< ::FILTERWHEEL::Filter>
+    : public
+        Basic_Arg_Traits_T<
+            ::FILTERWHEEL::Filter,
+            TAO::Any_Insert_Policy_Stream
+          >
+  {
+  };
 
   // TAO_IDL - Generated from
   // be/be_visitor_arg_traits.cpp:147
@@ -260,6 +296,34 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 // TAO_IDL - Generated from
+// be/be_visitor_enum/any_op_ch.cpp:39
+
+#if defined (ACE_ANY_OPS_USE_NAMESPACE)
+
+namespace FILTERWHEEL
+{
+  
+
+   void operator<<= (::CORBA::Any &, ::FILTERWHEEL::Filter);
+   ::CORBA::Boolean operator>>= (const ::CORBA::Any &, ::FILTERWHEEL::Filter &);
+}
+
+#else
+
+
+TAO_BEGIN_VERSIONED_NAMESPACE_DECL
+
+
+
+ void operator<<= (::CORBA::Any &, FILTERWHEEL::Filter);
+ ::CORBA::Boolean operator>>= (const ::CORBA::Any &, FILTERWHEEL::Filter &);
+TAO_END_VERSIONED_NAMESPACE_DECL
+
+
+
+#endif
+
+// TAO_IDL - Generated from
 // be/be_visitor_interface/any_op_ch.cpp:44
 
 
@@ -286,6 +350,19 @@ TAO_END_VERSIONED_NAMESPACE_DECL
 
 
 #endif
+
+// TAO_IDL - Generated from
+// be/be_visitor_enum/cdr_op_ch.cpp:37
+
+
+TAO_BEGIN_VERSIONED_NAMESPACE_DECL
+
+ ::CORBA::Boolean operator<< (TAO_OutputCDR &strm, FILTERWHEEL::Filter _tao_enumerator);
+ ::CORBA::Boolean operator>> (TAO_InputCDR &strm, FILTERWHEEL::Filter &_tao_enumerator);
+
+TAO_END_VERSIONED_NAMESPACE_DECL
+
+
 
 // TAO_IDL - Generated from
 // be/be_visitor_interface/cdr_op_ch.cpp:44

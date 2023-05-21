@@ -21,6 +21,15 @@ class FilterWheelBase : public Device
 
 	//######################## SPECIFIC TYPES ##############################
 	
+	/**
+ 	* The current Filter of the filter wheel
+ 	*/
+	enum Filter
+	{
+		UV, PURPLE, BLUE, GREEN, YELLOW, ORANGE, RED, IR
+	};
+	
+	
 	//####################### CONSTRUCTOR & DESTRUCTOR #####################
 	
 	/** Device Constructor */
@@ -71,7 +80,7 @@ class FilterWheelBase : public Device
 	/**
 	* void command
 	*/
-	virtual void moveCommand(short position) = 0;
+	virtual void moveCommand(FilterWheelBase::Filter position) = 0;
 	
 	//####################### MONITORS #####################################
 
@@ -80,13 +89,11 @@ class FilterWheelBase : public Device
 	*
 	* @magnitude:
 	* @description:FilterWheelFilter
-	* @maximum:7
-	* @minimum:0
-	* @units:None
-	* @sampling:0.2s
-	* @storage:60.0s
+	* @values:UV, PURPLE, BLUE, GREEN, YELLOW, ORANGE, RED, IR
+	* @sampling:1s
+	* @storage:600.0s
 	*/
-	virtual short filterWheelFilter();
+	virtual FilterWheelBase::Filter filterWheelFilter();
 
 	/**
 	* FilterWheelMoving
@@ -113,8 +120,8 @@ protected:
 	bool update_    ; ///<Activate/deactivate profile updating
 	
 	// Read-only attributes (monitorable magnitudes)
-	short filterWheelFilter_; ///<FilterWheelFilter
-	bool  filterWheelMoving_; ///<FilterWheelMoving
+	FilterWheelBase::Filter filterWheelFilter_; ///<FilterWheelFilter
+	bool   filterWheelMoving_; ///<FilterWheelMoving
 	
 	/// Method to create monitors
 	void createMonitors_();

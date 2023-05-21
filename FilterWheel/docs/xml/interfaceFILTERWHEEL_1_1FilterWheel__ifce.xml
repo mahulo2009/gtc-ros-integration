@@ -5,9 +5,9 @@
     <basecompoundref prot="public" virt="non-virtual">Device_ifce</basecompoundref>
     <includes refid="FILTERWHEEL_8idl" local="no">FILTERWHEEL.idl</includes>
       <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="interfaceFILTERWHEEL_1_1FilterWheel__ifce_1ae6e7271bbeede9f657ca7f9bcff66bca" prot="public" static="no" mutable="no">
-        <type>readonly attribute short</type>
-        <definition>readonly attribute short FILTERWHEEL::FilterWheel_ifce::filterWheelFilter</definition>
+      <memberdef kind="variable" id="interfaceFILTERWHEEL_1_1FilterWheel__ifce_1af3b866a5c5ab1e4839282327d006bd2c" prot="public" static="no" mutable="no">
+        <type>readonly attribute <ref refid="namespaceFILTERWHEEL_1a253d702802e8e62d6e25c76b0ae3fdc1" kindref="member">FILTERWHEEL::Filter</ref></type>
+        <definition>readonly attribute FILTERWHEEL::Filter FILTERWHEEL::FilterWheel_ifce::filterWheelFilter</definition>
         <argsstring></argsstring>
         <name>filterWheelFilter</name>
         <briefdescription>
@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FILTERWHEEL.idl" line="20" column="1" bodyfile="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FILTERWHEEL.idl" bodystart="20" bodyend="-1"/>
+        <location file="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FILTERWHEEL.idl" line="24" column="1" bodyfile="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FILTERWHEEL.idl" bodystart="24" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="interfaceFILTERWHEEL_1_1FilterWheel__ifce_1a7743bdfb489fc4117c1d058cb0011307" prot="public" static="no" mutable="no">
         <type>readonly attribute boolean</type>
@@ -29,17 +29,17 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FILTERWHEEL.idl" line="21" column="1" bodyfile="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FILTERWHEEL.idl" bodystart="21" bodyend="-1"/>
+        <location file="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FILTERWHEEL.idl" line="25" column="1" bodyfile="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FILTERWHEEL.idl" bodystart="25" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="interfaceFILTERWHEEL_1_1FilterWheel__ifce_1a2cbbee41cc8c690c41e73841cb49f3e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="interfaceFILTERWHEEL_1_1FilterWheel__ifce_1a4e68f6c2e536f4c0cd2879fe02af2dbb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void FILTERWHEEL::FilterWheel_ifce::moveCommand</definition>
-        <argsstring>(in short position)</argsstring>
+        <argsstring>(in FILTERWHEEL::Filter position)</argsstring>
         <name>moveCommand</name>
         <param>
-          <type>in short</type>
+          <type>in <ref refid="namespaceFILTERWHEEL_1a253d702802e8e62d6e25c76b0ae3fdc1" kindref="member">FILTERWHEEL::Filter</ref></type>
           <declname>position</declname>
         </param>
         <exceptions> raises (DGT::GCSException)</exceptions>
@@ -49,7 +49,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FILTERWHEEL.idl" line="16" column="1"/>
+        <location file="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FILTERWHEEL.idl" line="20" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -78,11 +78,11 @@
         <label>DCF::Device_ifce</label>
       </node>
     </collaborationgraph>
-    <location file="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FILTERWHEEL.idl" line="14" column="1" bodyfile="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FILTERWHEEL.idl" bodystart="13" bodyend="24"/>
+    <location file="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FILTERWHEEL.idl" line="18" column="1" bodyfile="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FILTERWHEEL.idl" bodystart="17" bodyend="28"/>
     <listofallmembers>
-      <member refid="interfaceFILTERWHEEL_1_1FilterWheel__ifce_1ae6e7271bbeede9f657ca7f9bcff66bca" prot="public" virt="non-virtual"><scope>FILTERWHEEL::FilterWheel_ifce</scope><name>filterWheelFilter</name></member>
+      <member refid="interfaceFILTERWHEEL_1_1FilterWheel__ifce_1af3b866a5c5ab1e4839282327d006bd2c" prot="public" virt="non-virtual"><scope>FILTERWHEEL::FilterWheel_ifce</scope><name>filterWheelFilter</name></member>
       <member refid="interfaceFILTERWHEEL_1_1FilterWheel__ifce_1a7743bdfb489fc4117c1d058cb0011307" prot="public" virt="non-virtual"><scope>FILTERWHEEL::FilterWheel_ifce</scope><name>filterWheelMoving</name></member>
-      <member refid="interfaceFILTERWHEEL_1_1FilterWheel__ifce_1a2cbbee41cc8c690c41e73841cb49f3e4" prot="public" virt="non-virtual"><scope>FILTERWHEEL::FilterWheel_ifce</scope><name>moveCommand</name></member>
+      <member refid="interfaceFILTERWHEEL_1_1FilterWheel__ifce_1a4e68f6c2e536f4c0cd2879fe02af2dbb" prot="public" virt="non-virtual"><scope>FILTERWHEEL::FilterWheel_ifce</scope><name>moveCommand</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

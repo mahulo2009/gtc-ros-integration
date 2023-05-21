@@ -10,14 +10,18 @@
 
 module FILTERWHEEL
 {
+	enum Filter
+	{
+		UV, PURPLE, BLUE, GREEN, YELLOW, ORANGE, RED, IR
+	};
 	interface FilterWheel_ifce : DCF::Device_ifce 
 	{
 		// Specific FilterWheel operations
-		void moveCommand(in short position) 
+		void moveCommand(in FILTERWHEEL::Filter position) 
 			raises (DGT::GCSException); 
 
 		// Monitorable attributes (device magnitudes)
-		readonly attribute short   filterWheelFilter;
+		readonly attribute FILTERWHEEL::Filter  filterWheelFilter;
 		readonly attribute boolean filterWheelMoving;
 		
 		// Configurable attributes (device properties)

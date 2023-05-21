@@ -1,0 +1,1 @@
+	void moveCommand(Filter position) = 0;

@@ -6,41 +6,41 @@
     <includedby refid="FilterWheel_8cpp" local="yes">FilterWheel.cpp</includedby>
     <includedby refid="FilterWheelBase_8cpp" local="yes">FilterWheelBase.cpp</includedby>
     <incdepgraph>
-      <node id="80">
-        <label>FilterWheel.h</label>
-        <link refid="FilterWheel.h"/>
-        <childnode refid="81" relation="include">
-        </childnode>
-      </node>
-      <node id="81">
-        <label>FilterWheelBase.h</label>
-        <link refid="FilterWheelBase_8h"/>
-        <childnode refid="82" relation="include">
-        </childnode>
-        <childnode refid="83" relation="include">
-        </childnode>
-      </node>
-      <node id="82">
-        <label>Device.h</label>
-      </node>
-      <node id="83">
-        <label>ConcreteArrays.h</label>
-      </node>
-    </incdepgraph>
-    <invincdepgraph>
       <node id="84">
         <label>FilterWheel.h</label>
         <link refid="FilterWheel.h"/>
         <childnode refid="85" relation="include">
         </childnode>
-        <childnode refid="86" relation="include">
-        </childnode>
       </node>
       <node id="85">
+        <label>FilterWheelBase.h</label>
+        <link refid="FilterWheelBase_8h"/>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+      </node>
+      <node id="86">
+        <label>Device.h</label>
+      </node>
+      <node id="87">
+        <label>ConcreteArrays.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="88">
+        <label>FilterWheel.h</label>
+        <link refid="FilterWheel.h"/>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+      </node>
+      <node id="89">
         <label>FilterWheel.cpp</label>
         <link refid="FilterWheel_8cpp"/>
       </node>
-      <node id="86">
+      <node id="90">
         <label>FilterWheelBase.cpp</label>
         <link refid="FilterWheelBase_8cpp"/>
       </node>
@@ -97,7 +97,7 @@
 <codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//#######################<sp/>SPECIFIC<sp/>METHODS<sp/>#############################</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="60"><highlight class="normal"></highlight></codeline>
-<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFilterWheel_1a87d4d14b45f71f802b47fc34ca05b322" kindref="member">moveCommand</ref>(</highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>position);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFilterWheel_1a77911884afba09cffa7e64cbd7ad7ecd" kindref="member">moveCommand</ref>(<ref refid="classFilterWheelBase_1aabeaa7c1c1c37b9238074de959e2d9c6" kindref="member">FilterWheelBase::Filter</ref><sp/>position);</highlight></codeline>
 <codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="66"><highlight class="normal"></highlight></codeline>
 <codeline lineno="67"><highlight class="normal"><sp/></highlight><highlight class="comment">//-----------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>

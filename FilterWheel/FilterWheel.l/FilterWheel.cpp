@@ -93,6 +93,7 @@ void FilterWheel::init()
 		goInitialising_();
 		
 		// ## Initialization procedure
+		filterWheelFilter_  = BLUE;
 		
 		
 		cout << endl << "FilterWheel READY!!!" << endl << endl;
@@ -259,7 +260,7 @@ char* FilterWheel::report(short level)
 //----------------------------------------------------------------------
 // moveCommand 
 //----------------------------------------------------------------------
-void FilterWheel::moveCommand(short position)
+void FilterWheel::moveCommand(FilterWheelBase::Filter position)
 {
 	ACE_Guard<ACE_Thread_Mutex> guard(deviceGuardMutex_);
 
@@ -277,6 +278,8 @@ void FilterWheel::moveCommand(short position)
 			
 			//## Add code as required
 			filterWheelMoving_  = true;
+			//Sleep
+			TimeService::sleep(3.);
 			filterWheelFilter_  = position;
 			filterWheelMoving_  = false;
 			

@@ -8,69 +8,69 @@
     <includedby refid="FilterWheelAdapter_8h" local="yes">FilterWheelAdapter.h</includedby>
     <includedby refid="FilterWheelConfigAgent_8h" local="yes">FilterWheelConfigAgent.h</includedby>
     <incdepgraph>
-      <node id="120">
+      <node id="124">
         <label>FilterWheelBase.h</label>
         <link refid="FilterWheelBase.h"/>
-        <childnode refid="121" relation="include">
-        </childnode>
-        <childnode refid="122" relation="include">
-        </childnode>
-      </node>
-      <node id="121">
-        <label>Device.h</label>
-      </node>
-      <node id="122">
-        <label>ConcreteArrays.h</label>
-      </node>
-    </incdepgraph>
-    <invincdepgraph>
-      <node id="129">
-        <label>FilterWheelConfigAgent.h</label>
-        <link refid="FilterWheelConfigAgent_8h"/>
-        <childnode refid="126" relation="include">
-        </childnode>
-        <childnode refid="130" relation="include">
-        </childnode>
-      </node>
-      <node id="127">
-        <label>FilterWheelAdapter.h</label>
-        <link refid="FilterWheelAdapter_8h"/>
-        <childnode refid="128" relation="include">
-        </childnode>
-        <childnode refid="126" relation="include">
-        </childnode>
-      </node>
-      <node id="124">
-        <label>FilterWheel.h</label>
-        <link refid="FilterWheel_8h"/>
         <childnode refid="125" relation="include">
         </childnode>
         <childnode refid="126" relation="include">
         </childnode>
       </node>
       <node id="125">
-        <label>FilterWheel.cpp</label>
-        <link refid="FilterWheel_8cpp"/>
+        <label>Device.h</label>
       </node>
-      <node id="123">
-        <label>FilterWheelBase.h</label>
-        <link refid="FilterWheelBase.h"/>
-        <childnode refid="124" relation="include">
+      <node id="126">
+        <label>ConcreteArrays.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="133">
+        <label>FilterWheelConfigAgent.h</label>
+        <link refid="FilterWheelConfigAgent_8h"/>
+        <childnode refid="130" relation="include">
         </childnode>
-        <childnode refid="127" relation="include">
+        <childnode refid="134" relation="include">
         </childnode>
-        <childnode refid="129" relation="include">
+      </node>
+      <node id="131">
+        <label>FilterWheelAdapter.h</label>
+        <link refid="FilterWheelAdapter_8h"/>
+        <childnode refid="132" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
         </childnode>
       </node>
       <node id="128">
+        <label>FilterWheel.h</label>
+        <link refid="FilterWheel_8h"/>
+        <childnode refid="129" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+      </node>
+      <node id="129">
+        <label>FilterWheel.cpp</label>
+        <link refid="FilterWheel_8cpp"/>
+      </node>
+      <node id="127">
+        <label>FilterWheelBase.h</label>
+        <link refid="FilterWheelBase.h"/>
+        <childnode refid="128" relation="include">
+        </childnode>
+        <childnode refid="131" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+      </node>
+      <node id="132">
         <label>FilterWheelAdapter.cpp</label>
         <link refid="FilterWheelAdapter_8cpp"/>
       </node>
-      <node id="130">
+      <node id="134">
         <label>FilterWheelConfigAgent.cpp</label>
         <link refid="FilterWheelConfigAgent_8cpp"/>
       </node>
-      <node id="126">
+      <node id="130">
         <label>FilterWheelBase.cpp</label>
         <link refid="FilterWheelBase_8cpp"/>
       </node>
@@ -100,68 +100,74 @@
 <codeline lineno="21"><highlight class="normal"></highlight></codeline>
 <codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//########################<sp/>SPECIFIC<sp/>TYPES<sp/>##############################</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//#######################<sp/>CONSTRUCTOR<sp/>&amp;<sp/>DESTRUCTOR<sp/>#####################</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classFilterWheelBase_1a8ec0287915338f45db06a390abb2faa6" kindref="member">FilterWheelBase</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>name);</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"></highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classFilterWheelBase_1af570338f3e76a5363c7d74ecaa2d5a21" kindref="member">~FilterWheelBase</ref>();</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"></highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//##########################<sp/>DEVICE<sp/>METHODS<sp/>############################</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><ref refid="classFilterWheelBase_1a273ecab6899be2705cca6f89ca6c4788" kindref="member">connect</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>orbname,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>corbaDebug,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>threads,<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>priority,</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>mode<sp/><sp/><sp/><sp/><sp/><sp/>=Device::INTEGRATED,</highlight></codeline>
-<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>update<sp/><sp/><sp/><sp/>=Device::DO_NOT_UPDATE);</highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><ref refid="classFilterWheelBase_1a42e67bf520aaec1c0310d392eb4cb056" kindref="member">start</ref>();</highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><ref refid="classFilterWheelBase_1aafc5305c343da1276923a18d36a0422f" kindref="member">init</ref>();</highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><ref refid="classFilterWheelBase_1ace32795069f15712e716b982b2830ae8" kindref="member">halt</ref>();</highlight></codeline>
+<codeline lineno="27" refid="classFilterWheelBase_1aabeaa7c1c1c37b9238074de959e2d9c6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="classFilterWheelBase_1aabeaa7c1c1c37b9238074de959e2d9c6" kindref="member">Filter</ref></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="29" refid="classFilterWheelBase_1aabeaa7c1c1c37b9238074de959e2d9c6aeddb296d7fe36d10c61f927e6b8b66f8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classFilterWheelBase_1aabeaa7c1c1c37b9238074de959e2d9c6a8b05b70b70af9a247ed780d8ef64b1e6" kindref="member">UV</ref>,<sp/><ref refid="classFilterWheelBase_1aabeaa7c1c1c37b9238074de959e2d9c6ab3c2fc44886e2b9e887b440f2b275644" kindref="member">PURPLE</ref>,<sp/><ref refid="classFilterWheelBase_1aabeaa7c1c1c37b9238074de959e2d9c6a32e118204bfb4a506b335038bb0fbf0c" kindref="member">BLUE</ref>,<sp/><ref refid="classFilterWheelBase_1aabeaa7c1c1c37b9238074de959e2d9c6aea7e2c8a1d9b62c9cf18e5415479f9af" kindref="member">GREEN</ref>,<sp/><ref refid="classFilterWheelBase_1aabeaa7c1c1c37b9238074de959e2d9c6aeddb296d7fe36d10c61f927e6b8b66f8" kindref="member">YELLOW</ref>,<sp/><ref refid="classFilterWheelBase_1aabeaa7c1c1c37b9238074de959e2d9c6ad1083a9dd1fef63bebc87810384b9029" kindref="member">ORANGE</ref>,<sp/><ref refid="classFilterWheelBase_1aabeaa7c1c1c37b9238074de959e2d9c6a49261190b5820c9a58ffbd837254d427" kindref="member">RED</ref>,<sp/><ref refid="classFilterWheelBase_1aabeaa7c1c1c37b9238074de959e2d9c6a6f9aaaceeff702875312848a3dfe54f1" kindref="member">IR</ref></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//#######################<sp/>CONSTRUCTOR<sp/>&amp;<sp/>DESTRUCTOR<sp/>#####################</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classFilterWheelBase_1a8ec0287915338f45db06a390abb2faa6" kindref="member">FilterWheelBase</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>name);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classFilterWheelBase_1af570338f3e76a5363c7d74ecaa2d5a21" kindref="member">~FilterWheelBase</ref>();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//##########################<sp/>DEVICE<sp/>METHODS<sp/>############################</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><ref refid="classFilterWheelBase_1a273ecab6899be2705cca6f89ca6c4788" kindref="member">connect</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>orbname,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>corbaDebug,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>threads,<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>priority,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>mode<sp/><sp/><sp/><sp/><sp/><sp/>=Device::INTEGRATED,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>update<sp/><sp/><sp/><sp/>=Device::DO_NOT_UPDATE);</highlight></codeline>
 <codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><ref refid="classFilterWheelBase_1a3489759202f2bb34afe9bb3d7d4db353" kindref="member">shutdown</ref>();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><ref refid="classFilterWheelBase_1a42e67bf520aaec1c0310d392eb4cb056" kindref="member">start</ref>();</highlight></codeline>
 <codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><ref refid="classFilterWheelBase_1a567a3614438287acc2746277a2e72d41" kindref="member">reset</ref>();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><ref refid="classFilterWheelBase_1aafc5305c343da1276923a18d36a0422f" kindref="member">init</ref>();</highlight></codeline>
 <codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><ref refid="classFilterWheelBase_1a5ec901fdf33247a5dc48f5b469dd0e11" kindref="member">restore</ref>();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><ref refid="classFilterWheelBase_1ace32795069f15712e716b982b2830ae8" kindref="member">halt</ref>();</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><ref refid="classFilterWheelBase_1a034ff512467ba0c7ae74706244454cd0" kindref="member">test</ref>();</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><ref refid="classFilterWheelBase_1a3489759202f2bb34afe9bb3d7d4db353" kindref="member">shutdown</ref>();</highlight></codeline>
 <codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><ref refid="classFilterWheelBase_1aa84125a4891782d2f155a9e82aba23c6" kindref="member">abort</ref>();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><ref refid="classFilterWheelBase_1a567a3614438287acc2746277a2e72d41" kindref="member">reset</ref>();</highlight></codeline>
 <codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classFilterWheelBase_1afca143b72b25e39312267a967a049bfe" kindref="member">report</ref>(</highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>level);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><ref refid="classFilterWheelBase_1a5ec901fdf33247a5dc48f5b469dd0e11" kindref="member">restore</ref>();</highlight></codeline>
 <codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classFilterWheelBase_1a80b45825d8c5cf8db2b3b90a776cf0b8" kindref="member">version</ref>();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><ref refid="classFilterWheelBase_1a034ff512467ba0c7ae74706244454cd0" kindref="member">test</ref>();</highlight></codeline>
 <codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//#######################<sp/>SPECIFIC<sp/>METHODS<sp/>#############################</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="70"><highlight class="normal"></highlight></codeline>
-<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFilterWheelBase_1a432c92056ae5225b886fb243f5edb9ec" kindref="member">moveCommand</ref>(</highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>position)<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//#######################<sp/>MONITORS<sp/>#####################################</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="77"><highlight class="normal"></highlight></codeline>
-<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/><ref refid="classFilterWheelBase_1a50a4402a468508170ae0acbc708d6706" kindref="member">filterWheelFilter</ref>();</highlight></codeline>
-<codeline lineno="90"><highlight class="normal"></highlight></codeline>
-<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classFilterWheelBase_1a4f816ec06bdc1e05c66072140593512e" kindref="member">filterWheelMoving</ref>();</highlight></codeline>
-<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//#######################<sp/>PROPERTIES<sp/>##################################</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="107"><highlight class="normal"></highlight><highlight class="comment">//-----------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="108"><highlight class="normal"></highlight><highlight class="comment">//<sp/>protected<sp/>section<sp/></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="109"><highlight class="normal"></highlight><highlight class="comment">//-----------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="110"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="111"><highlight class="normal"></highlight></codeline>
-<codeline lineno="112" refid="classFilterWheelBase_1a260faa421241035ea51f6a67b05c3c1b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classFilterWheelBase_1a260faa421241035ea51f6a67b05c3c1b" kindref="member">corbaDebug_</ref>;<sp/></highlight></codeline>
-<codeline lineno="113" refid="classFilterWheelBase_1a07ef763d5ad181dfca1364cc8de6ce5f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classFilterWheelBase_1a07ef763d5ad181dfca1364cc8de6ce5f" kindref="member">update_</ref><sp/><sp/><sp/><sp/>;<sp/></highlight></codeline>
-<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Read-only<sp/>attributes<sp/>(monitorable<sp/>magnitudes)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="116" refid="classFilterWheelBase_1ac432f4002a52f07353455f175c06b16b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/><ref refid="classFilterWheelBase_1ac432f4002a52f07353455f175c06b16b" kindref="member">filterWheelFilter_</ref>;<sp/></highlight></codeline>
-<codeline lineno="117" refid="classFilterWheelBase_1ad3ad7198360e9c298b92d8ae414beef2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><ref refid="classFilterWheelBase_1ad3ad7198360e9c298b92d8ae414beef2" kindref="member">filterWheelMoving_</ref>;<sp/></highlight></codeline>
-<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFilterWheelBase_1abdd8d3fc7dc39520b5bcf489f60e6463" kindref="member">createMonitors_</ref>();</highlight></codeline>
-<codeline lineno="121"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="122"><highlight class="normal"></highlight></codeline>
-<codeline lineno="123"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>_FilterWheelBase_h_<sp/></highlight></codeline>
-<codeline lineno="124"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><ref refid="classFilterWheelBase_1aa84125a4891782d2f155a9e82aba23c6" kindref="member">abort</ref>();</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classFilterWheelBase_1afca143b72b25e39312267a967a049bfe" kindref="member">report</ref>(</highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>level);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classFilterWheelBase_1a80b45825d8c5cf8db2b3b90a776cf0b8" kindref="member">version</ref>();</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//#######################<sp/>SPECIFIC<sp/>METHODS<sp/>#############################</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFilterWheelBase_1a57bbeb569296f8bb046ab54f4e80df65" kindref="member">moveCommand</ref>(<ref refid="classFilterWheelBase_1aabeaa7c1c1c37b9238074de959e2d9c6" kindref="member">FilterWheelBase::Filter</ref><sp/>position)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//#######################<sp/>MONITORS<sp/>#####################################</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classFilterWheelBase_1aabeaa7c1c1c37b9238074de959e2d9c6" kindref="member">FilterWheelBase::Filter</ref><sp/><ref refid="classFilterWheelBase_1a1dc261090690549d79172583214584a6" kindref="member">filterWheelFilter</ref>();</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classFilterWheelBase_1a4f816ec06bdc1e05c66072140593512e" kindref="member">filterWheelMoving</ref>();</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//#######################<sp/>PROPERTIES<sp/>##################################</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="comment">//-----------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="comment">//<sp/>protected<sp/>section<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="comment">//-----------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="classFilterWheelBase_1a260faa421241035ea51f6a67b05c3c1b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classFilterWheelBase_1a260faa421241035ea51f6a67b05c3c1b" kindref="member">corbaDebug_</ref>;<sp/></highlight></codeline>
+<codeline lineno="120" refid="classFilterWheelBase_1a07ef763d5ad181dfca1364cc8de6ce5f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classFilterWheelBase_1a07ef763d5ad181dfca1364cc8de6ce5f" kindref="member">update_</ref><sp/><sp/><sp/><sp/>;<sp/></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Read-only<sp/>attributes<sp/>(monitorable<sp/>magnitudes)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="classFilterWheelBase_1a35643cfbbf35132495e4117fd3d4b270" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classFilterWheelBase_1aabeaa7c1c1c37b9238074de959e2d9c6" kindref="member">FilterWheelBase::Filter</ref><sp/><ref refid="classFilterWheelBase_1a35643cfbbf35132495e4117fd3d4b270" kindref="member">filterWheelFilter_</ref>;<sp/></highlight></codeline>
+<codeline lineno="124" refid="classFilterWheelBase_1ad3ad7198360e9c298b92d8ae414beef2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><ref refid="classFilterWheelBase_1ad3ad7198360e9c298b92d8ae414beef2" kindref="member">filterWheelMoving_</ref>;<sp/></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFilterWheelBase_1abdd8d3fc7dc39520b5bcf489f60e6463" kindref="member">createMonitors_</ref>();</highlight></codeline>
+<codeline lineno="128"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>_FilterWheelBase_h_<sp/></highlight></codeline>
+<codeline lineno="131"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="/work/gcsop/src_c++/gtc/FilterWheel/FilterWheel.l/FilterWheelBase.h"/>
   </compounddef>

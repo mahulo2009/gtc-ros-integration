@@ -61,7 +61,7 @@ class FilterWheel : public FilterWheelBase
 	/**
 	* void command
 	*/
-	void moveCommand(short position);
+	void moveCommand(FilterWheelBase::Filter position);
 	
 
  //-----------------------------------------------------------------

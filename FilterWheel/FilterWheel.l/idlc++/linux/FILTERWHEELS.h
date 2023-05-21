@@ -63,6 +63,19 @@ namespace TAO
 {
 
   // TAO_IDL - Generated from
+  // be/be_visitor_arg_traits.cpp:904
+
+  template<>
+  class SArg_Traits< ::FILTERWHEEL::Filter>
+    : public
+        Basic_SArg_Traits_T<
+            ::FILTERWHEEL::Filter,
+            TAO::Any_Insert_Policy_Stream
+          >
+  {
+  };
+
+  // TAO_IDL - Generated from
   // be/be_visitor_arg_traits.cpp:147
 
 #if !defined (_FILTERWHEEL_FILTERWHEEL_IFCE__SARG_TRAITS_)
@@ -129,7 +142,7 @@ namespace POA_FILTERWHEEL
     // be/be_visitor_operation/operation_sh.cpp:39
 
     virtual void moveCommand (
-      ::CORBA::Short position) = 0;
+      ::FILTERWHEEL::Filter position) = 0;
 
     static void moveCommand_skel (
         TAO_ServerRequest &server_request,
@@ -139,7 +152,7 @@ namespace POA_FILTERWHEEL
     // TAO_IDL - Generated from
     // be/be_visitor_operation/operation_sh.cpp:39
 
-    virtual ::CORBA::Short filterWheelFilter (
+    virtual ::FILTERWHEEL::Filter filterWheelFilter (
       void) = 0;
 
     static void _get_filterWheelFilter_skel (

@@ -98,12 +98,12 @@ $(document).ready(function(){initNavTree('FilterWheelAdapter_8h_source.html','')
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">//----------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment">// Device specific operations</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">//----------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span>   <a class="code" href="classFilterWheelAdapter.html#a401cdf362ddd0fffbcbfec09a837fb7c">moveCommand</a>(CORBA::Short position);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span>   <a class="code" href="classFilterWheelAdapter.html#a56871477837f680562fb29d2cecf5ceb">moveCommand</a>(<span class="keyword">const</span> <a class="code" href="namespaceFILTERWHEEL.html#a253d702802e8e62d6e25c76b0ae3fdc1">FILTERWHEEL::Filter</a> position);</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">//----------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="comment">// Monitorable attributes (device magnitudes) </span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">//----------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    CORBA::Short   <a class="code" href="classFilterWheelAdapter.html#a7220339f9f59bd553fa7af49b3590fb6">filterWheelFilter</a>();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="namespaceFILTERWHEEL.html#a253d702802e8e62d6e25c76b0ae3fdc1">FILTERWHEEL::Filter</a>         <a class="code" href="classFilterWheelAdapter.html#af048d09b073f0cfacfbc071513baa039">filterWheelFilter</a>();</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    CORBA::Boolean <a class="code" href="classFilterWheelAdapter.html#ac2b46f2f7733da6c75a023c24068553f">filterWheelMoving</a>();</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">//----------------------------------------------------------------------</span></div>
@@ -111,32 +111,38 @@ $(document).ready(function(){initNavTree('FilterWheelAdapter_8h_source.html','')
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">//----------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">//--------------------------------------------------</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">// private section </span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">//--------------------------------------------------</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; <span class="comment">//-----------------------------------------------------------------</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; <span class="comment">// protected section </span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; <span class="comment">//-----------------------------------------------------------------</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; <span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="classFilterWheelBase.html">FilterWheelBase</a>* device_;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif // _FilterWheelAdapter_h_ </span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">//--------------------------------------------------</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">// private section </span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">//--------------------------------------------------</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="classFilterWheelBase.html">FilterWheelBase</a>* device_;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;};</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif // _FilterWheelAdapter_h_ </span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor"></span></div>
 <div class="ttc" id="classFilterWheelAdapter_html"><div class="ttname"><a href="classFilterWheelAdapter.html">FilterWheelAdapter</a></div><div class="ttdef"><b>Definition:</b> FilterWheelAdapter.h:15</div></div>
 <div class="ttc" id="FilterWheelBase_8h_html"><div class="ttname"><a href="FilterWheelBase_8h.html">FilterWheelBase.h</a></div></div>
+<div class="ttc" id="classFilterWheelAdapter_html_af048d09b073f0cfacfbc071513baa039"><div class="ttname"><a href="classFilterWheelAdapter.html#af048d09b073f0cfacfbc071513baa039">FilterWheelAdapter::filterWheelFilter</a></div><div class="ttdeci">FILTERWHEEL::Filter filterWheelFilter()</div><div class="ttdef"><b>Definition:</b> FilterWheelAdapter.cpp:49</div></div>
 <div class="ttc" id="classFilterWheelBase_html"><div class="ttname"><a href="classFilterWheelBase.html">FilterWheelBase</a></div><div class="ttdoc">This class is automaticaly regenerated when devBuilder-gev is invoked, and therefore it should not be...</div><div class="ttdef"><b>Definition:</b> FilterWheelBase.h:15</div></div>
-<div class="ttc" id="classFilterWheelAdapter_html_a401cdf362ddd0fffbcbfec09a837fb7c"><div class="ttname"><a href="classFilterWheelAdapter.html#a401cdf362ddd0fffbcbfec09a837fb7c">FilterWheelAdapter::moveCommand</a></div><div class="ttdeci">void moveCommand(CORBA::Short position)</div><div class="ttdef"><b>Definition:</b> FilterWheelAdapter.cpp:32</div></div>
 <div class="ttc" id="classFilterWheelAdapter_html_a116b4ce7e9cac9c99f9ef3caeb4dfafe"><div class="ttname"><a href="classFilterWheelAdapter.html#a116b4ce7e9cac9c99f9ef3caeb4dfafe">FilterWheelAdapter::~FilterWheelAdapter</a></div><div class="ttdeci">~FilterWheelAdapter()</div><div class="ttdef"><b>Definition:</b> FilterWheelAdapter.cpp:20</div></div>
-<div class="ttc" id="classFilterWheelAdapter_html_a7220339f9f59bd553fa7af49b3590fb6"><div class="ttname"><a href="classFilterWheelAdapter.html#a7220339f9f59bd553fa7af49b3590fb6">FilterWheelAdapter::filterWheelFilter</a></div><div class="ttdeci">CORBA::Short filterWheelFilter()</div><div class="ttdef"><b>Definition:</b> FilterWheelAdapter.cpp:49</div></div>
+<div class="ttc" id="classFilterWheelAdapter_html_a56871477837f680562fb29d2cecf5ceb"><div class="ttname"><a href="classFilterWheelAdapter.html#a56871477837f680562fb29d2cecf5ceb">FilterWheelAdapter::moveCommand</a></div><div class="ttdeci">void moveCommand(const FILTERWHEEL::Filter position)</div><div class="ttdef"><b>Definition:</b> FilterWheelAdapter.cpp:32</div></div>
 <div class="ttc" id="classFilterWheelAdapter_html_a834f06b496779baeae26339cccaea4a7"><div class="ttname"><a href="classFilterWheelAdapter.html#a834f06b496779baeae26339cccaea4a7">FilterWheelAdapter::FilterWheelAdapter</a></div><div class="ttdeci">FilterWheelAdapter(FilterWheelBase *device)</div><div class="ttdef"><b>Definition:</b> FilterWheelAdapter.cpp:11</div></div>
-<div class="ttc" id="classFilterWheelAdapter_html_ac2b46f2f7733da6c75a023c24068553f"><div class="ttname"><a href="classFilterWheelAdapter.html#ac2b46f2f7733da6c75a023c24068553f">FilterWheelAdapter::filterWheelMoving</a></div><div class="ttdeci">CORBA::Boolean filterWheelMoving()</div><div class="ttdef"><b>Definition:</b> FilterWheelAdapter.cpp:55</div></div>
+<div class="ttc" id="classFilterWheelAdapter_html_ac2b46f2f7733da6c75a023c24068553f"><div class="ttname"><a href="classFilterWheelAdapter.html#ac2b46f2f7733da6c75a023c24068553f">FilterWheelAdapter::filterWheelMoving</a></div><div class="ttdeci">CORBA::Boolean filterWheelMoving()</div><div class="ttdef"><b>Definition:</b> FilterWheelAdapter.cpp:56</div></div>
 <div class="ttc" id="classFilterWheel_html"><div class="ttname"><a href="classFilterWheel.html">FilterWheel</a></div><div class="ttdef"><b>Definition:</b> FilterWheel.h:13</div></div>
+<div class="ttc" id="namespaceFILTERWHEEL_html_a253d702802e8e62d6e25c76b0ae3fdc1"><div class="ttname"><a href="namespaceFILTERWHEEL.html#a253d702802e8e62d6e25c76b0ae3fdc1">FILTERWHEEL::Filter</a></div><div class="ttdeci">Filter</div><div class="ttdef"><b>Definition:</b> FILTERWHEEL.idl:13</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3007ad6fbcc706598b08724c1376acb1.html">FilterWheel.l</a></li><li class="navelem"><a class="el" href="FilterWheelAdapter_8h.html">FilterWheelAdapter.h</a></li>
-    <li class="footer">Generated on Thu May 18 2023 15:05:19 for FilterWheel by
+    <li class="footer">Generated on Sun May 21 2023 16:02:32 for FilterWheel by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

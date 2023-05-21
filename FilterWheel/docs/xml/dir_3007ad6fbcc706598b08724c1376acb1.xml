@@ -11,6 +11,8 @@
     <innerfile refid="FilterWheelBase_8h">FilterWheelBase.h</innerfile>
     <innerfile refid="FilterWheelConfigAgent_8cpp">FilterWheelConfigAgent.cpp</innerfile>
     <innerfile refid="FilterWheelConfigAgent_8h">FilterWheelConfigAgent.h</innerfile>
+    <innerfile refid="FilterWheelSimulator_8cpp">FilterWheelSimulator.cpp</innerfile>
+    <innerfile refid="FilterWheelSimulator_8h">FilterWheelSimulator.h</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
