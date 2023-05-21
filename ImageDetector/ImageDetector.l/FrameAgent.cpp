@@ -40,7 +40,7 @@ void FrameAgent::connect(LogAgent *logAgent, AlarmAgent * alarmAgent, std::strin
 	
 	try
 	{
-		dfManagerConnector_.componentInterfaceName("DF::Manager_ifce");
+		dfManagerConnector_.componentInterfaceName("DF/Manager1");
 		dfManagerConnector_.timeout(TimeValue(60,0), 1);
 	   	dfManagerConnector_.changeComponentCorbaName(dataFactoryManagerInstanceCorbaName);
 		dfManagerConnector_.initAgents(alarmAgent, logAgent);

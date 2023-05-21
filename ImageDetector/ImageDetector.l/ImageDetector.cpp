@@ -15,7 +15,7 @@
 //----------------------------------------------------------------------
 ImageDetector::ImageDetector(string name)
 : ImageDetectorBase(name),
-	frameAgent_(name, "ICARODFAgent"),
+	frameAgent_(name, "DF/Manager1"),
 	windows_(1,4)
 {
 	trace_.out("ImageDetector constructor\n");
@@ -107,6 +107,7 @@ void ImageDetector::init()
 		
 		// ## Initialization procedure
 		exposureTimeSeconds_=1;
+		frameAgent_.connect(logAgent_, alarmAgent_, "", "DF/Manager1");
 		
 		cout << endl << "ImageDetector READY!!!" << endl << endl;
 		

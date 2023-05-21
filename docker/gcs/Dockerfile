@@ -66,9 +66,9 @@ COPY patches/* /tmp/
 RUN patch /opt/gcs/tools/nrp /tmp/nrp.patch
 RUN mkdir -p /work/gcsop/src_c++/gtc/DSL/DAF/ && cp -Rp /opt/gcs/src_c++/gtc/DSL/DAF/ /work/gcsop/src_c++/gtc/DSL/ &&  cd /work/gcsop/src_c++/gtc/DSL/DAF/ && patch DAF.l/CORBAContext.cpp /tmp/CORBAContext.patch
 
-RUN git clone https://***:***@github.com/mahulo2009/DGCSTypesFastDDS.git /work/gcsop/src_c++/gtc/DGCSTypesFastDDS
-RUN git clone https://***:***@github.com/mahulo2009/Server_KitFastDDS.git /work/gcsop/src_c++/gtc/Server_KitFastDDS
-RUN git clone https://***:***@github.com/mahulo2009/InspectorDeviceFastDDS.git /work/gcsop/src_c++/gtc/InspectorDeviceFastDDS
+RUN git clone https://aeronpsaro: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@github.com/mahulo2009/DGCSTypesFastDDS.git /work/gcsop/src_c++/gtc/DGCSTypesFastDDS
+RUN git clone https://aeronpsaro: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@github.com/mahulo2009/Server_KitFastDDS.git /work/gcsop/src_c++/gtc/Server_KitFastDDS
+RUN git clone https://aeronpsaro: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@github.com/mahulo2009/InspectorDeviceFastDDS.git /work/gcsop/src_c++/gtc/InspectorDeviceFastDDS
 
 RUN chown -R gcsop:control /work/gcsop
 
