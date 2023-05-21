@@ -19,7 +19,7 @@ if __name__ == "__main__":
  
     imageDetector = ns.resolve("Osiris/ImageDetector_1",IMAGEDETECTOR.ImageDetector_ifce)
     imageDetector.ping()
-    #imageDetector.setExposureTimeSeconds(5.)
+    imageDetector.setExposureTimeSeconds(5.)
     imageDetector.expose()
     
     #orb.run()
