@@ -73,7 +73,7 @@ void ImageDetector::start()
 		}
 		catch(GCSException& ex)
 		{
-			logError_("unable to configure device");
+			//logError_("unable to configure device");
 			throw;
 		}
 		
@@ -205,7 +205,7 @@ void ImageDetector::test()
 	{
 		if (isOn()==FALSE)
 		{
-			logError_("Test is only posible in ON state");
+			//logError_("Test is only posible in ON state");
 			throw WrongState(name_.c_str(),"Not in ON state. Unable to test");
 		}
 		
@@ -264,7 +264,7 @@ char* ImageDetector::report(short level)
 * - Shall make a transition to RUNNING (even when is already running)   *
 * - Shall make a transition to IDLE when the Device in really idle      *
 * - Use ACE_Guard only for thread safe operations                       *
-* - If an error is detected use logError_() & throw GCSException        *
+* - If an error is detected use //logError_() & throw GCSException        *
 * - If an alarm is detected use sendAlarm_()                            *
 * - If a failure is detected use goFault_(method)                       *
 * - Access to a DeviceDriver or aggregated Device can be required       *
@@ -285,7 +285,7 @@ void ImageDetector::expose()
 
 		if ( ! isDisabled())
 		{
-			logInfo_("expose()");
+			//logInfo_("expose()");
 			
 			//## Add code as required
 			idExposing_ = true;
@@ -298,10 +298,10 @@ void ImageDetector::expose()
 			idExposureTimeLeft_ = 0;
 
 			
-			logInfo_("expose() completed successfully");
+			//logInfo_("expose() completed successfully");
 		}
 		else
-			logInfo_("Device disabled. expose not executed");
+			//logInfo_("Device disabled. expose not executed");
 
 		goIdle_();
 	}
@@ -309,7 +309,7 @@ void ImageDetector::expose()
 	{
 		goIdle_();
 		ex.addToTrace("ImageDetector::expose()");
-		logError_("ImageDetector::expose() exception - %s\n", ex.toString());
+		//logError_("ImageDetector::expose() exception - %s\n", ex.toString());
 		trace_.err("ImageDetector::expose() exception - %s\n", ex.toString());
 		throw;
 	}
@@ -359,16 +359,16 @@ void ImageDetector::setExposureTimeSeconds(double time)
 
 		if ( ! isDisabled())
 		{
-			logInfo_("setExposureTimeSeconds()");
+			//logInfo_("setExposureTimeSeconds()");
 			
 			//## Add code as required
 			exposureTimeSeconds_ = time;
 			
 			
-			logInfo_("setExposureTimeSeconds() completed successfully");
+			//logInfo_("setExposureTimeSeconds() completed successfully");
 		}
 		else
-			logInfo_("Device disabled. setExposureTimeSeconds not executed");
+			//logInfo_("Device disabled. setExposureTimeSeconds not executed");
 
 		goIdle_();
 	}
@@ -376,7 +376,7 @@ void ImageDetector::setExposureTimeSeconds(double time)
 	{
 		goIdle_();
 		ex.addToTrace("ImageDetector::setExposureTimeSeconds()");
-		logError_("ImageDetector::setExposureTimeSeconds() exception - %s\n", ex.toString());
+		//logError_("ImageDetector::setExposureTimeSeconds() exception - %s\n", ex.toString());
 		trace_.err("ImageDetector::setExposureTimeSeconds() exception - %s\n", ex.toString());
 		throw;
 	}

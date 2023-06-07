@@ -5,10 +5,12 @@
 #define _ImageDetector_h_
 
 // Includes
-#include "ImageDetectorBase.h"
 
 #include <Frame.h>
 #include "FrameAgent.h"
+// logError and logInfo are redefined in FastDDS library, and thus FastDDS dependencies
+// must always be included last
+#include "ImageDetectorBase.h"
 
 /**
 * 
@@ -87,6 +89,7 @@ class ImageDetector : public ImageDetectorBase
 
 	void expose_();
 	void buildFrame_(Frame<double,2> & frame);
+
 };
 
 #endif // _ImageDetector_h_ 

@@ -79,6 +79,7 @@ void ImageDetectorBase::connect(string orbname, bool corbaDebug, unsigned thread
 		{
 			trace_.out("creating monitor agent\n");
 			monitorAgent_ = new MonitorAgent(name_.c_str());
+			monitorAgentFastDDS_ = new MonitorAgentFastDDS();
 		}
 		catch(GCSException& ex)
 		{
@@ -141,7 +142,7 @@ void ImageDetectorBase::start()
 		}
 		catch(GCSException& ex)
 		{
-			logError_("unable to configure device");
+			//logError_("unable to configure device");
 			throw;
 		}
 		
@@ -270,7 +271,7 @@ void ImageDetectorBase::restore()
 	
 	if (isFault()==FALSE)
 	{
-		logError_("Restore is only posible in FAULT state");
+		//logError_("Restore is only posible in FAULT state");
 		throw WrongState(name_.c_str(),"Not in FAULT state. Unable to restore");
 	}
 	
@@ -307,7 +308,7 @@ void ImageDetectorBase::test()
 	{
 		if (isOn()==FALSE)
 		{
-			logError_("Test is only posible in ON state");
+			//logError_("Test is only posible in ON state");
 			throw WrongState(name_.c_str(),"Not in ON state. Unable to test");
 		}
 		
@@ -387,6 +388,7 @@ void ImageDetectorBase::createMonitors_()
 		if (monitorAgent_ != NULL)
 		{
 			monitorAgent_->createMonitor<ImageDetectorBase,double>(this,"idExposureTimeLeft",&ImageDetectorBase::idExposureTimeLeft);
+			monitorAgentFastDDS_->createMonitor<ImageDetectorBase,double,DoubleValue>(this,"idExposureTimeLeft",&ImageDetectorBase::idExposureTimeLeft);
 		}
 	}
 	catch(GCSException& ex)
@@ -415,7 +417,7 @@ void ImageDetectorBase::createMonitors_()
 * - Shall make a transition to RUNNING (even when is already running)   *
 * - Shall make a transition to IDLE when the Device in really idle      *
 * - Use ACE_Guard only for thread safe operations                       *
-* - If an error is detected use logError_() & throw GCSException        *
+* - If an error is detected use //logError_() & throw GCSException        *
 * - If an alarm is detected use sendAlarm_()                            *
 * - If a failure is detected use goIdle_()                              *
 ************************************************************************/
@@ -463,7 +465,7 @@ double ImageDetectorBase::idExposureTimeLeft()
 * - Both get/set methods shall be provided for each property            *
 * - Properties shall have a default value initialized at startup        *
 * - It is required to check the ranges before to apply properties       *
-* - If an error is detected: use logError_() & throw GCSException       *
+* - If an error is detected: use //logError_() & throw GCSException       *
 * - Inform that a property is changed: use propertyChange_()            *
 ************************************************************************/
 	

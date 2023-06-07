@@ -7,6 +7,7 @@
 // Includes
 #include <Device.h>
 #include <ConcreteArrays.h>
+#include <MonitorAgentFastDDS.h>
 
 /**
 * This class is automaticaly regenerated when devBuilder-gev is invoked,
@@ -120,6 +121,7 @@ protected:
 	// Read-only attributes (monitorable magnitudes)
 	bool   idExposing_        ; ///<ImageDetectorExposing
 	double idExposureTimeLeft_; ///<ImageDetectorExposureTimeLeft
+	MonitorAgentFastDDS * monitorAgentFastDDS_;
 	
 	/// Method to create monitors
 	void createMonitors_();
